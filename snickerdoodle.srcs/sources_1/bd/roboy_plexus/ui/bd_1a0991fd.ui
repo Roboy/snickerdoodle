@@ -1,0 +1,97 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1270 -y 90 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1270 -y 130 -defaultsOSRD
+preplace port mosi_0 -pg 1 -lvl 4 -x 1270 -y 570 -defaultsOSRD
+preplace port sck_0 -pg 1 -lvl 4 -x 1270 -y 590 -defaultsOSRD
+preplace port power_sense_n -pg 1 -lvl 0 -x 0 -y 450 -defaultsOSRD
+preplace port mirrored_muscle_unit_0 -pg 1 -lvl 0 -x 0 -y 430 -defaultsOSRD
+preplace port miso_0 -pg 1 -lvl 0 -x 0 -y 410 -defaultsOSRD
+preplace port miso_1 -pg 1 -lvl 0 -x 0 -y 650 -defaultsOSRD
+preplace port mirrored_muscle_unit_1 -pg 1 -lvl 0 -x 0 -y 670 -defaultsOSRD
+preplace port miso_2 -pg 1 -lvl 0 -x 0 -y 850 -defaultsOSRD
+preplace port mirrored_muscle_unit_2 -pg 1 -lvl 0 -x 0 -y 870 -defaultsOSRD
+preplace port mirrored_muscle_unit_3 -pg 1 -lvl 0 -x 0 -y 1070 -defaultsOSRD
+preplace port miso_3 -pg 1 -lvl 0 -x 0 -y 1050 -defaultsOSRD
+preplace port miso_4 -pg 1 -lvl 0 -x 0 -y 1300 -defaultsOSRD
+preplace port miso_5 -pg 1 -lvl 0 -x 0 -y 1500 -defaultsOSRD
+preplace port mirrored_muscle_unit_4 -pg 1 -lvl 0 -x 0 -y 1320 -defaultsOSRD
+preplace port mirrored_muscle_unit_5 -pg 1 -lvl 0 -x 0 -y 1520 -defaultsOSRD
+preplace port mosi_1 -pg 1 -lvl 4 -x 1270 -y 710 -defaultsOSRD
+preplace port mosi_2 -pg 1 -lvl 4 -x 1270 -y 890 -defaultsOSRD
+preplace port mosi_3 -pg 1 -lvl 4 -x 1270 -y 1090 -defaultsOSRD
+preplace port mosi_4 -pg 1 -lvl 4 -x 1270 -y 1340 -defaultsOSRD
+preplace port mosi_5 -pg 1 -lvl 4 -x 1270 -y 1540 -defaultsOSRD
+preplace port sck_1 -pg 1 -lvl 4 -x 1270 -y 690 -defaultsOSRD
+preplace port sck_2 -pg 1 -lvl 4 -x 1270 -y 870 -defaultsOSRD
+preplace port sck_3 -pg 1 -lvl 4 -x 1270 -y 1070 -defaultsOSRD
+preplace port sck_4 -pg 1 -lvl 4 -x 1270 -y 1320 -defaultsOSRD
+preplace port sck_5 -pg 1 -lvl 4 -x 1270 -y 1520 -defaultsOSRD
+preplace portBus ss_n_0 -pg 1 -lvl 4 -x 1270 -y 110 -defaultsOSRD
+preplace portBus ss_n_1 -pg 1 -lvl 4 -x 1270 -y 660 -defaultsOSRD
+preplace portBus ss_n_2 -pg 1 -lvl 4 -x 1270 -y 850 -defaultsOSRD
+preplace portBus ss_n_3 -pg 1 -lvl 4 -x 1270 -y 1050 -defaultsOSRD
+preplace portBus ss_n_4 -pg 1 -lvl 4 -x 1270 -y 1300 -defaultsOSRD
+preplace portBus ss_n_5 -pg 1 -lvl 4 -x 1270 -y 1500 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 260 -y 180 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 1040 -y 350 -defaultsOSRD
+preplace inst rst_ps7_0_49M -pg 1 -lvl 2 -x 660 -y 250 -defaultsOSRD
+preplace inst myoControl_0 -pg 1 -lvl 1 -x 260 -y 440 -defaultsOSRD
+preplace inst myoControl_1 -pg 1 -lvl 1 -x 260 -y 680 -defaultsOSRD
+preplace inst myoControl_2 -pg 1 -lvl 1 -x 260 -y 880 -defaultsOSRD
+preplace inst myoControl_3 -pg 1 -lvl 1 -x 260 -y 1080 -defaultsOSRD
+preplace inst myoControl_4 -pg 1 -lvl 1 -x 260 -y 1330 -defaultsOSRD
+preplace inst myoControl_5 -pg 1 -lvl 1 -x 260 -y 1530 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 N 230
+preplace netloc rst_ps7_0_49M_peripheral_aresetn 1 0 3 40 560 470J 550 870
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 30 10 480 150 880
+preplace netloc myoControl_0_mosi 1 1 3 NJ 440 860J 600 1250J
+preplace netloc myoControl_0_sck 1 1 3 NJ 460 850J 590 NJ
+preplace netloc power_sense_n_1 1 0 1 20 450n
+preplace netloc mirrored_muscle_unit_1 1 0 1 N 430
+preplace netloc miso_1 1 0 1 N 410
+preplace netloc myoControl_0_ss_n_o 1 1 3 460 120 NJ 120 1240J
+preplace netloc miso_1_1 1 0 1 N 650
+preplace netloc mirrored_muscle_unit_1_1 1 0 1 N 670
+preplace netloc miso_2_1 1 0 1 N 850
+preplace netloc mirrored_muscle_unit_2_1 1 0 1 N 870
+preplace netloc mirrored_muscle_unit_3_1 1 0 1 N 1070
+preplace netloc miso_3_1 1 0 1 N 1050
+preplace netloc miso_4_1 1 0 1 N 1300
+preplace netloc mirrored_muscle_unit_4_1 1 0 1 N 1320
+preplace netloc miso_5_1 1 0 1 N 1500
+preplace netloc mirrored_muscle_unit_5_1 1 0 1 N 1520
+preplace netloc myoControl_1_mosi 1 1 3 NJ 680 NJ 680 1250
+preplace netloc myoControl_2_mosi 1 1 3 NJ 880 NJ 880 1250
+preplace netloc myoControl_3_mosi 1 1 3 NJ 1080 NJ 1080 1250
+preplace netloc myoControl_4_mosi 1 1 3 NJ 1330 NJ 1330 1220
+preplace netloc myoControl_5_mosi 1 1 3 NJ 1530 NJ 1530 1220
+preplace netloc myoControl_1_sck 1 1 3 470 690 NJ 690 NJ
+preplace netloc myoControl_2_sck 1 1 3 470 870 NJ 870 NJ
+preplace netloc myoControl_3_sck 1 1 3 470 1070 NJ 1070 NJ
+preplace netloc myoControl_4_sck 1 1 3 470 1320 NJ 1320 NJ
+preplace netloc myoControl_5_sck 1 1 3 470 1520 NJ 1520 NJ
+preplace netloc myoControl_1_ss_n_o 1 1 3 N 660 NJ 660 NJ
+preplace netloc myoControl_2_ss_n_o 1 1 3 470 850 NJ 850 NJ
+preplace netloc myoControl_3_ss_n_o 1 1 3 470 1050 NJ 1050 NJ
+preplace netloc myoControl_4_ss_n_o 1 1 3 470 1300 NJ 1300 NJ
+preplace netloc myoControl_5_ss_n_o 1 1 3 470 1500 NJ 1500 NJ
+preplace netloc processing_system7_0_DDR 1 1 3 NJ 90 N 90 N
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 110 N 110 1190
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 2 470J 140 890J
+preplace netloc ps7_0_axi_periph_M00_AXI 1 0 4 60 550 460J 560 840J 580 1240
+preplace netloc ps7_0_axi_periph_M01_AXI 1 0 4 60 570 NJ 570 NJ 570 1200
+preplace netloc ps7_0_axi_periph_M02_AXI 1 0 4 50 1200 NJ 1200 NJ 1200 1230
+preplace netloc ps7_0_axi_periph_M03_AXI 1 0 4 60 1190 NJ 1190 NJ 1190 1190
+preplace netloc ps7_0_axi_periph_M04_AXI 1 0 4 50 1210 NJ 1210 NJ 1210 1220
+preplace netloc ps7_0_axi_periph_M05_AXI 1 0 4 60 1220 NJ 1220 NJ 1220 1210
+levelinfo -pg 1 0 260 660 1040 1270
+pagesize -pg 1 -db -bbox -sgen -230 0 1400 1640
+"
+}
+{
+   "da_axi4_cnt":"7",
+   "da_ps7_cnt":"1"
+}

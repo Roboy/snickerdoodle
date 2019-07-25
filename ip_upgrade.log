@@ -1,0 +1,79 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Fri Jul 26 00:07:04 2019
+| Host         : base running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'roboy_plexus_myoControl_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of roboy_plexus_myoControl_0_3 (Roboy:roboy_plexus:myoControl:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Thu Jul 25 21:48:55 2019
+| Host         : base running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'roboy_plexus_myoControl_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of roboy_plexus_myoControl_0_3 (Roboy:roboy_plexus:myoControl:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Thu Jul 25 21:41:00 2019
+| Host         : base running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'roboy_plexus_myoControl_0_3'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of roboy_plexus_myoControl_0_3 (Roboy:roboy_plexus:myoControl:1.0) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'roboy_plexus_myoControl_0_3'. These changes may impact your design.
+
+
+-Upgrade has added port 'mirrored_muscle_unit'
+
+-Upgrade has added port 'miso'
+
+-Upgrade has added port 'mosi'
+
+-Upgrade has added port 'power_sense_n'
+
+-Upgrade has added port 'sck'
+
+-Upgrade has added port 'ss_n_o'
+
+
