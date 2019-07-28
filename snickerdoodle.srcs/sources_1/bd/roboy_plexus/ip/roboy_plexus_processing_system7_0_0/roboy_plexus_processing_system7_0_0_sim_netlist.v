@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Thu Jul 25 21:58:16 2019
+// Date        : Sun Jul 28 17:37:05 2019
 // Host        : base running 64-bit Ubuntu 18.04.2 LTS
 // Command     : write_verilog -force -mode funcsim
 //               /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_processing_system7_0_0/roboy_plexus_processing_system7_0_0_sim_netlist.v
@@ -15,7 +15,22 @@
 (* CHECK_LICENSE_TYPE = "roboy_plexus_processing_system7_0_0,processing_system7_v5_5_processing_system7,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "processing_system7_v5_5_processing_system7,Vivado 2019.1" *) 
 (* NotValidForBitStream *)
 module roboy_plexus_processing_system7_0_0
-   (GPIO_I,
+   (ENET1_GMII_TX_EN,
+    ENET1_GMII_TX_ER,
+    ENET1_MDIO_MDC,
+    ENET1_MDIO_O,
+    ENET1_MDIO_T,
+    ENET1_GMII_TXD,
+    ENET1_GMII_COL,
+    ENET1_GMII_CRS,
+    ENET1_GMII_RX_CLK,
+    ENET1_GMII_RX_DV,
+    ENET1_GMII_RX_ER,
+    ENET1_GMII_TX_CLK,
+    ENET1_MDIO_I,
+    ENET1_EXT_INTIN,
+    ENET1_GMII_RXD,
+    GPIO_I,
     GPIO_O,
     GPIO_T,
     M_AXI_GP0_ARVALID,
@@ -128,6 +143,21 @@ module roboy_plexus_processing_system7_0_0
     PS_SRSTB,
     PS_CLK,
     PS_PORB);
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 TX_EN" *) output [0:0]ENET1_GMII_TX_EN;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 TX_ER" *) output [0:0]ENET1_GMII_TX_ER;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:mdio:1.0 MDIO_ETHERNET_1 MDC" *) output ENET1_MDIO_MDC;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:mdio:1.0 MDIO_ETHERNET_1 MDIO_O" *) output ENET1_MDIO_O;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:mdio:1.0 MDIO_ETHERNET_1 MDIO_T" *) output ENET1_MDIO_T;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 TXD" *) output [7:0]ENET1_GMII_TXD;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 COL" *) input ENET1_GMII_COL;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 CRS" *) input ENET1_GMII_CRS;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 RX_CLK" *) input ENET1_GMII_RX_CLK;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 RX_DV" *) input ENET1_GMII_RX_DV;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 RX_ER" *) input ENET1_GMII_RX_ER;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 TX_CLK" *) input ENET1_GMII_TX_CLK;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:mdio:1.0 MDIO_ETHERNET_1 MDIO_I" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME MDIO_ETHERNET_1, CAN_DEBUG false" *) input ENET1_MDIO_I;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 ENET1_EXT_INTIN INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ENET1_EXT_INTIN, SENSITIVITY LEVEL_HIGH, PortWidth 1" *) input ENET1_EXT_INTIN;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 RXD" *) input [7:0]ENET1_GMII_RXD;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_I" *) input [63:0]GPIO_I;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O" *) output [63:0]GPIO_O;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_T" *) output [63:0]GPIO_T;
@@ -213,8 +243,8 @@ module roboy_plexus_processing_system7_0_0
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_ACP WSTRB" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_ACP, NUM_WRITE_OUTSTANDING 8, NUM_READ_OUTSTANDING 8, DATA_WIDTH 64, PROTOCOL AXI3, FREQ_HZ 49999947, ID_WIDTH 3, ADDR_WIDTH 32, AWUSER_WIDTH 5, ARUSER_WIDTH 5, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [7:0]S_AXI_ACP_WSTRB;
   (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 IRQ_F2P INTERRUPT" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME IRQ_F2P, SENSITIVITY LEVEL_HIGH, PortWidth 1" *) input [0:0]IRQ_F2P;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 FCLK_CLK0 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_CLK0, FREQ_HZ 49999947, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) output FCLK_CLK0;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 FCLK_CLK1 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_CLK1, FREQ_HZ 99999893, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0" *) output FCLK_CLK1;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 FCLK_CLK2 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_CLK2, FREQ_HZ 153845993, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK2, INSERT_VIP 0" *) output FCLK_CLK2;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 FCLK_CLK1 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_CLK1, FREQ_HZ 24999973, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0" *) output FCLK_CLK1;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 FCLK_CLK2 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_CLK2, FREQ_HZ 2499998, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK2, INSERT_VIP 0" *) output FCLK_CLK2;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 FCLK_CLK3 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_CLK3, FREQ_HZ 199999786, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK3, INSERT_VIP 0" *) output FCLK_CLK3;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 FCLK_RESET0_N RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_RESET0_N, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) output FCLK_RESET0_N;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 FCLK_RESET1_N RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_RESET1_N, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) output FCLK_RESET1_N;
@@ -259,6 +289,21 @@ module roboy_plexus_processing_system7_0_0
   wire DDR_VRN;
   wire DDR_VRP;
   wire DDR_WEB;
+  wire ENET1_EXT_INTIN;
+  wire ENET1_GMII_COL;
+  wire ENET1_GMII_CRS;
+  wire [7:0]ENET1_GMII_RXD;
+  wire ENET1_GMII_RX_CLK;
+  wire ENET1_GMII_RX_DV;
+  wire ENET1_GMII_RX_ER;
+  wire [7:0]ENET1_GMII_TXD;
+  wire ENET1_GMII_TX_CLK;
+  wire [0:0]ENET1_GMII_TX_EN;
+  wire [0:0]ENET1_GMII_TX_ER;
+  wire ENET1_MDIO_I;
+  wire ENET1_MDIO_MDC;
+  wire ENET1_MDIO_O;
+  wire ENET1_MDIO_T;
   wire FCLK_CLK0;
   wire FCLK_CLK1;
   wire FCLK_CLK2;
@@ -384,11 +429,6 @@ module roboy_plexus_processing_system7_0_0
   wire NLW_inst_ENET0_PTP_SYNC_FRAME_TX_UNCONNECTED;
   wire NLW_inst_ENET0_SOF_RX_UNCONNECTED;
   wire NLW_inst_ENET0_SOF_TX_UNCONNECTED;
-  wire NLW_inst_ENET1_GMII_TX_EN_UNCONNECTED;
-  wire NLW_inst_ENET1_GMII_TX_ER_UNCONNECTED;
-  wire NLW_inst_ENET1_MDIO_MDC_UNCONNECTED;
-  wire NLW_inst_ENET1_MDIO_O_UNCONNECTED;
-  wire NLW_inst_ENET1_MDIO_T_UNCONNECTED;
   wire NLW_inst_ENET1_PTP_DELAY_REQ_RX_UNCONNECTED;
   wire NLW_inst_ENET1_PTP_DELAY_REQ_TX_UNCONNECTED;
   wire NLW_inst_ENET1_PTP_PDELAY_REQ_RX_UNCONNECTED;
@@ -549,7 +589,6 @@ module roboy_plexus_processing_system7_0_0
   wire [1:0]NLW_inst_DMA2_DATYPE_UNCONNECTED;
   wire [1:0]NLW_inst_DMA3_DATYPE_UNCONNECTED;
   wire [7:0]NLW_inst_ENET0_GMII_TXD_UNCONNECTED;
-  wire [7:0]NLW_inst_ENET1_GMII_TXD_UNCONNECTED;
   wire [1:0]NLW_inst_EVENT_STANDBYWFE_UNCONNECTED;
   wire [1:0]NLW_inst_EVENT_STANDBYWFI_UNCONNECTED;
   wire [31:0]NLW_inst_FTMT_P2F_DEBUG_UNCONNECTED;
@@ -635,7 +674,7 @@ module roboy_plexus_processing_system7_0_0
   (* C_DQ_WIDTH = "32" *) 
   (* C_EMIO_GPIO_WIDTH = "64" *) 
   (* C_EN_EMIO_ENET0 = "0" *) 
-  (* C_EN_EMIO_ENET1 = "0" *) 
+  (* C_EN_EMIO_ENET1 = "1" *) 
   (* C_EN_EMIO_PJTAG = "0" *) 
   (* C_EN_EMIO_TRACE = "0" *) 
   (* C_FCLK_CLK0_BUF = "TRUE" *) 
@@ -686,7 +725,7 @@ module roboy_plexus_processing_system7_0_0
   (* C_USE_S_AXI_HP2 = "0" *) 
   (* C_USE_S_AXI_HP3 = "0" *) 
   (* HW_HANDOFF = "roboy_plexus_processing_system7_0_0.hwdef" *) 
-  (* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={867} load={0.5} /><MEMORY name={code} memType={LPDDR2} dataWidth={32} clockFreq={400} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={26} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS18} bidis={3} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS18} bidis={5} ioBank={Vcco_p1} clockFreq={165,000000} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={49,500000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p0} clockFreq={99,000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p1} clockFreq={99,000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p0} clockFreq={200.000000} usageRate={0.5} /><PLL domain={Processor} vco={1716,000} /><PLL domain={Memory} vco={1584,000} /><PLL domain={IO} vco={1980,000} /><AXI interface={S_AXI_ACP} dataWidth={32} clockFreq={49} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={49} usageRate={0.5} />/>" *) 
+  (* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={867} load={0.5} /><MEMORY name={code} memType={LPDDR2} dataWidth={32} clockFreq={400} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={26} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS18} bidis={3} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS18} bidis={5} ioBank={Vcco_p1} clockFreq={166.666489} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={49.999947} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p0} clockFreq={99.999893} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p1} clockFreq={99.999893} usageRate={0.5} /><IO interface={GigE} ioStandard={} bidis={2} ioBank={} clockFreq={125.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1733.332} /><PLL domain={Memory} vco={1599.998} /><PLL domain={IO} vco={1999.998} /><AXI interface={S_AXI_ACP} dataWidth={32} clockFreq={49} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={49} usageRate={0.5} />/>" *) 
   (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
   roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7 inst
        (.CAN0_PHY_RX(1'b0),
@@ -776,21 +815,21 @@ module roboy_plexus_processing_system7_0_0
         .ENET0_PTP_SYNC_FRAME_TX(NLW_inst_ENET0_PTP_SYNC_FRAME_TX_UNCONNECTED),
         .ENET0_SOF_RX(NLW_inst_ENET0_SOF_RX_UNCONNECTED),
         .ENET0_SOF_TX(NLW_inst_ENET0_SOF_TX_UNCONNECTED),
-        .ENET1_EXT_INTIN(1'b0),
-        .ENET1_GMII_COL(1'b0),
-        .ENET1_GMII_CRS(1'b0),
-        .ENET1_GMII_RXD({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .ENET1_GMII_RX_CLK(1'b0),
-        .ENET1_GMII_RX_DV(1'b0),
-        .ENET1_GMII_RX_ER(1'b0),
-        .ENET1_GMII_TXD(NLW_inst_ENET1_GMII_TXD_UNCONNECTED[7:0]),
-        .ENET1_GMII_TX_CLK(1'b0),
-        .ENET1_GMII_TX_EN(NLW_inst_ENET1_GMII_TX_EN_UNCONNECTED),
-        .ENET1_GMII_TX_ER(NLW_inst_ENET1_GMII_TX_ER_UNCONNECTED),
-        .ENET1_MDIO_I(1'b0),
-        .ENET1_MDIO_MDC(NLW_inst_ENET1_MDIO_MDC_UNCONNECTED),
-        .ENET1_MDIO_O(NLW_inst_ENET1_MDIO_O_UNCONNECTED),
-        .ENET1_MDIO_T(NLW_inst_ENET1_MDIO_T_UNCONNECTED),
+        .ENET1_EXT_INTIN(ENET1_EXT_INTIN),
+        .ENET1_GMII_COL(ENET1_GMII_COL),
+        .ENET1_GMII_CRS(ENET1_GMII_CRS),
+        .ENET1_GMII_RXD(ENET1_GMII_RXD),
+        .ENET1_GMII_RX_CLK(ENET1_GMII_RX_CLK),
+        .ENET1_GMII_RX_DV(ENET1_GMII_RX_DV),
+        .ENET1_GMII_RX_ER(ENET1_GMII_RX_ER),
+        .ENET1_GMII_TXD(ENET1_GMII_TXD),
+        .ENET1_GMII_TX_CLK(ENET1_GMII_TX_CLK),
+        .ENET1_GMII_TX_EN(ENET1_GMII_TX_EN),
+        .ENET1_GMII_TX_ER(ENET1_GMII_TX_ER),
+        .ENET1_MDIO_I(ENET1_MDIO_I),
+        .ENET1_MDIO_MDC(ENET1_MDIO_MDC),
+        .ENET1_MDIO_O(ENET1_MDIO_O),
+        .ENET1_MDIO_T(ENET1_MDIO_T),
         .ENET1_PTP_DELAY_REQ_RX(NLW_inst_ENET1_PTP_DELAY_REQ_RX_UNCONNECTED),
         .ENET1_PTP_DELAY_REQ_TX(NLW_inst_ENET1_PTP_DELAY_REQ_TX_UNCONNECTED),
         .ENET1_PTP_PDELAY_REQ_RX(NLW_inst_ENET1_PTP_PDELAY_REQ_RX_UNCONNECTED),
@@ -1377,7 +1416,7 @@ module roboy_plexus_processing_system7_0_0
 endmodule
 
 (* C_DM_WIDTH = "4" *) (* C_DQS_WIDTH = "4" *) (* C_DQ_WIDTH = "32" *) 
-(* C_EMIO_GPIO_WIDTH = "64" *) (* C_EN_EMIO_ENET0 = "0" *) (* C_EN_EMIO_ENET1 = "0" *) 
+(* C_EMIO_GPIO_WIDTH = "64" *) (* C_EN_EMIO_ENET0 = "0" *) (* C_EN_EMIO_ENET1 = "1" *) 
 (* C_EN_EMIO_PJTAG = "0" *) (* C_EN_EMIO_TRACE = "0" *) (* C_FCLK_CLK0_BUF = "TRUE" *) 
 (* C_FCLK_CLK1_BUF = "FALSE" *) (* C_FCLK_CLK2_BUF = "FALSE" *) (* C_FCLK_CLK3_BUF = "FALSE" *) 
 (* C_GP0_EN_MODIFIABLE_TXN = "1" *) (* C_GP1_EN_MODIFIABLE_TXN = "1" *) (* C_INCLUDE_ACP_TRANS_CHECK = "0" *) 
@@ -1395,7 +1434,7 @@ endmodule
 (* C_USE_S_AXI_ACP = "1" *) (* C_USE_S_AXI_GP0 = "0" *) (* C_USE_S_AXI_GP1 = "0" *) 
 (* C_USE_S_AXI_HP0 = "0" *) (* C_USE_S_AXI_HP1 = "0" *) (* C_USE_S_AXI_HP2 = "0" *) 
 (* C_USE_S_AXI_HP3 = "0" *) (* HW_HANDOFF = "roboy_plexus_processing_system7_0_0.hwdef" *) (* ORIG_REF_NAME = "processing_system7_v5_5_processing_system7" *) 
-(* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={867} load={0.5} /><MEMORY name={code} memType={LPDDR2} dataWidth={32} clockFreq={400} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={26} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS18} bidis={3} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS18} bidis={5} ioBank={Vcco_p1} clockFreq={165,000000} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={49,500000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p0} clockFreq={99,000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p1} clockFreq={99,000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p0} clockFreq={200.000000} usageRate={0.5} /><PLL domain={Processor} vco={1716,000} /><PLL domain={Memory} vco={1584,000} /><PLL domain={IO} vco={1980,000} /><AXI interface={S_AXI_ACP} dataWidth={32} clockFreq={49} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={49} usageRate={0.5} />/>" *) (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
+(* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={867} load={0.5} /><MEMORY name={code} memType={LPDDR2} dataWidth={32} clockFreq={400} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={26} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS18} bidis={3} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS18} bidis={5} ioBank={Vcco_p1} clockFreq={166.666489} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={49.999947} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p0} clockFreq={99.999893} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p1} clockFreq={99.999893} usageRate={0.5} /><IO interface={GigE} ioStandard={} bidis={2} ioBank={} clockFreq={125.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1733.332} /><PLL domain={Memory} vco={1599.998} /><PLL domain={IO} vco={1999.998} /><AXI interface={S_AXI_ACP} dataWidth={32} clockFreq={49} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={49} usageRate={0.5} />/>" *) (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
 module roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7
    (CAN0_PHY_TX,
     CAN0_PHY_RX,
@@ -2851,8 +2890,24 @@ module roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_sy
   wire ENET0_SOF_RX;
   wire ENET0_SOF_TX;
   wire ENET1_EXT_INTIN;
+  wire ENET1_GMII_COL;
+  wire ENET1_GMII_COL_i;
+  wire ENET1_GMII_CRS;
+  wire ENET1_GMII_CRS_i;
+  wire [7:0]ENET1_GMII_RXD;
+  wire [7:0]ENET1_GMII_RXD_i;
   wire ENET1_GMII_RX_CLK;
+  wire ENET1_GMII_RX_DV;
+  wire ENET1_GMII_RX_DV_i;
+  wire ENET1_GMII_RX_ER;
+  wire ENET1_GMII_RX_ER_i;
+  wire [7:0]ENET1_GMII_TXD;
+  wire [7:0]ENET1_GMII_TXD_i;
   wire ENET1_GMII_TX_CLK;
+  wire ENET1_GMII_TX_EN;
+  wire ENET1_GMII_TX_EN_i;
+  wire ENET1_GMII_TX_ER;
+  wire ENET1_GMII_TX_ER_i;
   wire ENET1_MDIO_I;
   wire ENET1_MDIO_MDC;
   wire ENET1_MDIO_O;
@@ -3487,13 +3542,10 @@ module roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_sy
   wire [63:0]gpio_out_t_n;
   wire NLW_PS7_i_EMIOENET0GMIITXEN_UNCONNECTED;
   wire NLW_PS7_i_EMIOENET0GMIITXER_UNCONNECTED;
-  wire NLW_PS7_i_EMIOENET1GMIITXEN_UNCONNECTED;
-  wire NLW_PS7_i_EMIOENET1GMIITXER_UNCONNECTED;
   wire NLW_PS7_i_EMIOPJTAGTDO_UNCONNECTED;
   wire NLW_PS7_i_EMIOPJTAGTDTN_UNCONNECTED;
   wire NLW_PS7_i_EMIOTRACECTL_UNCONNECTED;
   wire [7:0]NLW_PS7_i_EMIOENET0GMIITXD_UNCONNECTED;
-  wire [7:0]NLW_PS7_i_EMIOENET1GMIITXD_UNCONNECTED;
   wire [31:0]NLW_PS7_i_EMIOTRACEDATA_UNCONNECTED;
   wire [1:1]NLW_PS7_i_MAXIGP0ARCACHE_UNCONNECTED;
   wire [1:1]NLW_PS7_i_MAXIGP0AWCACHE_UNCONNECTED;
@@ -3510,16 +3562,6 @@ module roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_sy
   assign ENET0_GMII_TXD[0] = \<const0> ;
   assign ENET0_GMII_TX_EN = \<const0> ;
   assign ENET0_GMII_TX_ER = \<const0> ;
-  assign ENET1_GMII_TXD[7] = \<const0> ;
-  assign ENET1_GMII_TXD[6] = \<const0> ;
-  assign ENET1_GMII_TXD[5] = \<const0> ;
-  assign ENET1_GMII_TXD[4] = \<const0> ;
-  assign ENET1_GMII_TXD[3] = \<const0> ;
-  assign ENET1_GMII_TXD[2] = \<const0> ;
-  assign ENET1_GMII_TXD[1] = \<const0> ;
-  assign ENET1_GMII_TXD[0] = \<const0> ;
-  assign ENET1_GMII_TX_EN = \<const0> ;
-  assign ENET1_GMII_TX_ER = \<const0> ;
   assign M_AXI_GP0_ARCACHE[3:2] = \^M_AXI_GP0_ARCACHE [3:2];
   assign M_AXI_GP0_ARCACHE[1] = \<const1> ;
   assign M_AXI_GP0_ARCACHE[0] = \^M_AXI_GP0_ARCACHE [0];
@@ -3593,6 +3635,142 @@ module roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_sy
     ENET0_MDIO_T_INST_0
        (.I0(ENET0_MDIO_T_n),
         .O(ENET0_MDIO_T));
+  FDRE ENET1_GMII_COL_i_reg
+       (.C(ENET1_GMII_TX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_COL),
+        .Q(ENET1_GMII_COL_i),
+        .R(1'b0));
+  FDRE ENET1_GMII_CRS_i_reg
+       (.C(ENET1_GMII_TX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_CRS),
+        .Q(ENET1_GMII_CRS_i),
+        .R(1'b0));
+  FDRE \ENET1_GMII_RXD_i_reg[0] 
+       (.C(ENET1_GMII_RX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_RXD[0]),
+        .Q(ENET1_GMII_RXD_i[0]),
+        .R(1'b0));
+  FDRE \ENET1_GMII_RXD_i_reg[1] 
+       (.C(ENET1_GMII_RX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_RXD[1]),
+        .Q(ENET1_GMII_RXD_i[1]),
+        .R(1'b0));
+  FDRE \ENET1_GMII_RXD_i_reg[2] 
+       (.C(ENET1_GMII_RX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_RXD[2]),
+        .Q(ENET1_GMII_RXD_i[2]),
+        .R(1'b0));
+  FDRE \ENET1_GMII_RXD_i_reg[3] 
+       (.C(ENET1_GMII_RX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_RXD[3]),
+        .Q(ENET1_GMII_RXD_i[3]),
+        .R(1'b0));
+  FDRE \ENET1_GMII_RXD_i_reg[4] 
+       (.C(ENET1_GMII_RX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_RXD[4]),
+        .Q(ENET1_GMII_RXD_i[4]),
+        .R(1'b0));
+  FDRE \ENET1_GMII_RXD_i_reg[5] 
+       (.C(ENET1_GMII_RX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_RXD[5]),
+        .Q(ENET1_GMII_RXD_i[5]),
+        .R(1'b0));
+  FDRE \ENET1_GMII_RXD_i_reg[6] 
+       (.C(ENET1_GMII_RX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_RXD[6]),
+        .Q(ENET1_GMII_RXD_i[6]),
+        .R(1'b0));
+  FDRE \ENET1_GMII_RXD_i_reg[7] 
+       (.C(ENET1_GMII_RX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_RXD[7]),
+        .Q(ENET1_GMII_RXD_i[7]),
+        .R(1'b0));
+  FDRE ENET1_GMII_RX_DV_i_reg
+       (.C(ENET1_GMII_RX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_RX_DV),
+        .Q(ENET1_GMII_RX_DV_i),
+        .R(1'b0));
+  FDRE ENET1_GMII_RX_ER_i_reg
+       (.C(ENET1_GMII_RX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_RX_ER),
+        .Q(ENET1_GMII_RX_ER_i),
+        .R(1'b0));
+  FDRE \ENET1_GMII_TXD_reg[0] 
+       (.C(ENET1_GMII_TX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_TXD_i[0]),
+        .Q(ENET1_GMII_TXD[0]),
+        .R(1'b0));
+  FDRE \ENET1_GMII_TXD_reg[1] 
+       (.C(ENET1_GMII_TX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_TXD_i[1]),
+        .Q(ENET1_GMII_TXD[1]),
+        .R(1'b0));
+  FDRE \ENET1_GMII_TXD_reg[2] 
+       (.C(ENET1_GMII_TX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_TXD_i[2]),
+        .Q(ENET1_GMII_TXD[2]),
+        .R(1'b0));
+  FDRE \ENET1_GMII_TXD_reg[3] 
+       (.C(ENET1_GMII_TX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_TXD_i[3]),
+        .Q(ENET1_GMII_TXD[3]),
+        .R(1'b0));
+  FDRE \ENET1_GMII_TXD_reg[4] 
+       (.C(ENET1_GMII_TX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_TXD_i[4]),
+        .Q(ENET1_GMII_TXD[4]),
+        .R(1'b0));
+  FDRE \ENET1_GMII_TXD_reg[5] 
+       (.C(ENET1_GMII_TX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_TXD_i[5]),
+        .Q(ENET1_GMII_TXD[5]),
+        .R(1'b0));
+  FDRE \ENET1_GMII_TXD_reg[6] 
+       (.C(ENET1_GMII_TX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_TXD_i[6]),
+        .Q(ENET1_GMII_TXD[6]),
+        .R(1'b0));
+  FDRE \ENET1_GMII_TXD_reg[7] 
+       (.C(ENET1_GMII_TX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_TXD_i[7]),
+        .Q(ENET1_GMII_TXD[7]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    ENET1_GMII_TX_EN_reg
+       (.C(ENET1_GMII_TX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_TX_EN_i),
+        .Q(ENET1_GMII_TX_EN),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    ENET1_GMII_TX_ER_reg
+       (.C(ENET1_GMII_TX_CLK),
+        .CE(1'b1),
+        .D(ENET1_GMII_TX_ER_i),
+        .Q(ENET1_GMII_TX_ER),
+        .R(1'b0));
   LUT1 #(
     .INIT(2'h1)) 
     ENET1_MDIO_T_INST_0
@@ -4026,16 +4204,16 @@ module roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_sy
         .EMIOENET0SOFRX(ENET0_SOF_RX),
         .EMIOENET0SOFTX(ENET0_SOF_TX),
         .EMIOENET1EXTINTIN(ENET1_EXT_INTIN),
-        .EMIOENET1GMIICOL(1'b0),
-        .EMIOENET1GMIICRS(1'b0),
+        .EMIOENET1GMIICOL(ENET1_GMII_COL_i),
+        .EMIOENET1GMIICRS(ENET1_GMII_CRS_i),
         .EMIOENET1GMIIRXCLK(ENET1_GMII_RX_CLK),
-        .EMIOENET1GMIIRXD({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .EMIOENET1GMIIRXDV(1'b0),
-        .EMIOENET1GMIIRXER(1'b0),
+        .EMIOENET1GMIIRXD(ENET1_GMII_RXD_i),
+        .EMIOENET1GMIIRXDV(ENET1_GMII_RX_DV_i),
+        .EMIOENET1GMIIRXER(ENET1_GMII_RX_ER_i),
         .EMIOENET1GMIITXCLK(ENET1_GMII_TX_CLK),
-        .EMIOENET1GMIITXD(NLW_PS7_i_EMIOENET1GMIITXD_UNCONNECTED[7:0]),
-        .EMIOENET1GMIITXEN(NLW_PS7_i_EMIOENET1GMIITXEN_UNCONNECTED),
-        .EMIOENET1GMIITXER(NLW_PS7_i_EMIOENET1GMIITXER_UNCONNECTED),
+        .EMIOENET1GMIITXD(ENET1_GMII_TXD_i),
+        .EMIOENET1GMIITXEN(ENET1_GMII_TX_EN_i),
+        .EMIOENET1GMIITXER(ENET1_GMII_TX_ER_i),
         .EMIOENET1MDIOI(ENET1_MDIO_I),
         .EMIOENET1MDIOMDC(ENET1_MDIO_MDC),
         .EMIOENET1MDIOO(ENET1_MDIO_O),

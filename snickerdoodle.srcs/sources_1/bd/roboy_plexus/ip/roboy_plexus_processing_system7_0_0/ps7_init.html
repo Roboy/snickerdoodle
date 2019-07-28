@@ -1790,7 +1790,7 @@ The average of the data midpoint delay, of the data delays associated with a byt
 ARM PLL
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-858,000000
+866.665771
 </TD>
 </TR>
 <TR valign="top">
@@ -1801,7 +1801,18 @@ ARM PLL
 IO PLL
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-198,000000
+199.999786
+</TD>
+</TR>
+<TR valign="top">
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>ENET1 Freq (MHz)</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+External
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+125.000000
 </TD>
 </TR>
 <TR valign="top">
@@ -1812,7 +1823,7 @@ IO PLL
 IO PLL
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-99,000000
+99.999893
 </TD>
 </TR>
 <TR valign="top">
@@ -1823,7 +1834,7 @@ IO PLL
 IO PLL
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-99,000000
+99.999893
 </TD>
 </TR>
 <TR valign="top">
@@ -1834,7 +1845,7 @@ IO PLL
 IO PLL
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-49,500000
+49.999947
 </TD>
 </TR>
 <TR valign="top">
@@ -1845,7 +1856,7 @@ IO PLL
 IO PLL
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-165,000000
+166.666489
 </TD>
 </TR>
 <TR valign="top">
@@ -1856,7 +1867,7 @@ IO PLL
 IO PLL
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-49,500000
+49.999947
 </TD>
 </TR>
 <TR valign="top">
@@ -1867,7 +1878,7 @@ IO PLL
 IO PLL
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-99,000000
+24.999973
 </TD>
 </TR>
 <TR valign="top">
@@ -1878,7 +1889,7 @@ IO PLL
 IO PLL
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-152,307693
+2.499998
 </TD>
 </TR>
 <TR valign="top">
@@ -1889,7 +1900,7 @@ IO PLL
 IO PLL
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-198,000000
+199.999786
 </TD>
 </TR>
 </TABLE>
@@ -5492,6 +5503,50 @@ DCI_CLK_CTRL
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#FBF5EF>
+<A href="#GEM1_RCLK_CTRL">
+GEM1_RCLK_CTRL
+</A>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0XF800013C</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>32</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>RW</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0x000000</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>GigE 1 Rx Clock and Rx Signals Select</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<A href="#GEM1_CLK_CTRL">
+GEM1_CLK_CTRL
+</A>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0XF8000144</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>32</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>RW</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0x000000</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>GigE 1 Ref Clock Control</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
 <A href="#LQSPI_CLK_CTRL">
 LQSPI_CLK_CTRL
 </A>
@@ -6030,6 +6085,300 @@ SLCR_LOCK
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DCI clock control</B>
+</TD>
+</TR>
+</TABLE>
+<P>
+<H2><a name="GEM1_RCLK_CTRL">Register (<A href=#mod___slcr> slcr </A>)GEM1_RCLK_CTRL</a></H2>
+<TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
+<TR valign="top">
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Register Name</B>
+</TD>
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Address</B>
+</TD>
+<TD width=10% BGCOLOR=#FFFF00>
+<B>Width</B>
+</TD>
+<TD width=10% BGCOLOR=#FFFF00>
+<B>Type</B>
+</TD>
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Reset Value</B>
+</TD>
+<TD width=35% BGCOLOR=#FFFF00>
+<B>Description</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>GEM1_RCLK_CTRL</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0XF800013C</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>32</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>rw</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0x00000000</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>--</B>
+</TD>
+</TR>
+</TABLE>
+<P>
+<TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
+<TR valign="top">
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Field Name</B>
+</TD>
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Bits</B>
+</TD>
+<TD width=10% BGCOLOR=#C0FFC0>
+<B>Mask</B>
+</TD>
+<TD width=10% BGCOLOR=#C0FFC0>
+<B>Value</B>
+</TD>
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Shifted Value</B>
+</TD>
+<TD width=35% BGCOLOR=#C0FFC0>
+<B>Description</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>CLKACT</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0:0</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Ethernet Controller 1 Rx Clock control 0: disable, 1: enable</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>SRCSEL</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>4:4</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>10</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>10</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Select the source of the Rx clock, control and data signals: 0: MIO 1: EMIO</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>GEM1_RCLK_CTRL@0XF800013C</B>
+</TD>
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>31:0</B>
+</TD>
+<TD width=10% BGCOLOR=#C0C0C0>
+<B>11</B>
+</TD>
+<TD width=10% BGCOLOR=#C0C0C0>
+<B></B>
+</TD>
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>11</B>
+</TD>
+<TD width=35% BGCOLOR=#C0C0C0>
+<B>GigE 1 Rx Clock and Rx Signals Select</B>
+</TD>
+</TR>
+</TABLE>
+<P>
+<H2><a name="GEM1_CLK_CTRL">Register (<A href=#mod___slcr> slcr </A>)GEM1_CLK_CTRL</a></H2>
+<TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
+<TR valign="top">
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Register Name</B>
+</TD>
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Address</B>
+</TD>
+<TD width=10% BGCOLOR=#FFFF00>
+<B>Width</B>
+</TD>
+<TD width=10% BGCOLOR=#FFFF00>
+<B>Type</B>
+</TD>
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Reset Value</B>
+</TD>
+<TD width=35% BGCOLOR=#FFFF00>
+<B>Description</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>GEM1_CLK_CTRL</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0XF8000144</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>32</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>rw</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0x00000000</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>--</B>
+</TD>
+</TR>
+</TABLE>
+<P>
+<TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
+<TR valign="top">
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Field Name</B>
+</TD>
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Bits</B>
+</TD>
+<TD width=10% BGCOLOR=#C0FFC0>
+<B>Mask</B>
+</TD>
+<TD width=10% BGCOLOR=#C0FFC0>
+<B>Value</B>
+</TD>
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Shifted Value</B>
+</TD>
+<TD width=35% BGCOLOR=#C0FFC0>
+<B>Description</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>CLKACT</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0:0</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Ethernet Controller 1 Reference Clock control 0: disable, 1: enable</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>SRCSEL</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>6:4</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>70</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>4</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>40</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Selects the source to generate the reference clock 00x: IO PLL. 010: ARM PLL. 011: DDR PLL 1xx: Ethernet controller 1 EMIO clock</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>DIVISOR</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>13:8</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>3f00</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>100</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>First divisor for Ethernet controller 1 source clock.</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>DIVISOR1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>25:20</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>3f00000</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>100000</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Second divisor for Ethernet controller 1 source clock.</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>GEM1_CLK_CTRL@0XF8000144</B>
+</TD>
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>31:0</B>
+</TD>
+<TD width=10% BGCOLOR=#C0C0C0>
+<B>3f03f71</B>
+</TD>
+<TD width=10% BGCOLOR=#C0C0C0>
+<B></B>
+</TD>
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>100141</B>
+</TD>
+<TD width=35% BGCOLOR=#C0C0C0>
+<B>GigE 1 Ref Clock Control</B>
 </TD>
 </TR>
 </TABLE>
@@ -6926,10 +7275,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>28</B>
+<B>8</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>2800</B>
+<B>800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider.</B>
@@ -6946,10 +7295,10 @@ SLCR_LOCK
 <B>3f00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>5</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>100000</B>
+<B>500000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. Second cascade divide</B>
@@ -6969,7 +7318,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>102800</B>
+<B>500800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PL Clock 0 Output control</B>
@@ -7073,10 +7422,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>14</B>
+<B>a</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1400</B>
+<B>a00</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider.</B>
@@ -7093,10 +7442,10 @@ SLCR_LOCK
 <B>3f00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>8</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>100000</B>
+<B>800000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. Second cascade divide</B>
@@ -7116,7 +7465,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>101400</B>
+<B>800a00</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PL Clock 1 Output control</B>
@@ -7220,10 +7569,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>d</B>
+<B>20</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>d00</B>
+<B>2000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider.</B>
@@ -7240,10 +7589,10 @@ SLCR_LOCK
 <B>3f00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>19</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>100000</B>
+<B>1900000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. Second cascade divide</B>
@@ -7263,7 +7612,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>100d00</B>
+<B>1902000</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PL Clock 2 output control</B>
@@ -7367,10 +7716,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>a</B>
+<B>5</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>a00</B>
+<B>500</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider.</B>
@@ -7387,10 +7736,10 @@ SLCR_LOCK
 <B>3f00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>2</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>100000</B>
+<B>200000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. Second cascade divide</B>
@@ -7410,7 +7759,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>100a00</B>
+<B>200500</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PL Clock 3 output control</B>
@@ -7681,10 +8030,10 @@ SLCR_LOCK
 <B>80</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>80</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Gigabit Ethernet 1 AMBA Clock control 0: disable, 1: enable</B>
@@ -7964,7 +8313,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1dc8c0d</B>
+<B>1dc8c8d</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>AMBA Peripheral Clock Control</B>
@@ -10802,10 +11151,10 @@ ddrc_ctrl
 <B>3f</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>19</B>
+<B>1a</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>19</B>
+<B>1a</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tRC - Min time between activates to same bank (spec: 65 ns for DDR2-400 and smaller for faster parts). DRAM Related. Default value is set for DDR3.</B>
@@ -10865,7 +11214,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>41519</B>
+<B>4151a</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM Parameters 0</B>
@@ -12358,10 +12707,10 @@ ddrc_ctrl
 <B>3ff0000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>4e</B>
+<B>4f</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>4e0000</B>
+<B>4f0000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Clock cycles to wait after driving CKE high to start the DRAM initialization sequence. Units: 1024 clocks. DDR2 typically require a 400 ns delay, requiring this value to be programmed to 2 at all clock speeds. LPDDR2 - Typically require this to be programmed for a delay of 200 us.</B>
@@ -12401,7 +12750,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>4e3ff4</B>
+<B>4f3ff4</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM Burst 8 read/write</B>
@@ -15230,10 +15579,10 @@ ddrc_ctrl
 <B>fffff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>970f</B>
+<B>9896</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>970f</B>
+<B>9896</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DDR2: not used. LPDDR2 and DDR3: Average interval to wait between automatically issuing ZQCS (ZQ calibration short) commands to DDR3 devices. Meaningless if reg_ddrc_dis_auto_zq=1. Units: 1024 Clock cycles.</B>
@@ -15250,10 +15599,10 @@ ddrc_ctrl
 <B>ff00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>4e</B>
+<B>4f</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>4e00000</B>
+<B>4f00000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Number of cycles to assert DRAM reset signal during init sequence. Units: 1024 Clock cycles. Applicable for DDR3 only.</B>
@@ -15273,7 +15622,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>4e0970f</B>
+<B>4f09896</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Misc parameters</B>
@@ -15377,10 +15726,10 @@ ddrc_ctrl
 <B>1fe</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>c2</B>
+<B>c4</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>184</B>
+<B>188</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DDR2 and DDR3: not sued. LPDDR2: Minimum deep power down time. DDR exits from deep power down mode immediately after reg_ddrc_deeppowerdown_en is deasserted. Value from the spec is 500us. Units are in 1024 clock cycles. For performance only.</B>
@@ -15400,7 +15749,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>184</B>
+<B>188</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Deep powerdown (LPDDR2)</B>
@@ -17635,10 +17984,10 @@ ddrc_ctrl
 <B>ffc00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1f5</B>
+<B>252</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>The user programmable init ratio used Gate Leveling FSM</B>
@@ -17658,7 +18007,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY init ratio register for data slice 0.</B>
@@ -17762,10 +18111,10 @@ ddrc_ctrl
 <B>ffc00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1f5</B>
+<B>252</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>The user programmable init ratio used Gate Leveling FSM</B>
@@ -17785,7 +18134,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY init ratio register for data slice 0.</B>
@@ -17889,10 +18238,10 @@ ddrc_ctrl
 <B>ffc00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1f5</B>
+<B>252</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>The user programmable init ratio used Gate Leveling FSM</B>
@@ -17912,7 +18261,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY init ratio register for data slice 0.</B>
@@ -18016,10 +18365,10 @@ ddrc_ctrl
 <B>ffc00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1f5</B>
+<B>252</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>The user programmable init ratio used Gate Leveling FSM</B>
@@ -18039,7 +18388,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY init ratio register for data slice 0.</B>
@@ -19299,10 +19648,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when reg_phy_fifo_we_in_force is set to 0.</B>
@@ -19362,7 +19711,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY FIFO write enable configuration for data slice 0.</B>
@@ -19446,10 +19795,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when reg_phy_fifo_we_in_force is set to 0.</B>
@@ -19509,7 +19858,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY FIFO write enable configuration for data slice 0.</B>
@@ -19593,10 +19942,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when reg_phy_fifo_we_in_force is set to 0.</B>
@@ -19656,7 +20005,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY FIFO write enable configuration for data slice 0.</B>
@@ -19740,10 +20089,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when reg_phy_fifo_we_in_force is set to 0.</B>
@@ -19803,7 +20152,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY FIFO write enable configuration for data slice 0.</B>
@@ -22973,10 +23322,10 @@ ddrc_ctrl
 <B>ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>7d</B>
+<B>7e</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7d</B>
+<B>7e</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Maximum duration of the auto initialization, tINIT5. Units: 1024 clock cycles. LPDDR2 typically requires 10 us.</B>
@@ -23016,7 +23365,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>e7d</B>
+<B>e7e</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>LPDDR2 Control 3</B>
@@ -50698,6 +51047,50 @@ DCI_CLK_CTRL
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#FBF5EF>
+<A href="#GEM1_RCLK_CTRL">
+GEM1_RCLK_CTRL
+</A>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0XF800013C</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>32</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>RW</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0x000000</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>GigE 1 Rx Clock Control</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<A href="#GEM1_CLK_CTRL">
+GEM1_CLK_CTRL
+</A>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0XF8000144</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>32</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>RW</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0x000000</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>GigE 1 Ref Clock Control</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
 <A href="#LQSPI_CLK_CTRL">
 LQSPI_CLK_CTRL
 </A>
@@ -51236,6 +51629,300 @@ SLCR_LOCK
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DCI clock control</B>
+</TD>
+</TR>
+</TABLE>
+<P>
+<H2><a name="GEM1_RCLK_CTRL">Register (<A href=#mod___slcr> slcr </A>)GEM1_RCLK_CTRL</a></H2>
+<TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
+<TR valign="top">
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Register Name</B>
+</TD>
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Address</B>
+</TD>
+<TD width=10% BGCOLOR=#FFFF00>
+<B>Width</B>
+</TD>
+<TD width=10% BGCOLOR=#FFFF00>
+<B>Type</B>
+</TD>
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Reset Value</B>
+</TD>
+<TD width=35% BGCOLOR=#FFFF00>
+<B>Description</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>GEM1_RCLK_CTRL</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0XF800013C</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>32</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>rw</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0x00000000</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>--</B>
+</TD>
+</TR>
+</TABLE>
+<P>
+<TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
+<TR valign="top">
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Field Name</B>
+</TD>
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Bits</B>
+</TD>
+<TD width=10% BGCOLOR=#C0FFC0>
+<B>Mask</B>
+</TD>
+<TD width=10% BGCOLOR=#C0FFC0>
+<B>Value</B>
+</TD>
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Shifted Value</B>
+</TD>
+<TD width=35% BGCOLOR=#C0FFC0>
+<B>Description</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>CLKACT</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0:0</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Ethernet Controller 1 Rx Clock control 0: disable, 1: enable</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>SRCSEL</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>4:4</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>10</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>10</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Select the source to generate the Rx clock: 0: MIO Rx clock, 1: EMIO Rx clock</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>GEM1_RCLK_CTRL@0XF800013C</B>
+</TD>
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>31:0</B>
+</TD>
+<TD width=10% BGCOLOR=#C0C0C0>
+<B>11</B>
+</TD>
+<TD width=10% BGCOLOR=#C0C0C0>
+<B></B>
+</TD>
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>11</B>
+</TD>
+<TD width=35% BGCOLOR=#C0C0C0>
+<B>GigE 1 Rx Clock Control</B>
+</TD>
+</TR>
+</TABLE>
+<P>
+<H2><a name="GEM1_CLK_CTRL">Register (<A href=#mod___slcr> slcr </A>)GEM1_CLK_CTRL</a></H2>
+<TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
+<TR valign="top">
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Register Name</B>
+</TD>
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Address</B>
+</TD>
+<TD width=10% BGCOLOR=#FFFF00>
+<B>Width</B>
+</TD>
+<TD width=10% BGCOLOR=#FFFF00>
+<B>Type</B>
+</TD>
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Reset Value</B>
+</TD>
+<TD width=35% BGCOLOR=#FFFF00>
+<B>Description</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>GEM1_CLK_CTRL</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0XF8000144</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>32</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>rw</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0x00000000</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>--</B>
+</TD>
+</TR>
+</TABLE>
+<P>
+<TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
+<TR valign="top">
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Field Name</B>
+</TD>
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Bits</B>
+</TD>
+<TD width=10% BGCOLOR=#C0FFC0>
+<B>Mask</B>
+</TD>
+<TD width=10% BGCOLOR=#C0FFC0>
+<B>Value</B>
+</TD>
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Shifted Value</B>
+</TD>
+<TD width=35% BGCOLOR=#C0FFC0>
+<B>Description</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>CLKACT</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0:0</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Ethernet Controller 1 Reference Clock control 0: disable, 1: enable</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>SRCSEL</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>6:4</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>70</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>4</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>40</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Selects the source to generate the reference clock 00x: IO PLL. 010: ARM PLL. 011: DDR PLL 1xx: Ethernet controller 1 EMIO clock</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>DIVISOR</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>13:8</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>3f00</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>100</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>First divisor for Ethernet controller 1 source clock.</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>DIVISOR1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>25:20</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>3f00000</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>100000</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Second divisor for Ethernet controller 1 source clock.</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>GEM1_CLK_CTRL@0XF8000144</B>
+</TD>
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>31:0</B>
+</TD>
+<TD width=10% BGCOLOR=#C0C0C0>
+<B>3f03f71</B>
+</TD>
+<TD width=10% BGCOLOR=#C0C0C0>
+<B></B>
+</TD>
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>100141</B>
+</TD>
+<TD width=35% BGCOLOR=#C0C0C0>
+<B>GigE 1 Ref Clock Control</B>
 </TD>
 </TR>
 </TABLE>
@@ -52132,10 +52819,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>28</B>
+<B>8</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>2800</B>
+<B>800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider.</B>
@@ -52152,10 +52839,10 @@ SLCR_LOCK
 <B>3f00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>5</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>100000</B>
+<B>500000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. Second cascade divide</B>
@@ -52175,7 +52862,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>102800</B>
+<B>500800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PL Clock 0 Output control</B>
@@ -52279,10 +52966,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>14</B>
+<B>a</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1400</B>
+<B>a00</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider.</B>
@@ -52299,10 +52986,10 @@ SLCR_LOCK
 <B>3f00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>8</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>100000</B>
+<B>800000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. Second cascade divide</B>
@@ -52322,7 +53009,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>101400</B>
+<B>800a00</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PL Clock 1 Output control</B>
@@ -52426,10 +53113,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>d</B>
+<B>20</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>d00</B>
+<B>2000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider.</B>
@@ -52446,10 +53133,10 @@ SLCR_LOCK
 <B>3f00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>19</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>100000</B>
+<B>1900000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. Second cascade divide</B>
@@ -52469,7 +53156,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>100d00</B>
+<B>1902000</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PL Clock 2 output control</B>
@@ -52573,10 +53260,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>a</B>
+<B>5</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>a00</B>
+<B>500</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider.</B>
@@ -52593,10 +53280,10 @@ SLCR_LOCK
 <B>3f00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>2</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>100000</B>
+<B>200000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. Second cascade divide</B>
@@ -52616,7 +53303,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>100a00</B>
+<B>200500</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PL Clock 3 output control</B>
@@ -52887,10 +53574,10 @@ SLCR_LOCK
 <B>80</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>80</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Gigabit Ethernet 1 AMBA Clock control 0: disable, 1: enable</B>
@@ -53170,7 +53857,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1dc8c0d</B>
+<B>1dc8c8d</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>AMBA Peripheral Clock Control</B>
@@ -56130,10 +56817,10 @@ ddrc_ctrl
 <B>3f</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>19</B>
+<B>1a</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>19</B>
+<B>1a</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tRC - Min time between activates to same bank (spec: 65 ns for DDR2-400 and smaller for faster parts). DRAM Related. Default value is set for DDR3.</B>
@@ -56193,7 +56880,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>41519</B>
+<B>4151a</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM Parameters 0</B>
@@ -57746,10 +58433,10 @@ ddrc_ctrl
 <B>3ff0000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>4e</B>
+<B>4f</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>4e0000</B>
+<B>4f0000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Clock cycles to wait after driving CKE high to start the DRAM initialization sequence. Units: 1024 clocks. DDR2 typically require a 400 ns delay, requiring this value to be programmed to 2 at all clock speeds. LPDDR2 - Typically require this to be programmed for a delay of 200 us.</B>
@@ -57789,7 +58476,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>4e3ff4</B>
+<B>4f3ff4</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM Burst 8 read/write</B>
@@ -60985,10 +61672,10 @@ ddrc_ctrl
 <B>fffff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>970f</B>
+<B>9896</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>970f</B>
+<B>9896</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DDR2: not used. LPDDR2 and DDR3: Average interval to wait between automatically issuing ZQCS (ZQ calibration short) commands to DDR3 devices. Meaningless if reg_ddrc_dis_auto_zq=1. Units: 1024 Clock cycles.</B>
@@ -61005,10 +61692,10 @@ ddrc_ctrl
 <B>ff00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>4e</B>
+<B>4f</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>4e00000</B>
+<B>4f00000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Number of cycles to assert DRAM reset signal during init sequence. Units: 1024 Clock cycles. Applicable for DDR3 only.</B>
@@ -61028,7 +61715,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>4e0970f</B>
+<B>4f09896</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Misc parameters</B>
@@ -61132,10 +61819,10 @@ ddrc_ctrl
 <B>1fe</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>c2</B>
+<B>c4</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>184</B>
+<B>188</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DDR2 and DDR3: not sued. LPDDR2: Minimum deep power down time. DDR exits from deep power down mode immediately after reg_ddrc_deeppowerdown_en is deasserted. Value from the spec is 500us. Units are in 1024 clock cycles. For performance only.</B>
@@ -61155,7 +61842,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>184</B>
+<B>188</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Deep powerdown (LPDDR2)</B>
@@ -63770,10 +64457,10 @@ ddrc_ctrl
 <B>ffc00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1f5</B>
+<B>252</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>The user programmable init ratio used Gate Leveling FSM</B>
@@ -63793,7 +64480,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY init ratio register for data slice 0.</B>
@@ -63897,10 +64584,10 @@ ddrc_ctrl
 <B>ffc00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1f5</B>
+<B>252</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>The user programmable init ratio used Gate Leveling FSM</B>
@@ -63920,7 +64607,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY init ratio register for data slice 1.</B>
@@ -64024,10 +64711,10 @@ ddrc_ctrl
 <B>ffc00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1f5</B>
+<B>252</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>The user programmable init ratio used Gate Leveling FSM</B>
@@ -64047,7 +64734,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY init ratio register for data slice 2.</B>
@@ -64151,10 +64838,10 @@ ddrc_ctrl
 <B>ffc00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1f5</B>
+<B>252</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>The user programmable init ratio used Gate Leveling FSM</B>
@@ -64174,7 +64861,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY init ratio register for data slice 3.</B>
@@ -65434,10 +66121,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when fifo_we_X_force_mode is set to 0.</B>
@@ -65497,7 +66184,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY FIFO write enable configuration for data slice 0.</B>
@@ -65581,10 +66268,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when fifo_we_X_force_mode is set to 0.</B>
@@ -65644,7 +66331,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY FIFO write enable configuration for data slice 1.</B>
@@ -65728,10 +66415,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when fifo_we_X_force_mode is set to 0.</B>
@@ -65791,7 +66478,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY FIFO write enable configuration for data slice 2.</B>
@@ -65875,10 +66562,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when fifo_we_X_force_mode is set to 0.</B>
@@ -65938,7 +66625,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY FIFO write enable configuration for data slice 3.</B>
@@ -69288,10 +69975,10 @@ ddrc_ctrl
 <B>ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>7d</B>
+<B>7e</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7d</B>
+<B>7e</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Maximum duration of the auto initialization, tINIT5. Units: 1024 clock cycles. LPDDR2 typically requires 10 us.</B>
@@ -69331,7 +70018,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>e7d</B>
+<B>e7e</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>LPDDR2 Control 3</B>
@@ -97032,6 +97719,50 @@ DCI_CLK_CTRL
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#FBF5EF>
+<A href="#GEM1_RCLK_CTRL">
+GEM1_RCLK_CTRL
+</A>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0XF800013C</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>32</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>RW</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0x000000</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Gigabit Ethernet MAC 1 RX Clock Control</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<A href="#GEM1_CLK_CTRL">
+GEM1_CLK_CTRL
+</A>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0XF8000144</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>32</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>RW</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0x000000</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Gigabit Ethernet MAC 1 Ref Clock Control</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
 <A href="#LQSPI_CLK_CTRL">
 LQSPI_CLK_CTRL
 </A>
@@ -97570,6 +98301,300 @@ SLCR_LOCK
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DCI clock control</B>
+</TD>
+</TR>
+</TABLE>
+<P>
+<H2><a name="GEM1_RCLK_CTRL">Register (<A href=#mod___slcr> slcr </A>)GEM1_RCLK_CTRL</a></H2>
+<TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
+<TR valign="top">
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Register Name</B>
+</TD>
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Address</B>
+</TD>
+<TD width=10% BGCOLOR=#FFFF00>
+<B>Width</B>
+</TD>
+<TD width=10% BGCOLOR=#FFFF00>
+<B>Type</B>
+</TD>
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Reset Value</B>
+</TD>
+<TD width=35% BGCOLOR=#FFFF00>
+<B>Description</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>GEM1_RCLK_CTRL</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0XF800013C</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>32</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>rw</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0x00000000</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>--</B>
+</TD>
+</TR>
+</TABLE>
+<P>
+<TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
+<TR valign="top">
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Field Name</B>
+</TD>
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Bits</B>
+</TD>
+<TD width=10% BGCOLOR=#C0FFC0>
+<B>Mask</B>
+</TD>
+<TD width=10% BGCOLOR=#C0FFC0>
+<B>Value</B>
+</TD>
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Shifted Value</B>
+</TD>
+<TD width=35% BGCOLOR=#C0FFC0>
+<B>Description</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>CLKACT</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0:0</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Clock active. 0 - Clock is disabled. 1 - Clock is enabled.</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>SRCSEL</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>4:4</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>10</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>10</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Selects the source used to generate the clock. 0 - Source for generated clock is GEM 0 MIO RX clock. 1 - Source for generated clock is GEM 0 FMIO RX clock.</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>GEM1_RCLK_CTRL@0XF800013C</B>
+</TD>
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>31:0</B>
+</TD>
+<TD width=10% BGCOLOR=#C0C0C0>
+<B>11</B>
+</TD>
+<TD width=10% BGCOLOR=#C0C0C0>
+<B></B>
+</TD>
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>11</B>
+</TD>
+<TD width=35% BGCOLOR=#C0C0C0>
+<B>Gigabit Ethernet MAC 1 RX Clock Control</B>
+</TD>
+</TR>
+</TABLE>
+<P>
+<H2><a name="GEM1_CLK_CTRL">Register (<A href=#mod___slcr> slcr </A>)GEM1_CLK_CTRL</a></H2>
+<TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
+<TR valign="top">
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Register Name</B>
+</TD>
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Address</B>
+</TD>
+<TD width=10% BGCOLOR=#FFFF00>
+<B>Width</B>
+</TD>
+<TD width=10% BGCOLOR=#FFFF00>
+<B>Type</B>
+</TD>
+<TD width=15% BGCOLOR=#FFFF00>
+<B>Reset Value</B>
+</TD>
+<TD width=35% BGCOLOR=#FFFF00>
+<B>Description</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>GEM1_CLK_CTRL</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0XF8000144</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>32</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>rw</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0x00000000</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>--</B>
+</TD>
+</TR>
+</TABLE>
+<P>
+<TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
+<TR valign="top">
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Field Name</B>
+</TD>
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Bits</B>
+</TD>
+<TD width=10% BGCOLOR=#C0FFC0>
+<B>Mask</B>
+</TD>
+<TD width=10% BGCOLOR=#C0FFC0>
+<B>Value</B>
+</TD>
+<TD width=15% BGCOLOR=#C0FFC0>
+<B>Shifted Value</B>
+</TD>
+<TD width=35% BGCOLOR=#C0FFC0>
+<B>Description</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>CLKACT</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>0:0</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Clock active. 0 - Clock is disabled. 1 - Clock is enabled.</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>SRCSEL</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>6:4</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>70</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>4</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>40</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Selects the source used to generate the clock. 1xx - Source for generated clock is Ethernet 0 FMIO clock. 00x - Source for generated clock is IO PLL. 010 - Source for generated clock is ARM PLL. 011 - Source for generated clock is DDR PLL</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>DIVISOR</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>13:8</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>3f00</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>100</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>DIVISOR1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>25:20</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>3f00000</B>
+</TD>
+<TD width=10% BGCOLOR=#FBF5EF>
+<B>1</B>
+</TD>
+<TD width=15% BGCOLOR=#FBF5EF>
+<B>100000</B>
+</TD>
+<TD width=35% BGCOLOR=#FBF5EF>
+<B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. Second cascade divider</B>
+</TD>
+</TR>
+<TR valign="top">
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>GEM1_CLK_CTRL@0XF8000144</B>
+</TD>
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>31:0</B>
+</TD>
+<TD width=10% BGCOLOR=#C0C0C0>
+<B>3f03f71</B>
+</TD>
+<TD width=10% BGCOLOR=#C0C0C0>
+<B></B>
+</TD>
+<TD width=15% BGCOLOR=#C0C0C0>
+<B>100141</B>
+</TD>
+<TD width=35% BGCOLOR=#C0C0C0>
+<B>Gigabit Ethernet MAC 1 Ref Clock Control</B>
 </TD>
 </TR>
 </TABLE>
@@ -98466,10 +99491,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>28</B>
+<B>8</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>2800</B>
+<B>800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider</B>
@@ -98486,10 +99511,10 @@ SLCR_LOCK
 <B>3f00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>5</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>100000</B>
+<B>500000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. Second cascade divider</B>
@@ -98509,7 +99534,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>102800</B>
+<B>500800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>FPGA 0 Output Clock Control</B>
@@ -98613,10 +99638,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>14</B>
+<B>a</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1400</B>
+<B>a00</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider</B>
@@ -98633,10 +99658,10 @@ SLCR_LOCK
 <B>3f00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>8</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>100000</B>
+<B>800000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. Second cascade divider</B>
@@ -98656,7 +99681,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>101400</B>
+<B>800a00</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>FPGA 1 Output Clock Control</B>
@@ -98760,10 +99785,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>d</B>
+<B>20</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>d00</B>
+<B>2000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider</B>
@@ -98780,10 +99805,10 @@ SLCR_LOCK
 <B>3f00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>19</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>100000</B>
+<B>1900000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. Second cascade divider</B>
@@ -98803,7 +99828,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>100d00</B>
+<B>1902000</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>FPGA 2 Output Clock Control</B>
@@ -98907,10 +99932,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>a</B>
+<B>5</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>a00</B>
+<B>500</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider</B>
@@ -98927,10 +99952,10 @@ SLCR_LOCK
 <B>3f00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>2</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>100000</B>
+<B>200000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. Second cascade divider</B>
@@ -98950,7 +99975,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>100a00</B>
+<B>200500</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>FPGA 3 Output Clock Control</B>
@@ -99221,10 +100246,10 @@ SLCR_LOCK
 <B>80</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>80</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Gigabit Ethernet MAC 1 AMBA Clock active. 0 - Clock is disabled. 1 - Clock is enabled.</B>
@@ -99504,7 +100529,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1dc8c0d</B>
+<B>1dc8c8d</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>AMBA Peripheral Clock Control</B>
@@ -102420,10 +103445,10 @@ ddrc_ctrl
 <B>3f</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>19</B>
+<B>1a</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>19</B>
+<B>1a</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tRC - Min time between activates to same bank (spec: 65 ns for DDR2-400 and smaller for faster parts). DRAM RELATED. Default value is set for DDR3.</B>
@@ -102483,7 +103508,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>41519</B>
+<B>4151a</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM Parameters register 0</B>
@@ -104036,10 +105061,10 @@ ddrc_ctrl
 <B>3ff0000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>4e</B>
+<B>4f</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>4e0000</B>
+<B>4f0000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Cycles to wait after driving CKE high to start the DRAM initialization sequence. Units: 1024 clocks. DDR2 typically require a 400 ns delay, requiring this value to be programmed to 2 at all clock speeds. LPDDR2 - Typically require this to be programmed for a delay of 200 us.</B>
@@ -104079,7 +105104,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>4e3ff4</B>
+<B>4f3ff4</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM burst 8 read/write register</B>
@@ -106881,10 +107906,10 @@ ddrc_ctrl
 <B>fffff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>970f</B>
+<B>9896</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>970f</B>
+<B>9896</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Average interval to wait between automatically issuing ZQCS (ZQ calibration short) commands to DDR3 devices. Meaningless if reg_ddrc_dis_auto_zq=1. Units: 1024 Clock cycles. Applicable for DDR3 and LPDDR2 devices.</B>
@@ -106901,10 +107926,10 @@ ddrc_ctrl
 <B>ff00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>4e</B>
+<B>4f</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>4e00000</B>
+<B>4f00000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Number of cycles to assert DRAM reset signal during init sequence. Units: 1024 Clock cycles. Applicable for DDR3 only.</B>
@@ -106924,7 +107949,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>4e0970f</B>
+<B>4f09896</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Misc parameters register</B>
@@ -107028,10 +108053,10 @@ ddrc_ctrl
 <B>1fe</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>c2</B>
+<B>c4</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>184</B>
+<B>188</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Minimum deep power down time applicable only for LPDDR2. LPDDR exits from deep power down mode immediately after reg_ddrc_deeppowerdown_en is deasserted. For LPDDR2, Value from the spec is 500us. Units are in 1024 clock cycles. Present only in designs configured to support LPDDR or LPDDR2. FOR PERFORMANCE ONLY.</B>
@@ -107051,7 +108076,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>184</B>
+<B>188</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Deep powerdown register</B>
@@ -109486,10 +110511,10 @@ ddrc_ctrl
 <B>ffc00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1f5</B>
+<B>252</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>The user programmable init ratio used Gate Leveling FSM</B>
@@ -109509,7 +110534,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY init ratio register for data slice 0.</B>
@@ -109613,10 +110638,10 @@ ddrc_ctrl
 <B>ffc00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1f5</B>
+<B>252</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>The user programmable init ratio used Gate Leveling FSM</B>
@@ -109636,7 +110661,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY init ratio register for data slice 0.</B>
@@ -109740,10 +110765,10 @@ ddrc_ctrl
 <B>ffc00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1f5</B>
+<B>252</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>The user programmable init ratio used Gate Leveling FSM</B>
@@ -109763,7 +110788,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY init ratio register for data slice 0.</B>
@@ -109867,10 +110892,10 @@ ddrc_ctrl
 <B>ffc00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1f5</B>
+<B>252</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>The user programmable init ratio used Gate Leveling FSM</B>
@@ -109890,7 +110915,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>7d400</B>
+<B>94800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY init ratio register for data slice 0.</B>
@@ -111150,10 +112175,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when fifo_we_X_force_mode is set to 0.</B>
@@ -111213,7 +112238,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY fifo write enable configuration register for data slice 0.</B>
@@ -111297,10 +112322,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when fifo_we_X_force_mode is set to 0.</B>
@@ -111360,7 +112385,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY fifo write enable configuration register for data slice 0.</B>
@@ -111444,10 +112469,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when fifo_we_X_force_mode is set to 0.</B>
@@ -111507,7 +112532,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY fifo write enable configuration register for data slice 0.</B>
@@ -111591,10 +112616,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when fifo_we_X_force_mode is set to 0.</B>
@@ -111654,7 +112679,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1d7</B>
+<B>234</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY fifo write enable configuration register for data slice 0.</B>
@@ -115004,10 +116029,10 @@ ddrc_ctrl
 <B>ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>7d</B>
+<B>7e</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7d</B>
+<B>7e</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Maximum duration of the auto initialization, tINIT5. Present only in designs configured to support LPDDR2. Units: 1024 clock cycles. LPDDR2 typically requires 10 us.</B>
@@ -115047,7 +116072,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>e7d</B>
+<B>e7e</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>LPDDR2 Control 3 Register</B>

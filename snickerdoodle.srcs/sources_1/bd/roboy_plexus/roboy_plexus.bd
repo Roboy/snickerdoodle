@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x1A72C05BC593EDAD",
+      "boundary_crc": "0x2395938B88076B",
       "device": "xc7z020clg400-3",
       "name": "roboy_plexus",
       "synth_flow_mode": "Hierarchical",
@@ -19,8 +19,7 @@
         "m01_couplers": {},
         "m02_couplers": {},
         "m03_couplers": {},
-        "m04_couplers": {},
-        "m05_couplers": {}
+        "m04_couplers": {}
       },
       "rst_ps7_0_49M": "",
       "myoControl_0": "",
@@ -28,7 +27,8 @@
       "myoControl_2": "",
       "myoControl_3": "",
       "myoControl_4": "",
-      "myoControl_5": ""
+      "tri_state_buffer_0": "",
+      "gmii_to_rgmii_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -138,13 +138,7 @@
       "miso_4": {
         "direction": "I"
       },
-      "miso_5": {
-        "direction": "I"
-      },
       "mirrored_muscle_unit_4": {
-        "direction": "I"
-      },
-      "mirrored_muscle_unit_5": {
         "direction": "I"
       },
       "mosi_1": {
@@ -159,9 +153,6 @@
       "mosi_4": {
         "direction": "O"
       },
-      "mosi_5": {
-        "direction": "O"
-      },
       "sck_1": {
         "direction": "O"
       },
@@ -174,9 +165,6 @@
       "sck_4": {
         "direction": "O"
       },
-      "sck_5": {
-        "direction": "O"
-      },
       "ss_n_1": {
         "direction": "O",
         "left": "7",
@@ -187,20 +175,43 @@
         "left": "5",
         "right": "0"
       },
-      "ss_n_3": {
-        "direction": "O",
-        "left": "3",
-        "right": "0"
-      },
       "ss_n_4": {
         "direction": "O",
         "left": "5",
         "right": "0"
       },
-      "ss_n_5": {
+      "ss_n_3": {
+        "direction": "O",
+        "left": "5",
+        "right": "0"
+      },
+      "MDC": {
+        "direction": "O"
+      },
+      "MDIO": {
+        "direction": "IO"
+      },
+      "rgmii_rxd": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "rgmii_rx_ctl": {
+        "direction": "I"
+      },
+      "rgmii_txd": {
         "direction": "O",
         "left": "3",
         "right": "0"
+      },
+      "rgmii_tx_ctl": {
+        "direction": "O"
+      },
+      "rgmii_txc": {
+        "direction": "O"
+      },
+      "rgmii_rxc": {
+        "direction": "I"
       }
     },
     "components": {
@@ -221,16 +232,16 @@
             "value": "10.000000"
           },
           "PCW_ACT_ENET1_PERIPHERAL_FREQMHZ": {
-            "value": "10.000000"
+            "value": "125.000000"
           },
           "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
             "value": "49.999947"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "99.999893"
+            "value": "24.999973"
           },
           "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
-            "value": "153.845993"
+            "value": "2.499998"
           },
           "PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ": {
             "value": "199.999786"
@@ -287,10 +298,10 @@
             "value": "49999947"
           },
           "PCW_CLK1_FREQ": {
-            "value": "99999893"
+            "value": "24999973"
           },
           "PCW_CLK2_FREQ": {
-            "value": "153845993"
+            "value": "2499998"
           },
           "PCW_CLK3_FREQ": {
             "value": "199999786"
@@ -322,6 +333,33 @@
           "PCW_ENET0_PERIPHERAL_CLKSRC": {
             "value": "IO PLL"
           },
+          "PCW_ENET0_PERIPHERAL_ENABLE": {
+            "value": "0"
+          },
+          "PCW_ENET0_RESET_ENABLE": {
+            "value": "0"
+          },
+          "PCW_ENET1_ENET1_IO": {
+            "value": "EMIO"
+          },
+          "PCW_ENET1_GRP_MDIO_ENABLE": {
+            "value": "1"
+          },
+          "PCW_ENET1_GRP_MDIO_IO": {
+            "value": "EMIO"
+          },
+          "PCW_ENET1_PERIPHERAL_ENABLE": {
+            "value": "1"
+          },
+          "PCW_ENET1_PERIPHERAL_FREQMHZ": {
+            "value": "1000 Mbps"
+          },
+          "PCW_ENET_RESET_ENABLE": {
+            "value": "1"
+          },
+          "PCW_ENET_RESET_SELECT": {
+            "value": "Share reset pin"
+          },
           "PCW_EN_CLK0_PORT": {
             "value": "1"
           },
@@ -340,6 +378,12 @@
           "PCW_EN_EMIO_CD_SDIO1": {
             "value": "0"
           },
+          "PCW_EN_EMIO_ENET0": {
+            "value": "0"
+          },
+          "PCW_EN_EMIO_ENET1": {
+            "value": "1"
+          },
           "PCW_EN_EMIO_GPIO": {
             "value": "1"
           },
@@ -354,6 +398,12 @@
           },
           "PCW_EN_EMIO_WP_SDIO1": {
             "value": "0"
+          },
+          "PCW_EN_ENET0": {
+            "value": "0"
+          },
+          "PCW_EN_ENET1": {
+            "value": "1"
           },
           "PCW_EN_GPIO": {
             "value": "1"
@@ -413,10 +463,10 @@
             "value": "50"
           },
           "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
-            "value": "100"
+            "value": "25"
           },
           "PCW_FPGA2_PERIPHERAL_FREQMHZ": {
-            "value": "150"
+            "value": "2.5"
           },
           "PCW_FPGA3_PERIPHERAL_FREQMHZ": {
             "value": "200"
@@ -965,7 +1015,7 @@
             "value": "1"
           },
           "PCW_QSPI_PERIPHERAL_FREQMHZ": {
-            "value": "200.000000"
+            "value": "200"
           },
           "PCW_QSPI_QSPI_IO": {
             "value": "MIO 1 .. 6"
@@ -1166,7 +1216,7 @@
         "xci_name": "roboy_plexus_ps7_0_axi_periph_0",
         "parameters": {
           "NUM_MI": {
-            "value": "6"
+            "value": "5"
           }
         },
         "interface_ports": {
@@ -1191,10 +1241,6 @@
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
           },
           "M04_AXI": {
-            "mode": "Master",
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
-          },
-          "M05_AXI": {
             "mode": "Master",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
           }
@@ -1308,22 +1354,6 @@
           "M04_ARESETN": {
             "type": "rst",
             "direction": "I"
-          },
-          "M05_ACLK": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_BUSIF": {
-                "value": "M05_AXI"
-              },
-              "ASSOCIATED_RESET": {
-                "value": "M05_ARESETN"
-              }
-            }
-          },
-          "M05_ARESETN": {
-            "type": "rst",
-            "direction": "I"
           }
         },
         "components": {
@@ -1332,7 +1362,7 @@
             "xci_name": "roboy_plexus_xbar_0",
             "parameters": {
               "NUM_MI": {
-                "value": "6"
+                "value": "5"
               },
               "NUM_SI": {
                 "value": "1"
@@ -1699,133 +1729,13 @@
                 ]
               }
             }
-          },
-          "m05_couplers": {
-            "interface_ports": {
-              "M_AXI": {
-                "mode": "Master",
-                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
-              },
-              "S_AXI": {
-                "mode": "Slave",
-                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
-              }
-            },
-            "ports": {
-              "M_ACLK": {
-                "type": "clk",
-                "direction": "I",
-                "parameters": {
-                  "ASSOCIATED_BUSIF": {
-                    "value": "M_AXI"
-                  },
-                  "ASSOCIATED_RESET": {
-                    "value": "M_ARESETN"
-                  }
-                }
-              },
-              "M_ARESETN": {
-                "type": "rst",
-                "direction": "I"
-              },
-              "S_ACLK": {
-                "type": "clk",
-                "direction": "I",
-                "parameters": {
-                  "ASSOCIATED_BUSIF": {
-                    "value": "S_AXI"
-                  },
-                  "ASSOCIATED_RESET": {
-                    "value": "S_ARESETN"
-                  }
-                }
-              },
-              "S_ARESETN": {
-                "type": "rst",
-                "direction": "I"
-              }
-            },
-            "interface_nets": {
-              "m05_couplers_to_m05_couplers": {
-                "interface_ports": [
-                  "S_AXI",
-                  "M_AXI"
-                ]
-              }
-            }
           }
         },
         "interface_nets": {
-          "m02_couplers_to_ps7_0_axi_periph": {
+          "m01_couplers_to_ps7_0_axi_periph": {
             "interface_ports": [
-              "M02_AXI",
-              "m02_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m04_couplers": {
-            "interface_ports": [
-              "xbar/M04_AXI",
-              "m04_couplers/S_AXI"
-            ]
-          },
-          "xbar_to_m00_couplers": {
-            "interface_ports": [
-              "xbar/M00_AXI",
-              "m00_couplers/S_AXI"
-            ]
-          },
-          "xbar_to_m03_couplers": {
-            "interface_ports": [
-              "xbar/M03_AXI",
-              "m03_couplers/S_AXI"
-            ]
-          },
-          "xbar_to_m05_couplers": {
-            "interface_ports": [
-              "xbar/M05_AXI",
-              "m05_couplers/S_AXI"
-            ]
-          },
-          "m05_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M05_AXI",
-              "m05_couplers/M_AXI"
-            ]
-          },
-          "m00_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M00_AXI",
-              "m00_couplers/M_AXI"
-            ]
-          },
-          "m03_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M03_AXI",
-              "m03_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m02_couplers": {
-            "interface_ports": [
-              "xbar/M02_AXI",
-              "m02_couplers/S_AXI"
-            ]
-          },
-          "s00_couplers_to_xbar": {
-            "interface_ports": [
-              "s00_couplers/M_AXI",
-              "xbar/S00_AXI"
-            ]
-          },
-          "m04_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M04_AXI",
-              "m04_couplers/M_AXI"
-            ]
-          },
-          "ps7_0_axi_periph_to_s00_couplers": {
-            "interface_ports": [
-              "S00_AXI",
-              "s00_couplers/S_AXI"
+              "M01_AXI",
+              "m01_couplers/M_AXI"
             ]
           },
           "xbar_to_m01_couplers": {
@@ -1834,10 +1744,64 @@
               "m01_couplers/S_AXI"
             ]
           },
-          "m01_couplers_to_ps7_0_axi_periph": {
+          "ps7_0_axi_periph_to_s00_couplers": {
             "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
+              "S00_AXI",
+              "s00_couplers/S_AXI"
+            ]
+          },
+          "s00_couplers_to_xbar": {
+            "interface_ports": [
+              "s00_couplers/M_AXI",
+              "xbar/S00_AXI"
+            ]
+          },
+          "xbar_to_m00_couplers": {
+            "interface_ports": [
+              "xbar/M00_AXI",
+              "m00_couplers/S_AXI"
+            ]
+          },
+          "m00_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M00_AXI",
+              "m00_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m04_couplers": {
+            "interface_ports": [
+              "xbar/M04_AXI",
+              "m04_couplers/S_AXI"
+            ]
+          },
+          "m03_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M03_AXI",
+              "m03_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m03_couplers": {
+            "interface_ports": [
+              "xbar/M03_AXI",
+              "m03_couplers/S_AXI"
+            ]
+          },
+          "m04_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M04_AXI",
+              "m04_couplers/M_AXI"
+            ]
+          },
+          "xbar_to_m02_couplers": {
+            "interface_ports": [
+              "xbar/M02_AXI",
+              "m02_couplers/S_AXI"
+            ]
+          },
+          "m02_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M02_AXI",
+              "m02_couplers/M_AXI"
             ]
           }
         },
@@ -1853,13 +1817,11 @@
               "m02_couplers/M_ACLK",
               "m03_couplers/M_ACLK",
               "m04_couplers/M_ACLK",
-              "m05_couplers/M_ACLK",
               "m00_couplers/S_ACLK",
               "m01_couplers/S_ACLK",
               "m02_couplers/S_ACLK",
               "m03_couplers/S_ACLK",
-              "m04_couplers/S_ACLK",
-              "m05_couplers/S_ACLK"
+              "m04_couplers/S_ACLK"
             ]
           },
           "ps7_0_axi_periph_ARESETN_net": {
@@ -1873,13 +1835,11 @@
               "m02_couplers/M_ARESETN",
               "m03_couplers/M_ARESETN",
               "m04_couplers/M_ARESETN",
-              "m05_couplers/M_ARESETN",
               "m00_couplers/S_ARESETN",
               "m01_couplers/S_ARESETN",
               "m02_couplers/S_ARESETN",
               "m03_couplers/S_ARESETN",
-              "m04_couplers/S_ARESETN",
-              "m05_couplers/S_ARESETN"
+              "m04_couplers/S_ARESETN"
             ]
           }
         }
@@ -1920,7 +1880,7 @@
         "xci_name": "roboy_plexus_myoControl_2_0",
         "parameters": {
           "NUMBER_OF_MOTORS": {
-            "value": "4"
+            "value": "6"
           }
         }
       },
@@ -1933,45 +1893,25 @@
           }
         }
       },
-      "myoControl_5": {
-        "vlnv": "Roboy:roboy_plexus:myoControl:1.0",
-        "xci_name": "roboy_plexus_myoControl_3_1",
+      "tri_state_buffer_0": {
+        "vlnv": "user.org:user:tri_state_buffer:1.0",
+        "xci_name": "roboy_plexus_tri_state_buffer_0_1"
+      },
+      "gmii_to_rgmii_0": {
+        "vlnv": "xilinx.com:ip:gmii_to_rgmii:4.0",
+        "xci_name": "roboy_plexus_gmii_to_rgmii_0_1",
         "parameters": {
-          "NUMBER_OF_MOTORS": {
-            "value": "4"
+          "C_EXTERNAL_CLOCK": {
+            "value": "true"
           }
         }
       }
     },
     "interface_nets": {
-      "processing_system7_0_DDR": {
+      "processing_system7_0_MDIO_ETHERNET_1": {
         "interface_ports": [
-          "DDR",
-          "processing_system7_0/DDR"
-        ]
-      },
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
-      "ps7_0_axi_periph_M04_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M04_AXI",
-          "myoControl_4/myoControl"
-        ]
-      },
-      "ps7_0_axi_periph_M00_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M00_AXI",
-          "myoControl_0/myoControl"
-        ]
-      },
-      "processing_system7_0_M_AXI_GP0": {
-        "interface_ports": [
-          "processing_system7_0/M_AXI_GP0",
-          "ps7_0_axi_periph/S00_AXI"
+          "processing_system7_0/MDIO_ETHERNET_1",
+          "gmii_to_rgmii_0/MDIO_GEM"
         ]
       },
       "ps7_0_axi_periph_M03_AXI": {
@@ -1980,22 +1920,52 @@
           "myoControl_3/myoControl"
         ]
       },
+      "processing_system7_0_GMII_ETHERNET_1": {
+        "interface_ports": [
+          "processing_system7_0/GMII_ETHERNET_1",
+          "gmii_to_rgmii_0/GMII"
+        ]
+      },
       "ps7_0_axi_periph_M01_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M01_AXI",
           "myoControl_1/myoControl"
         ]
       },
+      "ps7_0_axi_periph_M04_AXI": {
+        "interface_ports": [
+          "ps7_0_axi_periph/M04_AXI",
+          "myoControl_4/myoControl"
+        ]
+      },
+      "processing_system7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
+        ]
+      },
+      "processing_system7_0_M_AXI_GP0": {
+        "interface_ports": [
+          "processing_system7_0/M_AXI_GP0",
+          "ps7_0_axi_periph/S00_AXI"
+        ]
+      },
+      "ps7_0_axi_periph_M00_AXI": {
+        "interface_ports": [
+          "ps7_0_axi_periph/M00_AXI",
+          "myoControl_0/myoControl"
+        ]
+      },
+      "processing_system7_0_DDR": {
+        "interface_ports": [
+          "DDR",
+          "processing_system7_0/DDR"
+        ]
+      },
       "ps7_0_axi_periph_M02_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M02_AXI",
           "myoControl_2/myoControl"
-        ]
-      },
-      "ps7_0_axi_periph_M05_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M05_AXI",
-          "myoControl_5/myoControl"
         ]
       }
     },
@@ -2012,17 +1982,15 @@
           "ps7_0_axi_periph/S00_ARESETN",
           "ps7_0_axi_periph/M00_ARESETN",
           "ps7_0_axi_periph/ARESETN",
+          "ps7_0_axi_periph/M01_ARESETN",
+          "ps7_0_axi_periph/M02_ARESETN",
+          "ps7_0_axi_periph/M03_ARESETN",
+          "ps7_0_axi_periph/M04_ARESETN",
           "myoControl_0/myocontrol_aresetn",
           "myoControl_1/myocontrol_aresetn",
-          "ps7_0_axi_periph/M01_ARESETN",
           "myoControl_2/myocontrol_aresetn",
-          "ps7_0_axi_periph/M02_ARESETN",
           "myoControl_3/myocontrol_aresetn",
-          "ps7_0_axi_periph/M03_ARESETN",
-          "myoControl_4/myocontrol_aresetn",
-          "ps7_0_axi_periph/M04_ARESETN",
-          "myoControl_5/myocontrol_aresetn",
-          "ps7_0_axi_periph/M05_ARESETN"
+          "myoControl_4/myocontrol_aresetn"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
@@ -2033,18 +2001,18 @@
           "rst_ps7_0_49M/slowest_sync_clk",
           "ps7_0_axi_periph/M00_ACLK",
           "ps7_0_axi_periph/ACLK",
+          "ps7_0_axi_periph/M01_ACLK",
+          "ps7_0_axi_periph/M02_ACLK",
+          "ps7_0_axi_periph/M03_ACLK",
+          "ps7_0_axi_periph/M04_ACLK",
           "processing_system7_0/S_AXI_ACP_ACLK",
           "myoControl_0/myocontrol_aclk",
           "myoControl_1/myocontrol_aclk",
-          "ps7_0_axi_periph/M01_ACLK",
           "myoControl_2/myocontrol_aclk",
-          "ps7_0_axi_periph/M02_ACLK",
           "myoControl_3/myocontrol_aclk",
-          "ps7_0_axi_periph/M03_ACLK",
           "myoControl_4/myocontrol_aclk",
-          "ps7_0_axi_periph/M04_ACLK",
-          "myoControl_5/myocontrol_aclk",
-          "ps7_0_axi_periph/M05_ACLK"
+          "gmii_to_rgmii_0/gmii_clk",
+          "gmii_to_rgmii_0/ref_clk_in"
         ]
       },
       "myoControl_0_mosi": {
@@ -2066,8 +2034,7 @@
           "myoControl_1/power_sense_n",
           "myoControl_2/power_sense_n",
           "myoControl_3/power_sense_n",
-          "myoControl_4/power_sense_n",
-          "myoControl_5/power_sense_n"
+          "myoControl_4/power_sense_n"
         ]
       },
       "mirrored_muscle_unit_1": {
@@ -2136,18 +2103,6 @@
           "myoControl_4/mirrored_muscle_unit"
         ]
       },
-      "miso_5_1": {
-        "ports": [
-          "miso_5",
-          "myoControl_5/miso"
-        ]
-      },
-      "mirrored_muscle_unit_5_1": {
-        "ports": [
-          "mirrored_muscle_unit_5",
-          "myoControl_5/mirrored_muscle_unit"
-        ]
-      },
       "myoControl_1_mosi": {
         "ports": [
           "myoControl_1/mosi",
@@ -2170,12 +2125,6 @@
         "ports": [
           "myoControl_4/mosi",
           "mosi_4"
-        ]
-      },
-      "myoControl_5_mosi": {
-        "ports": [
-          "myoControl_5/mosi",
-          "mosi_5"
         ]
       },
       "myoControl_1_sck": {
@@ -2202,12 +2151,6 @@
           "sck_4"
         ]
       },
-      "myoControl_5_sck": {
-        "ports": [
-          "myoControl_5/sck",
-          "sck_5"
-        ]
-      },
       "myoControl_1_ss_n_o": {
         "ports": [
           "myoControl_1/ss_n_o",
@@ -2220,22 +2163,82 @@
           "ss_n_2"
         ]
       },
-      "myoControl_3_ss_n_o": {
-        "ports": [
-          "myoControl_3/ss_n_o",
-          "ss_n_3"
-        ]
-      },
       "myoControl_4_ss_n_o": {
         "ports": [
           "myoControl_4/ss_n_o",
           "ss_n_4"
         ]
       },
-      "myoControl_5_ss_n_o": {
+      "myoControl_3_ss_n_o": {
         "ports": [
-          "myoControl_5/ss_n_o",
-          "ss_n_5"
+          "myoControl_3/ss_n_o",
+          "ss_n_3"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "MDIO",
+          "tri_state_buffer_0/mdio"
+        ]
+      },
+      "gmii_to_rgmii_0_mdio_phy_o": {
+        "ports": [
+          "gmii_to_rgmii_0/mdio_phy_o",
+          "tri_state_buffer_0/mdo"
+        ]
+      },
+      "gmii_to_rgmii_0_mdio_phy_t": {
+        "ports": [
+          "gmii_to_rgmii_0/mdio_phy_t",
+          "tri_state_buffer_0/transmit"
+        ]
+      },
+      "tri_state_buffer_0_mdi": {
+        "ports": [
+          "tri_state_buffer_0/mdi",
+          "gmii_to_rgmii_0/mdio_phy_i"
+        ]
+      },
+      "gmii_to_rgmii_0_mdio_phy_mdc": {
+        "ports": [
+          "gmii_to_rgmii_0/mdio_phy_mdc",
+          "MDC"
+        ]
+      },
+      "gmii_to_rgmii_0_rgmii_tx_ctl": {
+        "ports": [
+          "gmii_to_rgmii_0/rgmii_tx_ctl",
+          "rgmii_tx_ctl"
+        ]
+      },
+      "gmii_to_rgmii_0_rgmii_txc": {
+        "ports": [
+          "gmii_to_rgmii_0/rgmii_txc",
+          "rgmii_txc"
+        ]
+      },
+      "gmii_to_rgmii_0_rgmii_txd": {
+        "ports": [
+          "gmii_to_rgmii_0/rgmii_txd",
+          "rgmii_txd"
+        ]
+      },
+      "rgmii_rxd_1": {
+        "ports": [
+          "rgmii_rxd",
+          "gmii_to_rgmii_0/rgmii_rxd"
+        ]
+      },
+      "rgmii_rx_ctl_1": {
+        "ports": [
+          "rgmii_rx_ctl",
+          "gmii_to_rgmii_0/rgmii_rx_ctl"
+        ]
+      },
+      "rgmii_rxc_1": {
+        "ports": [
+          "rgmii_rxc",
+          "gmii_to_rgmii_0/rgmii_rxc"
         ]
       }
     },
@@ -2269,11 +2272,6 @@
               "SEG_myoControl_4_myoControl_reg": {
                 "address_block": "/myoControl_4/myoControl/myoControl_reg",
                 "offset": "0x43C40000",
-                "range": "64K"
-              },
-              "SEG_myoControl_5_myoControl_reg": {
-                "address_block": "/myoControl_5/myoControl/myoControl_reg",
-                "offset": "0x43C50000",
                 "range": "64K"
               }
             }

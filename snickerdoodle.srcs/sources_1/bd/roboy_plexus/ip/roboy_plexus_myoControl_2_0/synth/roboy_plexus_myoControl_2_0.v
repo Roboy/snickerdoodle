@@ -48,7 +48,7 @@
 
 
 // IP VLNV: Roboy:roboy_plexus:myoControl:1.0
-// IP Revision: 4
+// IP Revision: 5
 
 (* X_CORE_INFO = "myoControl_v1_0,Vivado 2019.1" *)
 (* CHECK_LICENSE_TYPE = "roboy_plexus_myoControl_2_0,myoControl_v1_0,{}" *)
@@ -123,7 +123,7 @@ output wire myocontrol_rvalid;
 ssing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 myoControl RREADY" *)
 input wire myocontrol_rready;
-output wire [3 : 0] ss_n_o;
+output wire [5 : 0] ss_n_o;
 input wire miso;
 output wire mosi;
 output wire sck;
@@ -139,7 +139,7 @@ input wire myocontrol_aresetn;
   myoControl_v1_0 #(
     .C_myoControl_DATA_WIDTH(32),
     .C_myoControl_ADDR_WIDTH(11),
-    .NUMBER_OF_MOTORS(4),
+    .NUMBER_OF_MOTORS(6),
     .CLOCK_SPEED_HZ(50000000)
   ) inst (
     .myocontrol_awaddr(myocontrol_awaddr),

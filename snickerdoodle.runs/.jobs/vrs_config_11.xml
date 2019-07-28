@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="roboy_plexus_processing_system7_0_0_synth_1" LaunchDir="/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="roboy_plexus_rst_ps7_0_49M_0_synth_1" LaunchDir="/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_rst_ps7_0_49M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="roboy_plexus_xbar_0_synth_1" LaunchDir="/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="roboy_plexus_myoControl_2_0_synth_1" LaunchDir="/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_myoControl_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="roboy_plexus_auto_pc_0_synth_1" LaunchDir="/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_23bc_eth_buf_0_synth_1" LaunchDir="/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/bd_23bc_eth_buf_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_23bc_mac_0_synth_1" LaunchDir="/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/bd_23bc_mac_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="roboy_plexus_axi_ethernet_0_dma_0_synth_1" LaunchDir="/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_axi_ethernet_0_dma_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="roboy_plexus_axi_ethernet_0_0_synth_1" LaunchDir="/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_axi_ethernet_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="bd_23bc_eth_buf_0_synth_1"/>
+		<Parent Id="bd_23bc_mac_0_synth_1"/>
+		<Parent Id="bd_23bc_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="bd_23bc_c_shift_ram_0_0_synth_1"/>
+		<Parent Id="bd_23bc_c_counter_binary_0_0_synth_1"/>
+	</Run>
+	<Run Id="bd_23bc_util_vector_logic_0_0_synth_1" LaunchDir="/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/bd_23bc_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_23bc_c_shift_ram_0_0_synth_1" LaunchDir="/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/bd_23bc_c_shift_ram_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_23bc_c_counter_binary_0_0_synth_1" LaunchDir="/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/bd_23bc_c_counter_binary_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="roboy_plexus_axi_smc_0_synth_1" LaunchDir="/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_axi_smc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="roboy_plexus_axi_ethernet_0_refclk_0_synth_1" LaunchDir="/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_axi_ethernet_0_refclk_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="roboy_plexus_processing_system7_0_0_synth_1"/>
+		<Parent Id="roboy_plexus_rst_ps7_0_49M_0_synth_1"/>
+		<Parent Id="roboy_plexus_xbar_0_synth_1"/>
+		<Parent Id="roboy_plexus_myoControl_2_0_synth_1"/>
+		<Parent Id="roboy_plexus_auto_pc_0_synth_1"/>
+		<Parent Id="roboy_plexus_axi_ethernet_0_dma_0_synth_1"/>
+		<Parent Id="roboy_plexus_axi_ethernet_0_0_synth_1"/>
+		<Parent Id="roboy_plexus_axi_smc_0_synth_1"/>
+		<Parent Id="roboy_plexus_axi_ethernet_0_refclk_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="roboy_plexus_processing_system7_0_0_synth_1"/>
+		<Parent Id="roboy_plexus_rst_ps7_0_49M_0_synth_1"/>
+		<Parent Id="roboy_plexus_xbar_0_synth_1"/>
+		<Parent Id="roboy_plexus_myoControl_2_0_synth_1"/>
+		<Parent Id="roboy_plexus_auto_pc_0_synth_1"/>
+		<Parent Id="bd_23bc_eth_buf_0_synth_1"/>
+		<Parent Id="bd_23bc_mac_0_synth_1"/>
+		<Parent Id="roboy_plexus_axi_ethernet_0_dma_0_synth_1"/>
+		<Parent Id="roboy_plexus_axi_ethernet_0_0_synth_1"/>
+		<Parent Id="bd_23bc_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="bd_23bc_c_shift_ram_0_0_synth_1"/>
+		<Parent Id="bd_23bc_c_counter_binary_0_0_synth_1"/>
+		<Parent Id="roboy_plexus_axi_smc_0_synth_1"/>
+		<Parent Id="roboy_plexus_axi_ethernet_0_refclk_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

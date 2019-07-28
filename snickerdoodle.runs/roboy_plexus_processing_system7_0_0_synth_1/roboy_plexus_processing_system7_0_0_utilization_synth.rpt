@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Thu Jul 25 21:58:15 2019
+| Date         : Sun Jul 28 17:37:05 2019
 | Host         : base running 64-bit Ubuntu 18.04.2 LTS
 | Command      : report_utilization -file roboy_plexus_processing_system7_0_0_utilization_synth.rpt -pb roboy_plexus_processing_system7_0_0_utilization_synth.pb
 | Design       : roboy_plexus_processing_system7_0_0
@@ -33,8 +33,8 @@ Table of Contents
 | Slice LUTs*             |  112 |     0 |     53200 |  0.21 |
 |   LUT as Logic          |  112 |     0 |     53200 |  0.21 |
 |   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
-| Slice Registers         |    0 |     0 |    106400 |  0.00 |
-|   Register as Flip Flop |    0 |     0 |    106400 |  0.00 |
+| Slice Registers         |   22 |     0 |    106400 |  0.02 |
+|   Register as Flip Flop |   22 |     0 |    106400 |  0.02 |
 |   Register as Latch     |    0 |     0 |    106400 |  0.00 |
 | F7 Muxes                |    0 |     0 |     26600 |  0.00 |
 | F8 Muxes                |    0 |     0 |     13300 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 0     |          Yes |       Reset |            - |
+| 22    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -148,6 +148,7 @@ Table of Contents
 +----------+------+----------------------+
 | BIBUF    |  130 |                   IO |
 | LUT1     |  112 |                  LUT |
+| FDRE     |   22 |         Flop & Latch |
 | PS7      |    1 | Specialized Resource |
 | BUFG     |    1 |                Clock |
 +----------+------+----------------------+

@@ -73,7 +73,7 @@ set rc [catch {
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir /home/letrend/workspace/snickerdoodle/snickerdoodle.cache/wt [current_project]
   set_property parent.project_path /home/letrend/workspace/snickerdoodle/snickerdoodle.xpr [current_project]
-  set_property ip_repo_paths /home/letrend/workspace/roboy_fpga_ips/myoControl_1.0 [current_project]
+  set_property ip_repo_paths /home/letrend/workspace/roboy_fpga_ips [current_project]
   update_ip_catalog
   set_property ip_output_repo /home/letrend/workspace/snickerdoodle/snickerdoodle.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]

@@ -677,6 +677,21 @@
 
 //MODULE DECLARATION
  module roboy_plexus_processing_system7_0_0 (
+  ENET1_GMII_TX_EN,
+  ENET1_GMII_TX_ER,
+  ENET1_MDIO_MDC,
+  ENET1_MDIO_O,
+  ENET1_MDIO_T,
+  ENET1_GMII_TXD,
+  ENET1_GMII_COL,
+  ENET1_GMII_CRS,
+  ENET1_GMII_RX_CLK,
+  ENET1_GMII_RX_DV,
+  ENET1_GMII_RX_ER,
+  ENET1_GMII_TX_CLK,
+  ENET1_MDIO_I,
+  ENET1_EXT_INTIN,
+  ENET1_GMII_RXD,
   GPIO_I,
   GPIO_O,
   GPIO_T,
@@ -796,7 +811,7 @@
 
       parameter C_EN_EMIO_PJTAG = 0;
       parameter C_EN_EMIO_ENET0 = 0;
-      parameter C_EN_EMIO_ENET1 = 0;
+      parameter C_EN_EMIO_ENET1 = 1;
       parameter C_EN_EMIO_TRACE = 0;
       parameter C_INCLUDE_TRACE_BUFFER = 0;
       parameter C_TRACE_BUFFER_FIFO_SIZE = 128;
@@ -853,6 +868,21 @@
 
 //INPUT AND OUTPUT PORTS
 
+      output  [0 : 0] ENET1_GMII_TX_EN;
+      output  [0 : 0] ENET1_GMII_TX_ER;
+      output  ENET1_MDIO_MDC;
+      output  ENET1_MDIO_O;
+      output  ENET1_MDIO_T;
+      output  [7 : 0] ENET1_GMII_TXD;
+      input  ENET1_GMII_COL;
+      input  ENET1_GMII_CRS;
+      input  ENET1_GMII_RX_CLK;
+      input  ENET1_GMII_RX_DV;
+      input  ENET1_GMII_RX_ER;
+      input  ENET1_GMII_TX_CLK;
+      input  ENET1_MDIO_I;
+      input  ENET1_EXT_INTIN;
+      input  [7 : 0] ENET1_GMII_RXD;
       input  [63 : 0] GPIO_I;
       output  [63 : 0] GPIO_O;
       output  [63 : 0] GPIO_T;
@@ -969,6 +999,12 @@
 
 //REG DECLARATIONS
 
+      reg [0 : 0] ENET1_GMII_TX_EN;
+      reg [0 : 0] ENET1_GMII_TX_ER;
+      reg ENET1_MDIO_MDC;
+      reg ENET1_MDIO_O;
+      reg ENET1_MDIO_T;
+      reg [7 : 0] ENET1_GMII_TXD;
       reg [63 : 0] GPIO_O;
       reg [63 : 0] GPIO_T;
       reg M_AXI_GP0_ARVALID;
@@ -1239,7 +1275,7 @@ output bit S_AXI_ACP_RVALID
      FCLK_CLK1 = 1'b0;
   end
 
-  always #(5.0) FCLK_CLK1 <= ~FCLK_CLK1;
+  always #(20.0) FCLK_CLK1 <= ~FCLK_CLK1;
 
   always@(posedge FCLK_CLK1)
   begin
@@ -1252,7 +1288,7 @@ output bit S_AXI_ACP_RVALID
      FCLK_CLK2 = 1'b0;
   end
 
-  always #(3.3333333333333335) FCLK_CLK2 <= ~FCLK_CLK2;
+  always #(200.0) FCLK_CLK2 <= ~FCLK_CLK2;
 
   always@(posedge FCLK_CLK2)
   begin

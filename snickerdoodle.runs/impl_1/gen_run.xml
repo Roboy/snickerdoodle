@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-3" LaunchTime="1564094662">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-3" LaunchTime="1564328874">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RDI-RDI" Name="roboy_plexus_wrapper.vdi"/>
   <File Type="BG-DRC" Name="roboy_plexus_wrapper.drc"/>
@@ -124,13 +124,13 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_gmii_to_rgmii_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_tri_state_buffer_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_myoControl_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_myoControl_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_myoControl_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_myoControl_0_4"/>
   <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_myoControl_3_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_myoControl_3_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_myoControl_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_myoControl_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_myoControl_0_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_rst_ps7_0_49M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_processing_system7_0_0"/>
 </GenRun>

@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Fri Jul 26 00:42:52 2019
+// Date        : Sun Jul 28 17:37:23 2019
 // Host        : base running 64-bit Ubuntu 18.04.2 LTS
 // Command     : write_verilog -force -mode funcsim -rename_top roboy_plexus_myoControl_1_0 -prefix
 //               roboy_plexus_myoControl_1_0_ roboy_plexus_myoControl_3_0_sim_netlist.v

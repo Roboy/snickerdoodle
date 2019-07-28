@@ -31,7 +31,7 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part krtkl.com:snickerdoodle_black:part0:1.0 [current_project]
-set_property ip_repo_paths /home/letrend/workspace/roboy_fpga_ips/myoControl_1.0 [current_project]
+set_property ip_repo_paths /home/letrend/workspace/roboy_fpga_ips [current_project]
 update_ip_catalog
 set_property ip_output_repo /home/letrend/workspace/snickerdoodle/snickerdoodle.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
@@ -42,6 +42,9 @@ set_property used_in_implementation false [get_files -all /home/letrend/workspac
 set_property used_in_implementation false [get_files -all /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_rst_ps7_0_49M_0/roboy_plexus_rst_ps7_0_49M_0.xdc]
 set_property used_in_implementation false [get_files -all /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_rst_ps7_0_49M_0/roboy_plexus_rst_ps7_0_49M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_xbar_0/roboy_plexus_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_gmii_to_rgmii_0_1/synth/roboy_plexus_gmii_to_rgmii_0_1.xdc]
+set_property used_in_implementation false [get_files -all /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_gmii_to_rgmii_0_1/synth/roboy_plexus_gmii_to_rgmii_0_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_gmii_to_rgmii_0_1/synth/roboy_plexus_gmii_to_rgmii_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_auto_pc_0/roboy_plexus_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus_ooc.xdc]
 

@@ -33,8 +33,11 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==roboy_plexus_my
 # IP: bd/roboy_plexus/ip/roboy_plexus_myoControl_3_0/roboy_plexus_myoControl_3_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==roboy_plexus_myoControl_3_0 || ORIG_REF_NAME==roboy_plexus_myoControl_3_0} -quiet] -quiet
 
-# IP: bd/roboy_plexus/ip/roboy_plexus_myoControl_3_1/roboy_plexus_myoControl_3_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==roboy_plexus_myoControl_3_1 || ORIG_REF_NAME==roboy_plexus_myoControl_3_1} -quiet] -quiet
+# IP: bd/roboy_plexus/ip/roboy_plexus_tri_state_buffer_0_1/roboy_plexus_tri_state_buffer_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==roboy_plexus_tri_state_buffer_0_1 || ORIG_REF_NAME==roboy_plexus_tri_state_buffer_0_1} -quiet] -quiet
+
+# IP: bd/roboy_plexus/ip/roboy_plexus_gmii_to_rgmii_0_1/roboy_plexus_gmii_to_rgmii_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==roboy_plexus_gmii_to_rgmii_0_1 || ORIG_REF_NAME==roboy_plexus_gmii_to_rgmii_0_1} -quiet] -quiet
 
 # IP: bd/roboy_plexus/ip/roboy_plexus_auto_pc_0/roboy_plexus_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==roboy_plexus_auto_pc_0 || ORIG_REF_NAME==roboy_plexus_auto_pc_0} -quiet] -quiet

@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Fri Jul 26 00:42:49 2019
+-- Date        : Sun Jul 28 17:37:23 2019
 -- Host        : base running 64-bit Ubuntu 18.04.2 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_myoControl_2_0/roboy_plexus_myoControl_2_0_stub.vhdl
--- Design      : roboy_plexus_myoControl_2_0
+-- Command     : write_vhdl -force -mode synth_stub -rename_top roboy_plexus_myoControl_2_0 -prefix
+--               roboy_plexus_myoControl_2_0_ roboy_plexus_myoControl_3_0_stub.vhdl
+-- Design      : roboy_plexus_myoControl_3_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-3
 -- --------------------------------------------------------------------------------
@@ -33,7 +33,7 @@ entity roboy_plexus_myoControl_2_0 is
     myocontrol_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     myocontrol_rvalid : out STD_LOGIC;
     myocontrol_rready : in STD_LOGIC;
-    ss_n_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    ss_n_o : out STD_LOGIC_VECTOR ( 5 downto 0 );
     miso : in STD_LOGIC;
     mosi : out STD_LOGIC;
     sck : out STD_LOGIC;
@@ -49,7 +49,7 @@ architecture stub of roboy_plexus_myoControl_2_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "myocontrol_awaddr[10:0],myocontrol_awprot[2:0],myocontrol_awvalid,myocontrol_awready,myocontrol_wdata[31:0],myocontrol_wstrb[3:0],myocontrol_wvalid,myocontrol_wready,myocontrol_bresp[1:0],myocontrol_bvalid,myocontrol_bready,myocontrol_araddr[10:0],myocontrol_arprot[2:0],myocontrol_arvalid,myocontrol_arready,myocontrol_rdata[31:0],myocontrol_rresp[1:0],myocontrol_rvalid,myocontrol_rready,ss_n_o[3:0],miso,mosi,sck,mirrored_muscle_unit,power_sense_n,myocontrol_aclk,myocontrol_aresetn";
+attribute black_box_pad_pin of stub : architecture is "myocontrol_awaddr[10:0],myocontrol_awprot[2:0],myocontrol_awvalid,myocontrol_awready,myocontrol_wdata[31:0],myocontrol_wstrb[3:0],myocontrol_wvalid,myocontrol_wready,myocontrol_bresp[1:0],myocontrol_bvalid,myocontrol_bready,myocontrol_araddr[10:0],myocontrol_arprot[2:0],myocontrol_arvalid,myocontrol_arready,myocontrol_rdata[31:0],myocontrol_rresp[1:0],myocontrol_rvalid,myocontrol_rready,ss_n_o[5:0],miso,mosi,sck,mirrored_muscle_unit,power_sense_n,myocontrol_aclk,myocontrol_aresetn";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "myoControl_v1_0,Vivado 2019.1";
 begin

@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-//Date        : Fri Jul 26 00:41:57 2019
+//Date        : Sun Jul 28 17:47:49 2019
 //Host        : base running 64-bit Ubuntu 18.04.2 LTS
 //Command     : generate_target roboy_plexus_wrapper.bd
 //Design      : roboy_plexus_wrapper
@@ -31,37 +31,40 @@ module roboy_plexus_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    MDC,
+    MDIO,
     mirrored_muscle_unit_0,
     mirrored_muscle_unit_1,
     mirrored_muscle_unit_2,
     mirrored_muscle_unit_3,
     mirrored_muscle_unit_4,
-    mirrored_muscle_unit_5,
     miso_0,
     miso_1,
     miso_2,
     miso_3,
     miso_4,
-    miso_5,
     mosi_0,
     mosi_1,
     mosi_2,
     mosi_3,
     mosi_4,
-    mosi_5,
     power_sense_n,
+    rgmii_rx_ctl,
+    rgmii_rxc,
+    rgmii_rxd,
+    rgmii_tx_ctl,
+    rgmii_txc,
+    rgmii_txd,
     sck_0,
     sck_1,
     sck_2,
     sck_3,
     sck_4,
-    sck_5,
     ss_n_0,
     ss_n_1,
     ss_n_2,
     ss_n_3,
-    ss_n_4,
-    ss_n_5);
+    ss_n_4);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -83,37 +86,40 @@ module roboy_plexus_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  output MDC;
+  inout MDIO;
   input mirrored_muscle_unit_0;
   input mirrored_muscle_unit_1;
   input mirrored_muscle_unit_2;
   input mirrored_muscle_unit_3;
   input mirrored_muscle_unit_4;
-  input mirrored_muscle_unit_5;
   input miso_0;
   input miso_1;
   input miso_2;
   input miso_3;
   input miso_4;
-  input miso_5;
   output mosi_0;
   output mosi_1;
   output mosi_2;
   output mosi_3;
   output mosi_4;
-  output mosi_5;
   input power_sense_n;
+  input rgmii_rx_ctl;
+  input rgmii_rxc;
+  input [3:0]rgmii_rxd;
+  output rgmii_tx_ctl;
+  output rgmii_txc;
+  output [3:0]rgmii_txd;
   output sck_0;
   output sck_1;
   output sck_2;
   output sck_3;
   output sck_4;
-  output sck_5;
   output [7:0]ss_n_0;
   output [7:0]ss_n_1;
   output [5:0]ss_n_2;
-  output [3:0]ss_n_3;
+  output [5:0]ss_n_3;
   output [5:0]ss_n_4;
-  output [3:0]ss_n_5;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -136,37 +142,40 @@ module roboy_plexus_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire MDC;
+  wire MDIO;
   wire mirrored_muscle_unit_0;
   wire mirrored_muscle_unit_1;
   wire mirrored_muscle_unit_2;
   wire mirrored_muscle_unit_3;
   wire mirrored_muscle_unit_4;
-  wire mirrored_muscle_unit_5;
   wire miso_0;
   wire miso_1;
   wire miso_2;
   wire miso_3;
   wire miso_4;
-  wire miso_5;
   wire mosi_0;
   wire mosi_1;
   wire mosi_2;
   wire mosi_3;
   wire mosi_4;
-  wire mosi_5;
   wire power_sense_n;
+  wire rgmii_rx_ctl;
+  wire rgmii_rxc;
+  wire [3:0]rgmii_rxd;
+  wire rgmii_tx_ctl;
+  wire rgmii_txc;
+  wire [3:0]rgmii_txd;
   wire sck_0;
   wire sck_1;
   wire sck_2;
   wire sck_3;
   wire sck_4;
-  wire sck_5;
   wire [7:0]ss_n_0;
   wire [7:0]ss_n_1;
   wire [5:0]ss_n_2;
-  wire [3:0]ss_n_3;
+  wire [5:0]ss_n_3;
   wire [5:0]ss_n_4;
-  wire [3:0]ss_n_5;
 
   roboy_plexus roboy_plexus_i
        (.DDR_addr(DDR_addr),
@@ -190,35 +199,38 @@ module roboy_plexus_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .MDC(MDC),
+        .MDIO(MDIO),
         .mirrored_muscle_unit_0(mirrored_muscle_unit_0),
         .mirrored_muscle_unit_1(mirrored_muscle_unit_1),
         .mirrored_muscle_unit_2(mirrored_muscle_unit_2),
         .mirrored_muscle_unit_3(mirrored_muscle_unit_3),
         .mirrored_muscle_unit_4(mirrored_muscle_unit_4),
-        .mirrored_muscle_unit_5(mirrored_muscle_unit_5),
         .miso_0(miso_0),
         .miso_1(miso_1),
         .miso_2(miso_2),
         .miso_3(miso_3),
         .miso_4(miso_4),
-        .miso_5(miso_5),
         .mosi_0(mosi_0),
         .mosi_1(mosi_1),
         .mosi_2(mosi_2),
         .mosi_3(mosi_3),
         .mosi_4(mosi_4),
-        .mosi_5(mosi_5),
         .power_sense_n(power_sense_n),
+        .rgmii_rx_ctl(rgmii_rx_ctl),
+        .rgmii_rxc(rgmii_rxc),
+        .rgmii_rxd(rgmii_rxd),
+        .rgmii_tx_ctl(rgmii_tx_ctl),
+        .rgmii_txc(rgmii_txc),
+        .rgmii_txd(rgmii_txd),
         .sck_0(sck_0),
         .sck_1(sck_1),
         .sck_2(sck_2),
         .sck_3(sck_3),
         .sck_4(sck_4),
-        .sck_5(sck_5),
         .ss_n_0(ss_n_0),
         .ss_n_1(ss_n_1),
         .ss_n_2(ss_n_2),
         .ss_n_3(ss_n_3),
-        .ss_n_4(ss_n_4),
-        .ss_n_5(ss_n_5));
+        .ss_n_4(ss_n_4));
 endmodule

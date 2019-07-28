@@ -162,37 +162,46 @@ proc create_root_design { parentCell } {
 
 
   # Create ports
+  set MDC [ create_bd_port -dir O MDC ]
+  set MDIO [ create_bd_port -dir IO MDIO ]
   set mirrored_muscle_unit_0 [ create_bd_port -dir I mirrored_muscle_unit_0 ]
   set mirrored_muscle_unit_1 [ create_bd_port -dir I mirrored_muscle_unit_1 ]
   set mirrored_muscle_unit_2 [ create_bd_port -dir I mirrored_muscle_unit_2 ]
   set mirrored_muscle_unit_3 [ create_bd_port -dir I mirrored_muscle_unit_3 ]
   set mirrored_muscle_unit_4 [ create_bd_port -dir I mirrored_muscle_unit_4 ]
-  set mirrored_muscle_unit_5 [ create_bd_port -dir I mirrored_muscle_unit_5 ]
   set miso_0 [ create_bd_port -dir I miso_0 ]
   set miso_1 [ create_bd_port -dir I miso_1 ]
   set miso_2 [ create_bd_port -dir I miso_2 ]
   set miso_3 [ create_bd_port -dir I miso_3 ]
   set miso_4 [ create_bd_port -dir I miso_4 ]
-  set miso_5 [ create_bd_port -dir I miso_5 ]
   set mosi_0 [ create_bd_port -dir O mosi_0 ]
   set mosi_1 [ create_bd_port -dir O mosi_1 ]
   set mosi_2 [ create_bd_port -dir O mosi_2 ]
   set mosi_3 [ create_bd_port -dir O mosi_3 ]
   set mosi_4 [ create_bd_port -dir O mosi_4 ]
-  set mosi_5 [ create_bd_port -dir O mosi_5 ]
   set power_sense_n [ create_bd_port -dir I power_sense_n ]
+  set rgmii_rx_ctl [ create_bd_port -dir I rgmii_rx_ctl ]
+  set rgmii_rxc [ create_bd_port -dir I rgmii_rxc ]
+  set rgmii_rxd [ create_bd_port -dir I -from 3 -to 0 rgmii_rxd ]
+  set rgmii_tx_ctl [ create_bd_port -dir O rgmii_tx_ctl ]
+  set rgmii_txc [ create_bd_port -dir O rgmii_txc ]
+  set rgmii_txd [ create_bd_port -dir O -from 3 -to 0 rgmii_txd ]
   set sck_0 [ create_bd_port -dir O sck_0 ]
   set sck_1 [ create_bd_port -dir O sck_1 ]
   set sck_2 [ create_bd_port -dir O sck_2 ]
   set sck_3 [ create_bd_port -dir O sck_3 ]
   set sck_4 [ create_bd_port -dir O sck_4 ]
-  set sck_5 [ create_bd_port -dir O sck_5 ]
   set ss_n_0 [ create_bd_port -dir O -from 7 -to 0 ss_n_0 ]
   set ss_n_1 [ create_bd_port -dir O -from 7 -to 0 ss_n_1 ]
   set ss_n_2 [ create_bd_port -dir O -from 5 -to 0 ss_n_2 ]
-  set ss_n_3 [ create_bd_port -dir O -from 3 -to 0 ss_n_3 ]
+  set ss_n_3 [ create_bd_port -dir O -from 5 -to 0 ss_n_3 ]
   set ss_n_4 [ create_bd_port -dir O -from 5 -to 0 ss_n_4 ]
-  set ss_n_5 [ create_bd_port -dir O -from 3 -to 0 ss_n_5 ]
+
+  # Create instance: gmii_to_rgmii_0, and set properties
+  set gmii_to_rgmii_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:gmii_to_rgmii:4.0 gmii_to_rgmii_0 ]
+  set_property -dict [ list \
+   CONFIG.C_EXTERNAL_CLOCK {true} \
+ ] $gmii_to_rgmii_0
 
   # Create instance: myoControl_0, and set properties
   set myoControl_0 [ create_bd_cell -type ip -vlnv Roboy:roboy_plexus:myoControl:1.0 myoControl_0 ]
@@ -215,7 +224,7 @@ proc create_root_design { parentCell } {
   # Create instance: myoControl_3, and set properties
   set myoControl_3 [ create_bd_cell -type ip -vlnv Roboy:roboy_plexus:myoControl:1.0 myoControl_3 ]
   set_property -dict [ list \
-   CONFIG.NUMBER_OF_MOTORS {4} \
+   CONFIG.NUMBER_OF_MOTORS {6} \
  ] $myoControl_3
 
   # Create instance: myoControl_4, and set properties
@@ -224,12 +233,6 @@ proc create_root_design { parentCell } {
    CONFIG.NUMBER_OF_MOTORS {6} \
  ] $myoControl_4
 
-  # Create instance: myoControl_5, and set properties
-  set myoControl_5 [ create_bd_cell -type ip -vlnv Roboy:roboy_plexus:myoControl:1.0 myoControl_5 ]
-  set_property -dict [ list \
-   CONFIG.NUMBER_OF_MOTORS {4} \
- ] $myoControl_5
-
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
   set_property -dict [ list \
@@ -237,10 +240,10 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_ACT_CAN_PERIPHERAL_FREQMHZ {10.000000} \
    CONFIG.PCW_ACT_DCI_PERIPHERAL_FREQMHZ {10.062883} \
    CONFIG.PCW_ACT_ENET0_PERIPHERAL_FREQMHZ {10.000000} \
-   CONFIG.PCW_ACT_ENET1_PERIPHERAL_FREQMHZ {10.000000} \
+   CONFIG.PCW_ACT_ENET1_PERIPHERAL_FREQMHZ {125.000000} \
    CONFIG.PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ {49.999947} \
-   CONFIG.PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ {99.999893} \
-   CONFIG.PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ {153.845993} \
+   CONFIG.PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ {24.999973} \
+   CONFIG.PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ {2.499998} \
    CONFIG.PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ {199.999786} \
    CONFIG.PCW_ACT_PCAP_PERIPHERAL_FREQMHZ {199.999786} \
    CONFIG.PCW_ACT_QSPI_PERIPHERAL_FREQMHZ {199.999786} \
@@ -262,8 +265,8 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_CAN_PERIPHERAL_DIVISOR0 {1} \
    CONFIG.PCW_CAN_PERIPHERAL_DIVISOR1 {1} \
    CONFIG.PCW_CLK0_FREQ {49999947} \
-   CONFIG.PCW_CLK1_FREQ {99999893} \
-   CONFIG.PCW_CLK2_FREQ {153845993} \
+   CONFIG.PCW_CLK1_FREQ {24999973} \
+   CONFIG.PCW_CLK2_FREQ {2499998} \
    CONFIG.PCW_CLK3_FREQ {199999786} \
    CONFIG.PCW_CPU_CPU_6X4X_MAX_RANGE {867} \
    CONFIG.PCW_CPU_CPU_PLL_FREQMHZ {1733.332} \
@@ -280,26 +283,41 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_DM_WIDTH {4} \
    CONFIG.PCW_DQS_WIDTH {4} \
    CONFIG.PCW_DQ_WIDTH {32} \
+   CONFIG.PCW_ENET0_ENET0_IO {<Select>} \
+   CONFIG.PCW_ENET0_GRP_MDIO_ENABLE {0} \
+   CONFIG.PCW_ENET0_GRP_MDIO_IO {<Select>} \
    CONFIG.PCW_ENET0_PERIPHERAL_CLKSRC {IO PLL} \
    CONFIG.PCW_ENET0_PERIPHERAL_DIVISOR0 {1} \
    CONFIG.PCW_ENET0_PERIPHERAL_DIVISOR1 {1} \
+   CONFIG.PCW_ENET0_PERIPHERAL_ENABLE {0} \
    CONFIG.PCW_ENET0_PERIPHERAL_FREQMHZ {1000 Mbps} \
    CONFIG.PCW_ENET0_RESET_ENABLE {0} \
+   CONFIG.PCW_ENET1_ENET1_IO {EMIO} \
+   CONFIG.PCW_ENET1_GRP_MDIO_ENABLE {1} \
+   CONFIG.PCW_ENET1_GRP_MDIO_IO {EMIO} \
+   CONFIG.PCW_ENET1_PERIPHERAL_CLKSRC {External} \
    CONFIG.PCW_ENET1_PERIPHERAL_DIVISOR0 {1} \
    CONFIG.PCW_ENET1_PERIPHERAL_DIVISOR1 {1} \
+   CONFIG.PCW_ENET1_PERIPHERAL_ENABLE {1} \
+   CONFIG.PCW_ENET1_PERIPHERAL_FREQMHZ {1000 Mbps} \
    CONFIG.PCW_ENET1_RESET_ENABLE {0} \
-   CONFIG.PCW_ENET_RESET_ENABLE {0} \
+   CONFIG.PCW_ENET_RESET_ENABLE {1} \
+   CONFIG.PCW_ENET_RESET_SELECT {Share reset pin} \
    CONFIG.PCW_EN_CLK0_PORT {1} \
    CONFIG.PCW_EN_CLK1_PORT {1} \
    CONFIG.PCW_EN_CLK2_PORT {1} \
    CONFIG.PCW_EN_CLK3_PORT {1} \
    CONFIG.PCW_EN_DDR {1} \
    CONFIG.PCW_EN_EMIO_CD_SDIO1 {0} \
+   CONFIG.PCW_EN_EMIO_ENET0 {0} \
+   CONFIG.PCW_EN_EMIO_ENET1 {1} \
    CONFIG.PCW_EN_EMIO_GPIO {1} \
    CONFIG.PCW_EN_EMIO_SDIO1 {0} \
    CONFIG.PCW_EN_EMIO_SPI1 {0} \
    CONFIG.PCW_EN_EMIO_UART0 {0} \
    CONFIG.PCW_EN_EMIO_WP_SDIO1 {0} \
+   CONFIG.PCW_EN_ENET0 {0} \
+   CONFIG.PCW_EN_ENET1 {1} \
    CONFIG.PCW_EN_GPIO {1} \
    CONFIG.PCW_EN_QSPI {1} \
    CONFIG.PCW_EN_RST0_PORT {1} \
@@ -314,11 +332,11 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_FCLK0_PERIPHERAL_DIVISOR0 {8} \
    CONFIG.PCW_FCLK0_PERIPHERAL_DIVISOR1 {5} \
    CONFIG.PCW_FCLK1_PERIPHERAL_CLKSRC {IO PLL} \
-   CONFIG.PCW_FCLK1_PERIPHERAL_DIVISOR0 {5} \
-   CONFIG.PCW_FCLK1_PERIPHERAL_DIVISOR1 {4} \
+   CONFIG.PCW_FCLK1_PERIPHERAL_DIVISOR0 {10} \
+   CONFIG.PCW_FCLK1_PERIPHERAL_DIVISOR1 {8} \
    CONFIG.PCW_FCLK2_PERIPHERAL_CLKSRC {IO PLL} \
-   CONFIG.PCW_FCLK2_PERIPHERAL_DIVISOR0 {13} \
-   CONFIG.PCW_FCLK2_PERIPHERAL_DIVISOR1 {1} \
+   CONFIG.PCW_FCLK2_PERIPHERAL_DIVISOR0 {32} \
+   CONFIG.PCW_FCLK2_PERIPHERAL_DIVISOR1 {25} \
    CONFIG.PCW_FCLK3_PERIPHERAL_CLKSRC {IO PLL} \
    CONFIG.PCW_FCLK3_PERIPHERAL_DIVISOR0 {5} \
    CONFIG.PCW_FCLK3_PERIPHERAL_DIVISOR1 {2} \
@@ -327,8 +345,8 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_FCLK_CLK2_BUF {FALSE} \
    CONFIG.PCW_FCLK_CLK3_BUF {FALSE} \
    CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {50} \
-   CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {100} \
-   CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ {150} \
+   CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {25} \
+   CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ {2.5} \
    CONFIG.PCW_FPGA3_PERIPHERAL_FREQMHZ {200} \
    CONFIG.PCW_FPGA_FCLK0_ENABLE {1} \
    CONFIG.PCW_FPGA_FCLK1_ENABLE {1} \
@@ -375,19 +393,19 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_MIO_15_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_15_PULLUP {enabled} \
    CONFIG.PCW_MIO_15_SLEW {fast} \
-   CONFIG.PCW_MIO_16_DIRECTION {inout} \
+   CONFIG.PCW_MIO_16_DIRECTION {out} \
    CONFIG.PCW_MIO_16_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_16_PULLUP {disabled} \
    CONFIG.PCW_MIO_16_SLEW {slow} \
-   CONFIG.PCW_MIO_17_DIRECTION {inout} \
+   CONFIG.PCW_MIO_17_DIRECTION {out} \
    CONFIG.PCW_MIO_17_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_17_PULLUP {disabled} \
    CONFIG.PCW_MIO_17_SLEW {slow} \
-   CONFIG.PCW_MIO_18_DIRECTION {inout} \
+   CONFIG.PCW_MIO_18_DIRECTION {out} \
    CONFIG.PCW_MIO_18_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_18_PULLUP {disabled} \
    CONFIG.PCW_MIO_18_SLEW {slow} \
-   CONFIG.PCW_MIO_19_DIRECTION {inout} \
+   CONFIG.PCW_MIO_19_DIRECTION {out} \
    CONFIG.PCW_MIO_19_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_19_PULLUP {disabled} \
    CONFIG.PCW_MIO_19_SLEW {slow} \
@@ -395,43 +413,43 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_MIO_1_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_1_PULLUP {enabled} \
    CONFIG.PCW_MIO_1_SLEW {fast} \
-   CONFIG.PCW_MIO_20_DIRECTION {inout} \
+   CONFIG.PCW_MIO_20_DIRECTION {out} \
    CONFIG.PCW_MIO_20_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_20_PULLUP {disabled} \
    CONFIG.PCW_MIO_20_SLEW {slow} \
-   CONFIG.PCW_MIO_21_DIRECTION {inout} \
+   CONFIG.PCW_MIO_21_DIRECTION {out} \
    CONFIG.PCW_MIO_21_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_21_PULLUP {disabled} \
    CONFIG.PCW_MIO_21_SLEW {slow} \
-   CONFIG.PCW_MIO_22_DIRECTION {inout} \
+   CONFIG.PCW_MIO_22_DIRECTION {in} \
    CONFIG.PCW_MIO_22_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_22_PULLUP {disabled} \
    CONFIG.PCW_MIO_22_SLEW {slow} \
-   CONFIG.PCW_MIO_23_DIRECTION {inout} \
+   CONFIG.PCW_MIO_23_DIRECTION {in} \
    CONFIG.PCW_MIO_23_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_23_PULLUP {disabled} \
    CONFIG.PCW_MIO_23_SLEW {slow} \
-   CONFIG.PCW_MIO_24_DIRECTION {inout} \
+   CONFIG.PCW_MIO_24_DIRECTION {in} \
    CONFIG.PCW_MIO_24_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_24_PULLUP {disabled} \
    CONFIG.PCW_MIO_24_SLEW {slow} \
-   CONFIG.PCW_MIO_25_DIRECTION {inout} \
+   CONFIG.PCW_MIO_25_DIRECTION {in} \
    CONFIG.PCW_MIO_25_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_25_PULLUP {disabled} \
    CONFIG.PCW_MIO_25_SLEW {slow} \
-   CONFIG.PCW_MIO_26_DIRECTION {inout} \
+   CONFIG.PCW_MIO_26_DIRECTION {in} \
    CONFIG.PCW_MIO_26_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_26_PULLUP {disabled} \
    CONFIG.PCW_MIO_26_SLEW {slow} \
-   CONFIG.PCW_MIO_27_DIRECTION {inout} \
+   CONFIG.PCW_MIO_27_DIRECTION {in} \
    CONFIG.PCW_MIO_27_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_27_PULLUP {disabled} \
    CONFIG.PCW_MIO_27_SLEW {slow} \
-   CONFIG.PCW_MIO_28_DIRECTION {inout} \
+   CONFIG.PCW_MIO_28_DIRECTION {out} \
    CONFIG.PCW_MIO_28_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_28_PULLUP {disabled} \
    CONFIG.PCW_MIO_28_SLEW {slow} \
-   CONFIG.PCW_MIO_29_DIRECTION {inout} \
+   CONFIG.PCW_MIO_29_DIRECTION {out} \
    CONFIG.PCW_MIO_29_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_29_PULLUP {disabled} \
    CONFIG.PCW_MIO_29_SLEW {slow} \
@@ -439,43 +457,43 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_MIO_2_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_2_PULLUP {disabled} \
    CONFIG.PCW_MIO_2_SLEW {fast} \
-   CONFIG.PCW_MIO_30_DIRECTION {inout} \
+   CONFIG.PCW_MIO_30_DIRECTION {out} \
    CONFIG.PCW_MIO_30_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_30_PULLUP {disabled} \
    CONFIG.PCW_MIO_30_SLEW {slow} \
-   CONFIG.PCW_MIO_31_DIRECTION {inout} \
+   CONFIG.PCW_MIO_31_DIRECTION {out} \
    CONFIG.PCW_MIO_31_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_31_PULLUP {disabled} \
    CONFIG.PCW_MIO_31_SLEW {slow} \
-   CONFIG.PCW_MIO_32_DIRECTION {inout} \
+   CONFIG.PCW_MIO_32_DIRECTION {out} \
    CONFIG.PCW_MIO_32_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_32_PULLUP {disabled} \
    CONFIG.PCW_MIO_32_SLEW {slow} \
-   CONFIG.PCW_MIO_33_DIRECTION {inout} \
+   CONFIG.PCW_MIO_33_DIRECTION {out} \
    CONFIG.PCW_MIO_33_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_33_PULLUP {disabled} \
    CONFIG.PCW_MIO_33_SLEW {slow} \
-   CONFIG.PCW_MIO_34_DIRECTION {inout} \
+   CONFIG.PCW_MIO_34_DIRECTION {in} \
    CONFIG.PCW_MIO_34_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_34_PULLUP {disabled} \
    CONFIG.PCW_MIO_34_SLEW {slow} \
-   CONFIG.PCW_MIO_35_DIRECTION {inout} \
+   CONFIG.PCW_MIO_35_DIRECTION {in} \
    CONFIG.PCW_MIO_35_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_35_PULLUP {disabled} \
    CONFIG.PCW_MIO_35_SLEW {slow} \
-   CONFIG.PCW_MIO_36_DIRECTION {inout} \
+   CONFIG.PCW_MIO_36_DIRECTION {in} \
    CONFIG.PCW_MIO_36_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_36_PULLUP {disabled} \
    CONFIG.PCW_MIO_36_SLEW {slow} \
-   CONFIG.PCW_MIO_37_DIRECTION {inout} \
+   CONFIG.PCW_MIO_37_DIRECTION {in} \
    CONFIG.PCW_MIO_37_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_37_PULLUP {disabled} \
    CONFIG.PCW_MIO_37_SLEW {slow} \
-   CONFIG.PCW_MIO_38_DIRECTION {inout} \
+   CONFIG.PCW_MIO_38_DIRECTION {in} \
    CONFIG.PCW_MIO_38_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_38_PULLUP {disabled} \
    CONFIG.PCW_MIO_38_SLEW {slow} \
-   CONFIG.PCW_MIO_39_DIRECTION {inout} \
+   CONFIG.PCW_MIO_39_DIRECTION {in} \
    CONFIG.PCW_MIO_39_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_39_PULLUP {disabled} \
    CONFIG.PCW_MIO_39_SLEW {slow} \
@@ -535,7 +553,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_MIO_51_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_51_PULLUP {enabled} \
    CONFIG.PCW_MIO_51_SLEW {slow} \
-   CONFIG.PCW_MIO_52_DIRECTION {inout} \
+   CONFIG.PCW_MIO_52_DIRECTION {out} \
    CONFIG.PCW_MIO_52_IOTYPE {LVCMOS 1.8V} \
    CONFIG.PCW_MIO_52_PULLUP {disabled} \
    CONFIG.PCW_MIO_52_SLEW {slow} \
@@ -588,7 +606,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_QSPI_PERIPHERAL_CLKSRC {IO PLL} \
    CONFIG.PCW_QSPI_PERIPHERAL_DIVISOR0 {10} \
    CONFIG.PCW_QSPI_PERIPHERAL_ENABLE {1} \
-   CONFIG.PCW_QSPI_PERIPHERAL_FREQMHZ {200.000000} \
+   CONFIG.PCW_QSPI_PERIPHERAL_FREQMHZ {200} \
    CONFIG.PCW_QSPI_QSPI_IO {MIO 1 .. 6} \
    CONFIG.PCW_SD0_GRP_CD_ENABLE {0} \
    CONFIG.PCW_SD0_GRP_POW_ENABLE {0} \
@@ -674,36 +692,45 @@ proc create_root_design { parentCell } {
   # Create instance: ps7_0_axi_periph, and set properties
   set ps7_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 ps7_0_axi_periph ]
   set_property -dict [ list \
-   CONFIG.NUM_MI {6} \
+   CONFIG.NUM_MI {5} \
  ] $ps7_0_axi_periph
 
   # Create instance: rst_ps7_0_49M, and set properties
   set rst_ps7_0_49M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_ps7_0_49M ]
 
+  # Create instance: tri_state_buffer_0, and set properties
+  set tri_state_buffer_0 [ create_bd_cell -type ip -vlnv user.org:user:tri_state_buffer:1.0 tri_state_buffer_0 ]
+
   # Create interface connections
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
+  connect_bd_intf_net -intf_net processing_system7_0_GMII_ETHERNET_1 [get_bd_intf_pins gmii_to_rgmii_0/GMII] [get_bd_intf_pins processing_system7_0/GMII_ETHERNET_1]
+  connect_bd_intf_net -intf_net processing_system7_0_MDIO_ETHERNET_1 [get_bd_intf_pins gmii_to_rgmii_0/MDIO_GEM] [get_bd_intf_pins processing_system7_0/MDIO_ETHERNET_1]
   connect_bd_intf_net -intf_net processing_system7_0_M_AXI_GP0 [get_bd_intf_pins processing_system7_0/M_AXI_GP0] [get_bd_intf_pins ps7_0_axi_periph/S00_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M00_AXI [get_bd_intf_pins myoControl_0/myoControl] [get_bd_intf_pins ps7_0_axi_periph/M00_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M01_AXI [get_bd_intf_pins myoControl_1/myoControl] [get_bd_intf_pins ps7_0_axi_periph/M01_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M02_AXI [get_bd_intf_pins myoControl_2/myoControl] [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M03_AXI [get_bd_intf_pins myoControl_3/myoControl] [get_bd_intf_pins ps7_0_axi_periph/M03_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M04_AXI [get_bd_intf_pins myoControl_4/myoControl] [get_bd_intf_pins ps7_0_axi_periph/M04_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M05_AXI [get_bd_intf_pins myoControl_5/myoControl] [get_bd_intf_pins ps7_0_axi_periph/M05_AXI]
 
   # Create port connections
+  connect_bd_net -net Net [get_bd_ports MDIO] [get_bd_pins tri_state_buffer_0/mdio]
+  connect_bd_net -net gmii_to_rgmii_0_mdio_phy_mdc [get_bd_ports MDC] [get_bd_pins gmii_to_rgmii_0/mdio_phy_mdc]
+  connect_bd_net -net gmii_to_rgmii_0_mdio_phy_o [get_bd_pins gmii_to_rgmii_0/mdio_phy_o] [get_bd_pins tri_state_buffer_0/mdo]
+  connect_bd_net -net gmii_to_rgmii_0_mdio_phy_t [get_bd_pins gmii_to_rgmii_0/mdio_phy_t] [get_bd_pins tri_state_buffer_0/transmit]
+  connect_bd_net -net gmii_to_rgmii_0_rgmii_tx_ctl [get_bd_ports rgmii_tx_ctl] [get_bd_pins gmii_to_rgmii_0/rgmii_tx_ctl]
+  connect_bd_net -net gmii_to_rgmii_0_rgmii_txc [get_bd_ports rgmii_txc] [get_bd_pins gmii_to_rgmii_0/rgmii_txc]
+  connect_bd_net -net gmii_to_rgmii_0_rgmii_txd [get_bd_ports rgmii_txd] [get_bd_pins gmii_to_rgmii_0/rgmii_txd]
   connect_bd_net -net mirrored_muscle_unit_1 [get_bd_ports mirrored_muscle_unit_0] [get_bd_pins myoControl_0/mirrored_muscle_unit]
   connect_bd_net -net mirrored_muscle_unit_1_1 [get_bd_ports mirrored_muscle_unit_1] [get_bd_pins myoControl_1/mirrored_muscle_unit]
   connect_bd_net -net mirrored_muscle_unit_2_1 [get_bd_ports mirrored_muscle_unit_2] [get_bd_pins myoControl_2/mirrored_muscle_unit]
   connect_bd_net -net mirrored_muscle_unit_3_1 [get_bd_ports mirrored_muscle_unit_3] [get_bd_pins myoControl_3/mirrored_muscle_unit]
   connect_bd_net -net mirrored_muscle_unit_4_1 [get_bd_ports mirrored_muscle_unit_4] [get_bd_pins myoControl_4/mirrored_muscle_unit]
-  connect_bd_net -net mirrored_muscle_unit_5_1 [get_bd_ports mirrored_muscle_unit_5] [get_bd_pins myoControl_5/mirrored_muscle_unit]
   connect_bd_net -net miso_1 [get_bd_ports miso_0] [get_bd_pins myoControl_0/miso]
   connect_bd_net -net miso_1_1 [get_bd_ports miso_1] [get_bd_pins myoControl_1/miso]
   connect_bd_net -net miso_2_1 [get_bd_ports miso_2] [get_bd_pins myoControl_2/miso]
   connect_bd_net -net miso_3_1 [get_bd_ports miso_3] [get_bd_pins myoControl_3/miso]
   connect_bd_net -net miso_4_1 [get_bd_ports miso_4] [get_bd_pins myoControl_4/miso]
-  connect_bd_net -net miso_5_1 [get_bd_ports miso_5] [get_bd_pins myoControl_5/miso]
   connect_bd_net -net myoControl_0_mosi [get_bd_ports mosi_0] [get_bd_pins myoControl_0/mosi]
   connect_bd_net -net myoControl_0_sck [get_bd_ports sck_0] [get_bd_pins myoControl_0/sck]
   connect_bd_net -net myoControl_0_ss_n_o [get_bd_ports ss_n_0] [get_bd_pins myoControl_0/ss_n_o]
@@ -719,13 +746,14 @@ proc create_root_design { parentCell } {
   connect_bd_net -net myoControl_4_mosi [get_bd_ports mosi_4] [get_bd_pins myoControl_4/mosi]
   connect_bd_net -net myoControl_4_sck [get_bd_ports sck_4] [get_bd_pins myoControl_4/sck]
   connect_bd_net -net myoControl_4_ss_n_o [get_bd_ports ss_n_4] [get_bd_pins myoControl_4/ss_n_o]
-  connect_bd_net -net myoControl_5_mosi [get_bd_ports mosi_5] [get_bd_pins myoControl_5/mosi]
-  connect_bd_net -net myoControl_5_sck [get_bd_ports sck_5] [get_bd_pins myoControl_5/sck]
-  connect_bd_net -net myoControl_5_ss_n_o [get_bd_ports ss_n_5] [get_bd_pins myoControl_5/ss_n_o]
-  connect_bd_net -net power_sense_n_1 [get_bd_ports power_sense_n] [get_bd_pins myoControl_0/power_sense_n] [get_bd_pins myoControl_1/power_sense_n] [get_bd_pins myoControl_2/power_sense_n] [get_bd_pins myoControl_3/power_sense_n] [get_bd_pins myoControl_4/power_sense_n] [get_bd_pins myoControl_5/power_sense_n]
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins myoControl_0/myocontrol_aclk] [get_bd_pins myoControl_1/myocontrol_aclk] [get_bd_pins myoControl_2/myocontrol_aclk] [get_bd_pins myoControl_3/myocontrol_aclk] [get_bd_pins myoControl_4/myocontrol_aclk] [get_bd_pins myoControl_5/myocontrol_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_ACP_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/M04_ACLK] [get_bd_pins ps7_0_axi_periph/M05_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_49M/slowest_sync_clk]
+  connect_bd_net -net power_sense_n_1 [get_bd_ports power_sense_n] [get_bd_pins myoControl_0/power_sense_n] [get_bd_pins myoControl_1/power_sense_n] [get_bd_pins myoControl_2/power_sense_n] [get_bd_pins myoControl_3/power_sense_n] [get_bd_pins myoControl_4/power_sense_n]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins gmii_to_rgmii_0/gmii_clk] [get_bd_pins gmii_to_rgmii_0/ref_clk_in] [get_bd_pins myoControl_0/myocontrol_aclk] [get_bd_pins myoControl_1/myocontrol_aclk] [get_bd_pins myoControl_2/myocontrol_aclk] [get_bd_pins myoControl_3/myocontrol_aclk] [get_bd_pins myoControl_4/myocontrol_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_ACP_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/M04_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_49M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_49M/ext_reset_in]
-  connect_bd_net -net rst_ps7_0_49M_peripheral_aresetn [get_bd_pins myoControl_0/myocontrol_aresetn] [get_bd_pins myoControl_1/myocontrol_aresetn] [get_bd_pins myoControl_2/myocontrol_aresetn] [get_bd_pins myoControl_3/myocontrol_aresetn] [get_bd_pins myoControl_4/myocontrol_aresetn] [get_bd_pins myoControl_5/myocontrol_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/M04_ARESETN] [get_bd_pins ps7_0_axi_periph/M05_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_49M/peripheral_aresetn]
+  connect_bd_net -net rgmii_rx_ctl_1 [get_bd_ports rgmii_rx_ctl] [get_bd_pins gmii_to_rgmii_0/rgmii_rx_ctl]
+  connect_bd_net -net rgmii_rxc_1 [get_bd_ports rgmii_rxc] [get_bd_pins gmii_to_rgmii_0/rgmii_rxc]
+  connect_bd_net -net rgmii_rxd_1 [get_bd_ports rgmii_rxd] [get_bd_pins gmii_to_rgmii_0/rgmii_rxd]
+  connect_bd_net -net rst_ps7_0_49M_peripheral_aresetn [get_bd_pins myoControl_0/myocontrol_aresetn] [get_bd_pins myoControl_1/myocontrol_aresetn] [get_bd_pins myoControl_2/myocontrol_aresetn] [get_bd_pins myoControl_3/myocontrol_aresetn] [get_bd_pins myoControl_4/myocontrol_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/M04_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_49M/peripheral_aresetn]
+  connect_bd_net -net tri_state_buffer_0_mdi [get_bd_pins gmii_to_rgmii_0/mdio_phy_i] [get_bd_pins tri_state_buffer_0/mdi]
 
   # Create address segments
   create_bd_addr_seg -range 0x00010000 -offset 0x43C00000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs myoControl_0/myoControl/myoControl_reg] SEG_myoControl_0_myoControl_reg
@@ -733,7 +761,6 @@ proc create_root_design { parentCell } {
   create_bd_addr_seg -range 0x00010000 -offset 0x43C20000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs myoControl_2/myoControl/myoControl_reg] SEG_myoControl_2_myoControl_reg
   create_bd_addr_seg -range 0x00010000 -offset 0x43C30000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs myoControl_3/myoControl/myoControl_reg] SEG_myoControl_3_myoControl_reg
   create_bd_addr_seg -range 0x00010000 -offset 0x43C40000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs myoControl_4/myoControl/myoControl_reg] SEG_myoControl_4_myoControl_reg
-  create_bd_addr_seg -range 0x00010000 -offset 0x43C50000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs myoControl_5/myoControl/myoControl_reg] SEG_myoControl_5_myoControl_reg
 
 
   # Restore current instance
