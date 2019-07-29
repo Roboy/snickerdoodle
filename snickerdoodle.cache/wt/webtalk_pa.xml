@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sun Jul 28 18:09:45 2019">
+<application name="pa" timeStamp="Tue Jul 30 00:14:08 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="c3ab6a1428ad4c2f96fecaa2d7e2dcb2" type="ProjectID"/>
 <property name="ProjectIteration" value="14" type="ProjectIteration"/>
@@ -19,20 +19,20 @@ This means code written to parse this file will need to be revisited each subseq
 <item name="Java Command Handlers">
 <property name="CloseProject" value="4" type="JavaHandler"/>
 <property name="CreateTopHDL" value="1" type="JavaHandler"/>
-<property name="CustomizeRSBBlock" value="49" type="JavaHandler"/>
+<property name="CustomizeRSBBlock" value="50" type="JavaHandler"/>
 <property name="DisconnectRSBPin" value="2" type="JavaHandler"/>
 <property name="EditConstraintSets" value="1" type="JavaHandler"/>
 <property name="EditCopy" value="17" type="JavaHandler"/>
-<property name="EditDelete" value="57" type="JavaHandler"/>
+<property name="EditDelete" value="69" type="JavaHandler"/>
 <property name="EditPaste" value="31" type="JavaHandler"/>
 <property name="EditProperties" value="5" type="JavaHandler"/>
-<property name="EditUndo" value="21" type="JavaHandler"/>
+<property name="EditUndo" value="23" type="JavaHandler"/>
 <property name="IPPackagerHandler" value="8" type="JavaHandler"/>
 <property name="IPPackagerWizardHandler" value="8" type="JavaHandler"/>
 <property name="MakeRSBConnection" value="1" type="JavaHandler"/>
 <property name="NewIPLocationHandler" value="1" type="JavaHandler"/>
 <property name="NewProject" value="2" type="JavaHandler"/>
-<property name="OpenBlockDesign" value="9" type="JavaHandler"/>
+<property name="OpenBlockDesign" value="10" type="JavaHandler"/>
 <property name="OpenIPLocationHandler" value="4" type="JavaHandler"/>
 <property name="OpenPackageView" value="1" type="JavaHandler"/>
 <property name="OpenProject" value="1" type="JavaHandler"/>
@@ -54,7 +54,7 @@ This means code written to parse this file will need to be revisited each subseq
 <item name="Gui Handlers">
 <property name="ApplyRSBMultiAutomationDialog_CHECKBOX_TREE" value="17" type="GuiHandlerData"/>
 <property name="BaseDialog_CANCEL" value="21" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="98" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="99" type="GuiHandlerData"/>
 <property name="BaseDialog_YES" value="6" type="GuiHandlerData"/>
 <property name="BaseReportTab_RERUN" value="3" type="GuiHandlerData"/>
 <property name="BoardChooser_BOARD_TABLE" value="1" type="GuiHandlerData"/>
@@ -78,7 +78,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="5" type="GuiHandlerData"/>
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="20" type="GuiHandlerData"/>
 <property name="FilterToolBar_SHOW_ALL" value="1" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="39" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="40" type="GuiHandlerData"/>
 <property name="GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE" value="10" type="GuiHandlerData"/>
 <property name="HACGCIPSymbol_SHOW_DISABLED_PORTS" value="4" type="GuiHandlerData"/>
 <property name="HPopupTitle_CLOSE" value="1" type="GuiHandlerData"/>
@@ -86,7 +86,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="IPStatusSectionPanel_UPGRADE_SELECTED" value="3" type="GuiHandlerData"/>
 <property name="IPStatusTablePanel_IP_STATUS_TABLE" value="3" type="GuiHandlerData"/>
 <property name="IPStatusTablePanel_MORE_INFO" value="2" type="GuiHandlerData"/>
-<property name="MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE" value="23" type="GuiHandlerData"/>
+<property name="MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE" value="37" type="GuiHandlerData"/>
 <property name="MIOTablePagePanel_MIO_TABLE" value="1" type="GuiHandlerData"/>
 <property name="MainMenuMgr_CHECKPOINT" value="8" type="GuiHandlerData"/>
 <property name="MainMenuMgr_EDIT" value="16" type="GuiHandlerData"/>
@@ -135,7 +135,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PAViews_CODE" value="1" type="GuiHandlerData"/>
 <property name="PAViews_DEVICE" value="6" type="GuiHandlerData"/>
 <property name="PAViews_PACKAGE_IP" value="2" type="GuiHandlerData"/>
-<property name="PAViews_PROJECT_SUMMARY" value="8" type="GuiHandlerData"/>
+<property name="PAViews_PROJECT_SUMMARY" value="9" type="GuiHandlerData"/>
 <property name="PackagerStepsPanel_PACKAGER_STEPS_LIST" value="10" type="GuiHandlerData"/>
 <property name="PlanAheadTab_REFRESH_IP_CATALOG" value="2" type="GuiHandlerData"/>
 <property name="ProjectDashboardView_DASHBOARD" value="1" type="GuiHandlerData"/>
@@ -161,13 +161,13 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SrcMenu_IP_HIERARCHY" value="3" type="GuiHandlerData"/>
 <property name="StaleMoreAction_OUT_OF_DATE_DETAILS" value="1" type="GuiHandlerData"/>
 <property name="StateMonitor_RESET_RUN" value="1" type="GuiHandlerData"/>
-<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="3" type="GuiHandlerData"/>
+<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="4" type="GuiHandlerData"/>
 <property name="SyntheticaStateMonitor_CANCEL" value="1" type="GuiHandlerData"/>
 <property name="SystemBuilderMenu_ADD_IP" value="2" type="GuiHandlerData"/>
 <property name="SystemBuilderMenu_CREATE_PORT" value="20" type="GuiHandlerData"/>
 <property name="SystemBuilderView_ADD_IP" value="22" type="GuiHandlerData"/>
 <property name="SystemBuilderView_EXPAND_COLLAPSE" value="25" type="GuiHandlerData"/>
-<property name="SystemBuilderView_OPTIMIZE_ROUTING" value="10" type="GuiHandlerData"/>
+<property name="SystemBuilderView_OPTIMIZE_ROUTING" value="11" type="GuiHandlerData"/>
 <property name="SystemBuilderView_PINNING" value="35" type="GuiHandlerData"/>
 <property name="SystemTab_SHOW_IP_STATUS" value="2" type="GuiHandlerData"/>
 <property name="SystemTreeView_SYSTEM_TREE" value="6" type="GuiHandlerData"/>
@@ -180,7 +180,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ZynqPanel_IMPORT_XPS_SETTINGS" value="1" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="18" type="GuiMode"/>
+<property name="GuiMode" value="19" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
 <property name="TclMode" value="5" type="TclMode"/>
 </item>
