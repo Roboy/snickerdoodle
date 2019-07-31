@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Sun Jul 28 15:05:30 2019
+-- Date        : Wed Jul 31 15:05:33 2019
 -- Host        : base running 64-bit Ubuntu 18.04.2 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_processing_system7_0_0/roboy_plexus_processing_system7_0_0_sim_netlist.vhdl
@@ -817,7 +817,7 @@ entity roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_sy
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "processing_system7_v5_5_processing_system7";
   attribute POWER : string;
-  attribute POWER of roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "<PROCESSOR name={system} numA9Cores={2} clockFreq={867} load={0.5} /><MEMORY name={code} memType={LPDDR2} dataWidth={32} clockFreq={400} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={12} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS18} bidis={3} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS18} bidis={5} ioBank={Vcco_p1} clockFreq={166.666489} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={49.999947} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p0} clockFreq={99.999893} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p1} clockFreq={99.999893} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS18} bidis={14} ioBank={Vcco_p1} clockFreq={124.999870} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1733.332} /><PLL domain={Memory} vco={1599.998} /><PLL domain={IO} vco={1999.998} /><AXI interface={S_AXI_ACP} dataWidth={32} clockFreq={49} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={49} usageRate={0.5} />/>";
+  attribute POWER of roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "<PROCESSOR name={system} numA9Cores={2} clockFreq={867} load={0.5} /><MEMORY name={code} memType={LPDDR2} dataWidth={32} clockFreq={400} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={0} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS18} bidis={3} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS18} bidis={5} ioBank={Vcco_p1} clockFreq={166.666489} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={49.999947} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p0} clockFreq={99.999893} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p1} clockFreq={99.999893} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS18} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS18} bidis={14} ioBank={Vcco_p1} clockFreq={124.999870} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1733.332} /><PLL domain={Memory} vco={1599.998} /><PLL domain={IO} vco={1999.998} /><AXI interface={S_AXI_ACP} dataWidth={32} clockFreq={49} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={49} usageRate={0.5} />/>";
   attribute USE_TRACE_DATA_EDGE_DETECTOR : integer;
   attribute USE_TRACE_DATA_EDGE_DETECTOR of roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
 end roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7;
@@ -3362,6 +3362,9 @@ entity roboy_plexus_processing_system7_0_0 is
     GPIO_I : in STD_LOGIC_VECTOR ( 63 downto 0 );
     GPIO_O : out STD_LOGIC_VECTOR ( 63 downto 0 );
     GPIO_T : out STD_LOGIC_VECTOR ( 63 downto 0 );
+    USB0_PORT_INDCTL : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    USB0_VBUS_PWRSELECT : out STD_LOGIC;
+    USB0_VBUS_PWRFAULT : in STD_LOGIC;
     M_AXI_GP0_ARVALID : out STD_LOGIC;
     M_AXI_GP0_AWVALID : out STD_LOGIC;
     M_AXI_GP0_BREADY : out STD_LOGIC;
@@ -3670,7 +3673,6 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0 is
   signal NLW_inst_UART1_DTRN_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_UART1_RTSN_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_UART1_TX_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_USB1_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_WDT_RST_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_DMA0_DATYPE_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -3756,7 +3758,6 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0 is
   signal NLW_inst_S_AXI_HP3_WACOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal NLW_inst_S_AXI_HP3_WCOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal NLW_inst_TRACE_DATA_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_inst_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_inst_USB1_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute C_DM_WIDTH : integer;
   attribute C_DM_WIDTH of inst : label is 4;
@@ -3871,7 +3872,7 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0 is
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of inst : label is "roboy_plexus_processing_system7_0_0.hwdef";
   attribute POWER : string;
-  attribute POWER of inst : label is "<PROCESSOR name={system} numA9Cores={2} clockFreq={867} load={0.5} /><MEMORY name={code} memType={LPDDR2} dataWidth={32} clockFreq={400} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={12} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS18} bidis={3} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS18} bidis={5} ioBank={Vcco_p1} clockFreq={166.666489} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={49.999947} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p0} clockFreq={99.999893} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p1} clockFreq={99.999893} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS18} bidis={14} ioBank={Vcco_p1} clockFreq={124.999870} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1733.332} /><PLL domain={Memory} vco={1599.998} /><PLL domain={IO} vco={1999.998} /><AXI interface={S_AXI_ACP} dataWidth={32} clockFreq={49} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={49} usageRate={0.5} />/>";
+  attribute POWER of inst : label is "<PROCESSOR name={system} numA9Cores={2} clockFreq={867} load={0.5} /><MEMORY name={code} memType={LPDDR2} dataWidth={32} clockFreq={400} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={0} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS18} bidis={3} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS18} bidis={5} ioBank={Vcco_p1} clockFreq={166.666489} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={49.999947} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p0} clockFreq={99.999893} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p1} clockFreq={99.999893} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS18} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS18} bidis={14} ioBank={Vcco_p1} clockFreq={124.999870} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1733.332} /><PLL domain={Memory} vco={1599.998} /><PLL domain={IO} vco={1999.998} /><AXI interface={S_AXI_ACP} dataWidth={32} clockFreq={49} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={49} usageRate={0.5} />/>";
   attribute USE_TRACE_DATA_EDGE_DETECTOR : integer;
   attribute USE_TRACE_DATA_EDGE_DETECTOR of inst : label is 0;
   attribute X_INTERFACE_INFO : string;
@@ -3890,9 +3891,9 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0 is
   attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of FCLK_CLK0 : signal is "XIL_INTERFACENAME FCLK_CLK0, FREQ_HZ 49999947, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of FCLK_CLK1 : signal is "xilinx.com:signal:clock:1.0 FCLK_CLK1 CLK";
-  attribute X_INTERFACE_PARAMETER of FCLK_CLK1 : signal is "XIL_INTERFACENAME FCLK_CLK1, FREQ_HZ 99999893, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of FCLK_CLK1 : signal is "XIL_INTERFACENAME FCLK_CLK1, FREQ_HZ 24999973, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of FCLK_CLK2 : signal is "xilinx.com:signal:clock:1.0 FCLK_CLK2 CLK";
-  attribute X_INTERFACE_PARAMETER of FCLK_CLK2 : signal is "XIL_INTERFACENAME FCLK_CLK2, FREQ_HZ 153845993, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK2, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of FCLK_CLK2 : signal is "XIL_INTERFACENAME FCLK_CLK2, FREQ_HZ 2499998, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK2, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of FCLK_CLK3 : signal is "xilinx.com:signal:clock:1.0 FCLK_CLK3 CLK";
   attribute X_INTERFACE_PARAMETER of FCLK_CLK3 : signal is "XIL_INTERFACENAME FCLK_CLK3, FREQ_HZ 199999786, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK3, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of FCLK_RESET0_N : signal is "xilinx.com:signal:reset:1.0 FCLK_RESET0_N RST";
@@ -3935,6 +3936,8 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0 is
   attribute X_INTERFACE_INFO of S_AXI_ACP_WLAST : signal is "xilinx.com:interface:aximm:1.0 S_AXI_ACP WLAST";
   attribute X_INTERFACE_INFO of S_AXI_ACP_WREADY : signal is "xilinx.com:interface:aximm:1.0 S_AXI_ACP WREADY";
   attribute X_INTERFACE_INFO of S_AXI_ACP_WVALID : signal is "xilinx.com:interface:aximm:1.0 S_AXI_ACP WVALID";
+  attribute X_INTERFACE_INFO of USB0_VBUS_PWRFAULT : signal is "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRFAULT";
+  attribute X_INTERFACE_INFO of USB0_VBUS_PWRSELECT : signal is "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRSELECT";
   attribute X_INTERFACE_INFO of DDR_Addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
   attribute X_INTERFACE_INFO of DDR_BankAddr : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";
   attribute X_INTERFACE_INFO of DDR_DM : signal is "xilinx.com:interface:ddrx:1.0 DDR DM";
@@ -4004,6 +4007,7 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0 is
   attribute X_INTERFACE_INFO of S_AXI_ACP_WID : signal is "xilinx.com:interface:aximm:1.0 S_AXI_ACP WID";
   attribute X_INTERFACE_INFO of S_AXI_ACP_WSTRB : signal is "xilinx.com:interface:aximm:1.0 S_AXI_ACP WSTRB";
   attribute X_INTERFACE_PARAMETER of S_AXI_ACP_WSTRB : signal is "XIL_INTERFACENAME S_AXI_ACP, NUM_WRITE_OUTSTANDING 8, NUM_READ_OUTSTANDING 8, DATA_WIDTH 64, PROTOCOL AXI3, FREQ_HZ 49999947, ID_WIDTH 3, ADDR_WIDTH 32, AWUSER_WIDTH 5, ARUSER_WIDTH 5, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_INFO of USB0_PORT_INDCTL : signal is "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 PORT_INDCTL";
 begin
 inst: entity work.roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7
      port map (
@@ -4684,9 +4688,9 @@ inst: entity work.roboy_plexus_processing_system7_0_0_processing_system7_v5_5_pr
       UART1_RTSN => NLW_inst_UART1_RTSN_UNCONNECTED,
       UART1_RX => '1',
       UART1_TX => NLW_inst_UART1_TX_UNCONNECTED,
-      USB0_PORT_INDCTL(1 downto 0) => NLW_inst_USB0_PORT_INDCTL_UNCONNECTED(1 downto 0),
-      USB0_VBUS_PWRFAULT => '0',
-      USB0_VBUS_PWRSELECT => NLW_inst_USB0_VBUS_PWRSELECT_UNCONNECTED,
+      USB0_PORT_INDCTL(1 downto 0) => USB0_PORT_INDCTL(1 downto 0),
+      USB0_VBUS_PWRFAULT => USB0_VBUS_PWRFAULT,
+      USB0_VBUS_PWRSELECT => USB0_VBUS_PWRSELECT,
       USB1_PORT_INDCTL(1 downto 0) => NLW_inst_USB1_PORT_INDCTL_UNCONNECTED(1 downto 0),
       USB1_VBUS_PWRFAULT => '0',
       USB1_VBUS_PWRSELECT => NLW_inst_USB1_VBUS_PWRSELECT_UNCONNECTED,

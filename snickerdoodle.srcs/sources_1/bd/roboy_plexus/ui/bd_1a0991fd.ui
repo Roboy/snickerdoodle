@@ -6,17 +6,17 @@ preplace port DDR -pg 1 -lvl 5 -x 1250 -y 90 -defaultsOSRD
 preplace port FIXED_IO -pg 1 -lvl 5 -x 1250 -y 110 -defaultsOSRD
 preplace port mosi_0 -pg 1 -lvl 5 -x 1250 -y 220 -defaultsOSRD
 preplace port sck_0 -pg 1 -lvl 5 -x 1250 -y 240 -defaultsOSRD
-preplace port power_sense_n -pg 1 -lvl 0 -x 0 -y 1030 -defaultsOSRD
-preplace port mirrored_muscle_unit_0 -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
-preplace port miso_0 -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
-preplace port miso_1 -pg 1 -lvl 0 -x 0 -y 600 -defaultsOSRD
-preplace port mirrored_muscle_unit_1 -pg 1 -lvl 0 -x 0 -y 620 -defaultsOSRD
-preplace port miso_2 -pg 1 -lvl 0 -x 0 -y 640 -defaultsOSRD
-preplace port mirrored_muscle_unit_2 -pg 1 -lvl 0 -x 0 -y 660 -defaultsOSRD
-preplace port mirrored_muscle_unit_3 -pg 1 -lvl 0 -x 0 -y 810 -defaultsOSRD
-preplace port miso_3 -pg 1 -lvl 0 -x 0 -y 790 -defaultsOSRD
-preplace port miso_4 -pg 1 -lvl 0 -x 0 -y 990 -defaultsOSRD
-preplace port mirrored_muscle_unit_4 -pg 1 -lvl 0 -x 0 -y 1010 -defaultsOSRD
+preplace port power_sense_n -pg 1 -lvl 0 -x -10 -y 1030 -defaultsOSRD
+preplace port mirrored_muscle_unit_0 -pg 1 -lvl 0 -x -10 -y 400 -defaultsOSRD
+preplace port miso_0 -pg 1 -lvl 0 -x -10 -y 380 -defaultsOSRD
+preplace port miso_1 -pg 1 -lvl 0 -x -10 -y 600 -defaultsOSRD
+preplace port mirrored_muscle_unit_1 -pg 1 -lvl 0 -x -10 -y 620 -defaultsOSRD
+preplace port miso_2 -pg 1 -lvl 0 -x -10 -y 640 -defaultsOSRD
+preplace port mirrored_muscle_unit_2 -pg 1 -lvl 0 -x -10 -y 660 -defaultsOSRD
+preplace port mirrored_muscle_unit_3 -pg 1 -lvl 0 -x -10 -y 810 -defaultsOSRD
+preplace port miso_3 -pg 1 -lvl 0 -x -10 -y 790 -defaultsOSRD
+preplace port miso_4 -pg 1 -lvl 0 -x -10 -y 990 -defaultsOSRD
+preplace port mirrored_muscle_unit_4 -pg 1 -lvl 0 -x -10 -y 1010 -defaultsOSRD
 preplace port mosi_1 -pg 1 -lvl 5 -x 1250 -y 420 -defaultsOSRD
 preplace port mosi_2 -pg 1 -lvl 5 -x 1250 -y 620 -defaultsOSRD
 preplace port mosi_3 -pg 1 -lvl 5 -x 1250 -y 820 -defaultsOSRD
@@ -34,49 +34,21 @@ preplace inst processing_system7_0 -pg 1 -lvl 1 -x 230 -y 190 -defaultsOSRD
 preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 630 -y 390 -defaultsOSRD
 preplace inst rst_ps7_0_49M -pg 1 -lvl 1 -x 230 -y 500 -defaultsOSRD
 preplace inst myoControl_0 -pg 1 -lvl 3 -x 1030 -y 220 -defaultsOSRD
-preplace inst myoControl_1 -pg 1 -lvl 3 -x 1030 -y 420 -defaultsOSRD
-preplace inst myoControl_2 -pg 1 -lvl 3 -x 1030 -y 620 -defaultsOSRD
-preplace inst myoControl_3 -pg 1 -lvl 3 -x 1030 -y 820 -defaultsOSRD
-preplace inst myoControl_4 -pg 1 -lvl 3 -x 1030 -y 1020 -defaultsOSRD
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 20 10 430
-preplace netloc rst_ps7_0_49M_peripheral_aresetn 1 1 2 480 630 790
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 30 370 450 650 860
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 370 430
+preplace netloc rst_ps7_0_49M_peripheral_aresetn 1 1 2 480 190 780
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 390 460 170 790
 preplace netloc myoControl_0_mosi 1 3 2 NJ 220 NJ
 preplace netloc myoControl_0_sck 1 3 2 NJ 240 NJ
-preplace netloc power_sense_n_1 1 0 3 NJ 1030 NJ 1030 840
-preplace netloc mirrored_muscle_unit_1 1 0 3 NJ 400 470J 590 800J
-preplace netloc miso_1 1 0 3 NJ 380 440J 190 NJ
+preplace netloc power_sense_n_1 1 0 3 10J 10 NJ 10 820
+preplace netloc mirrored_muscle_unit_1 1 0 3 NJ 400 470J 180 800J
+preplace netloc miso_1 1 0 3 NJ 380 440J 160 830J
 preplace netloc myoControl_0_ss_n_o 1 3 2 NJ 200 NJ
-preplace netloc miso_1_1 1 0 3 NJ 600 NJ 600 820J
-preplace netloc mirrored_muscle_unit_1_1 1 0 3 NJ 620 460J 610 850J
-preplace netloc miso_2_1 1 0 3 NJ 640 NJ 640 870J
-preplace netloc mirrored_muscle_unit_2_1 1 0 3 30J 630 470J 620 880J
-preplace netloc mirrored_muscle_unit_3_1 1 0 3 NJ 810 NJ 810 NJ
-preplace netloc miso_3_1 1 0 3 NJ 790 NJ 790 NJ
-preplace netloc miso_4_1 1 0 3 NJ 990 NJ 990 NJ
-preplace netloc mirrored_muscle_unit_4_1 1 0 3 NJ 1010 NJ 1010 NJ
-preplace netloc myoControl_1_mosi 1 3 2 NJ 420 NJ
-preplace netloc myoControl_2_mosi 1 3 2 NJ 620 NJ
-preplace netloc myoControl_3_mosi 1 3 2 NJ 820 NJ
-preplace netloc myoControl_4_mosi 1 3 2 NJ 1020 NJ
-preplace netloc myoControl_1_sck 1 3 2 NJ 440 NJ
-preplace netloc myoControl_2_sck 1 3 2 NJ 640 NJ
-preplace netloc myoControl_3_sck 1 3 2 NJ 840 NJ
-preplace netloc myoControl_4_sck 1 3 2 NJ 1040 NJ
-preplace netloc myoControl_1_ss_n_o 1 3 2 NJ 400 NJ
-preplace netloc myoControl_2_ss_n_o 1 3 2 NJ 600 NJ
-preplace netloc myoControl_4_ss_n_o 1 3 2 NJ 1000 NJ
-preplace netloc myoControl_3_ss_n_o 1 3 2 NJ 800 NJ
-preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 830 410n
-preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 N 370
-preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 810 430n
-preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ 110 NJ 110 NJ 110 NJ
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 480 150n
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 780 170n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 450 150n
 preplace netloc processing_system7_0_DDR 1 1 4 NJ 90 NJ 90 NJ 90 NJ
-preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 780 390n
-levelinfo -pg 1 0 230 630 1030 1210 1250
-pagesize -pg 1 -db -bbox -sgen -230 0 1380 1130
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ 110 NJ 110 NJ 110 NJ
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 810 170n
+levelinfo -pg 1 -10 230 630 1030 1210 1250
+pagesize -pg 1 -db -bbox -sgen -240 0 1380 1130
 "
 }
 {

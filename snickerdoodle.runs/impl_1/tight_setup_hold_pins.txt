@@ -1,0 +1,39 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|               clk_fpga_0 |               clk_fpga_0 |                  roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[29]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                  roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[31]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                  roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[30]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                  roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[25]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                  roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[26]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                  roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[21]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                  roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[22]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                  roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[17]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                  roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[18]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                  roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[13]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                  roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[14]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                   roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[9]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                  roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[10]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                   roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[5]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                   roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[6]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                   roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                   roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/delay_counter_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[6].pid_controller/pwmRef_reg[4]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[6].pid_controller/pwmRef_reg[5]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[6].pid_controller/pwmRef_reg[3]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[4].pid_controller/pwmRef_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[4].pid_controller/pwmRef_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[6].pid_controller/pwmRef_reg[6]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[6].pid_controller/pwmRef_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[4].pid_controller/pwmRef_reg[10]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[4].pid_controller/pwmRef_reg[15]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[4].pid_controller/pwmRef_reg[8]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[4].pid_controller/pwmRef_reg[3]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[6].pid_controller/pwmRef_reg[8]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[6].pid_controller/pwmRef_reg[7]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[6].pid_controller/pwmRef_reg[15]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[6].pid_controller/pwmRef_reg[9]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[4].pid_controller/pwmRef_reg[6]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[6].pid_controller/pwmRef_reg[14]/D|
+|               clk_fpga_0 |               clk_fpga_0 |roboy_plexus_i/myoControl_0/inst/myoControl_v1_0_myoControl_inst/instantiate_pid_controllers[4].pid_controller/pwmRef_reg[14]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

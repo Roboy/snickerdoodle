@@ -17,8 +17,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 set_param chipscope.maxJobs 16
-set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7z020clg400-3
 
 set_param project.singleFileAddWarning.threshold 0
@@ -42,9 +42,6 @@ set_property used_in_implementation false [get_files -all /home/letrend/workspac
 set_property used_in_implementation false [get_files -all /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_rst_ps7_0_49M_0/roboy_plexus_rst_ps7_0_49M_0.xdc]
 set_property used_in_implementation false [get_files -all /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_rst_ps7_0_49M_0/roboy_plexus_rst_ps7_0_49M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_xbar_0/roboy_plexus_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_gmii_to_rgmii_0_1/synth/roboy_plexus_gmii_to_rgmii_0_1.xdc]
-set_property used_in_implementation false [get_files -all /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_gmii_to_rgmii_0_1/synth/roboy_plexus_gmii_to_rgmii_0_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_gmii_to_rgmii_0_1/synth/roboy_plexus_gmii_to_rgmii_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_auto_pc_0/roboy_plexus_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus_ooc.xdc]
 

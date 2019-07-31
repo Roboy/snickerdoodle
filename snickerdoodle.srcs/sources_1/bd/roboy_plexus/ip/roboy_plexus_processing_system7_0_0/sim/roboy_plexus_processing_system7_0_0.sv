@@ -677,24 +677,12 @@
 
 //MODULE DECLARATION
  module roboy_plexus_processing_system7_0_0 (
-  ENET1_GMII_TX_EN,
-  ENET1_GMII_TX_ER,
-  ENET1_MDIO_MDC,
-  ENET1_MDIO_O,
-  ENET1_MDIO_T,
-  ENET1_GMII_TXD,
-  ENET1_GMII_COL,
-  ENET1_GMII_CRS,
-  ENET1_GMII_RX_CLK,
-  ENET1_GMII_RX_DV,
-  ENET1_GMII_RX_ER,
-  ENET1_GMII_TX_CLK,
-  ENET1_MDIO_I,
-  ENET1_EXT_INTIN,
-  ENET1_GMII_RXD,
   GPIO_I,
   GPIO_O,
   GPIO_T,
+  USB0_PORT_INDCTL,
+  USB0_VBUS_PWRSELECT,
+  USB0_VBUS_PWRFAULT,
   M_AXI_GP0_ARVALID,
   M_AXI_GP0_AWVALID,
   M_AXI_GP0_BREADY,
@@ -811,7 +799,7 @@
 
       parameter C_EN_EMIO_PJTAG = 0;
       parameter C_EN_EMIO_ENET0 = 0;
-      parameter C_EN_EMIO_ENET1 = 1;
+      parameter C_EN_EMIO_ENET1 = 0;
       parameter C_EN_EMIO_TRACE = 0;
       parameter C_INCLUDE_TRACE_BUFFER = 0;
       parameter C_TRACE_BUFFER_FIFO_SIZE = 128;
@@ -868,24 +856,12 @@
 
 //INPUT AND OUTPUT PORTS
 
-      output  [0 : 0] ENET1_GMII_TX_EN;
-      output  [0 : 0] ENET1_GMII_TX_ER;
-      output  ENET1_MDIO_MDC;
-      output  ENET1_MDIO_O;
-      output  ENET1_MDIO_T;
-      output  [7 : 0] ENET1_GMII_TXD;
-      input  ENET1_GMII_COL;
-      input  ENET1_GMII_CRS;
-      input  ENET1_GMII_RX_CLK;
-      input  ENET1_GMII_RX_DV;
-      input  ENET1_GMII_RX_ER;
-      input  ENET1_GMII_TX_CLK;
-      input  ENET1_MDIO_I;
-      input  ENET1_EXT_INTIN;
-      input  [7 : 0] ENET1_GMII_RXD;
       input  [63 : 0] GPIO_I;
       output  [63 : 0] GPIO_O;
       output  [63 : 0] GPIO_T;
+      output  [1 : 0] USB0_PORT_INDCTL;
+      output  USB0_VBUS_PWRSELECT;
+      input  USB0_VBUS_PWRFAULT;
       output  M_AXI_GP0_ARVALID;
       output  M_AXI_GP0_AWVALID;
       output  M_AXI_GP0_BREADY;
@@ -999,14 +975,10 @@
 
 //REG DECLARATIONS
 
-      reg [0 : 0] ENET1_GMII_TX_EN;
-      reg [0 : 0] ENET1_GMII_TX_ER;
-      reg ENET1_MDIO_MDC;
-      reg ENET1_MDIO_O;
-      reg ENET1_MDIO_T;
-      reg [7 : 0] ENET1_GMII_TXD;
       reg [63 : 0] GPIO_O;
       reg [63 : 0] GPIO_T;
+      reg [1 : 0] USB0_PORT_INDCTL;
+      reg USB0_VBUS_PWRSELECT;
       reg M_AXI_GP0_ARVALID;
       reg M_AXI_GP0_AWVALID;
       reg M_AXI_GP0_BREADY;

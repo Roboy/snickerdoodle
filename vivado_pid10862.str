@@ -1,0 +1,1584 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:47:09 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 10862
+License: Customer
+
+Current time: 	Wed Jul 31 12:02:20 CEST 2019
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Ubuntu
+OS Version: 4.15.0-55-generic
+OS Architecture: amd64
+Available processors (cores): 64
+
+Display: :1
+Screen size: 1920x1200
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 11 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	letrend
+User home directory: /home/letrend
+User working directory: /home/letrend/workspace/snickerdoodle
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2019.1
+RDI_DATADIR: /opt/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: /home/letrend/.Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: /home/letrend/.Xilinx/Vivado/2019.1/
+Vivado layouts directory: /home/letrend/.Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/letrend/workspace/snickerdoodle/vivado.log
+Vivado journal file location: 	/home/letrend/workspace/snickerdoodle/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-10862-base
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: /opt/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2019.1
+XILINX_SDK: /opt/Xilinx/SDK/2019.1
+XILINX_VIVADO: /opt/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	237 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,116 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,044 MB. GUI used memory: 50 MB. Current time: 7/31/19, 12:02:22 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/letrend/workspace/snickerdoodle/snickerdoodle.xpr", 0); // q (O, cl)
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: /home/letrend/workspace/snickerdoodle/snickerdoodle.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/letrend/workspace/snickerdoodle/snickerdoodle.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,185 MB. GUI used memory: 48 MB. Current time: 7/31/19, 12:09:27 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 105 MB (+108011kb) [00:07:16]
+// [Engine Memory]: 1,215 MB (+1122253kb) [00:07:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  2893 ms.
+// Tcl Message: open_project /home/letrend/workspace/snickerdoodle/snickerdoodle.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/letrend/workspace/roboy_fpga_ips'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'. 
+// [Engine Memory]: 1,287 MB (+12112kb) [00:07:18]
+// [GUI Memory]: 115 MB (+4387kb) [00:07:18]
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 6809.008 ; gain = 235.844 ; free physical = 57495 ; free virtual = 62180 
+// Project name: snickerdoodle; location: /home/letrend/workspace/snickerdoodle; part: xc7z020clg400-3
+dismissDialog("Open Project"); // by (cl)
+// [Engine Memory]: 1,359 MB (+8022kb) [00:07:20]
+// [Engine Memory]: 1,604 MB (+185772kb) [00:07:24]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// by (cl):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: open_bd_design {/home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd} 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CONNECTION_CHANGE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 7073.133 ; gain = 0.000 ; free physical = 57250 ; free virtual = 62008 
+// [GUI Memory]: 122 MB (+1463kb) [00:07:36]
+// 'bB' command handler elapsed time: 5 seconds
+dismissDialog("Open Block Design"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,424 MB. GUI used memory: 64 MB. Current time: 7/31/19, 12:09:52 PM CEST
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (cl):  Re-customize IP : addNotify
+// r (cl): Re-customize IP: addNotify
+// cl (r): Configuration Presets: addNotify
+dismissDialog("Re-customize IP"); // O (cl)
+selectTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Enet 0 ; MIO 16 ; tx_clk ; LVCMOS 1.8V ; slow ; disabled ; out ; ", 4, "Enet 0", 0, false, false, false, false, false, true); // aW (O, r) - Double Click
+// [GUI Memory]: 148 MB (+21081kb) [00:08:03]
+// Elapsed time: 103 seconds
+selectTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Enet 0 ; MIO 16 ; tx_clk ; LVCMOS 1.8V ; slow ; disabled ; out ; ", 4, "LVCMOS 1.8V", 3, false); // aW (O, r)
+selectTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Enet 0 ; MIO 17 ; txd[0] ; LVCMOS 1.8V ; slow ; disabled ; out ; ", 5, "LVCMOS 1.8V", 3, false); // aW (O, r)
+selectTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "ENET 0 ; MIO 16 .. 27 ;  ;  ;  ;  ;  ; ", 2, (String) null, 3, true); // aW (O, r) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,588 MB. GUI used memory: 89 MB. Current time: 7/31/19, 12:39:52 PM CEST
+// Elapsed time: 1885 seconds
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "MDIO ; MIO 52 .. 53 ;  ;  ;  ;  ;  ; ", 3); // aW (O, r)
+selectTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Enet 0 ; MIO 52 ; mdc ; LVCMOS 1.8V ; slow ; disabled ; out ; ", 4, "LVCMOS 1.8V", 3, false); // aW (O, r)
+// Elapsed time: 115 seconds
+selectTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Enet 0 ; MIO 53 ; mdio ; LVCMOS 1.8V ; slow ; disabled ; inout ; ", 5, "disabled", 5, false); // aW (O, r)
+// Elapsed time: 384 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// Tcl Command: 'set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0] 
+// Tcl Message: endgroup 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,598 MB. GUI used memory: 79 MB. Current time: 7/31/19, 1:09:52 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,594 MB. GUI used memory: 78 MB. Current time: 7/31/19, 1:39:52 PM CEST
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (cl):  Re-customize IP : addNotify
+// r (cl): Re-customize IP: addNotify
+// cl (r): Configuration Presets: addNotify
+// Elapsed time: 4255 seconds
+dismissDialog("Re-customize IP"); // O (cl)
+selectTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Enet 0 ; MIO 16 ; tx_clk ; LVCMOS 1.8V ; slow ; disabled ; out ; ", 4, "Enet 0", 0, false, false, false, false, false, true); // aW (O, r) - Double Click
+// [GUI Memory]: 157 MB (+1628kb) [02:00:57]
+// [GUI Memory]: 166 MB (+874kb) [02:05:25]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,628 MB. GUI used memory: 97 MB. Current time: 7/31/19, 2:09:52 PM CEST
+// Elapsed time: 1290 seconds
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "MDIO ; MIO 52 .. 53 ;  ;  ;  ;  ;  ; ", 3); // aW (O, r)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,692 MB. GUI used memory: 97 MB. Current time: 7/31/19, 2:25:22 PM CEST
+// [Engine Memory]: 1,760 MB (+78728kb) [02:23:37]
+// Elapsed time: 267 seconds
+selectButton("Clock Configuration", "Clock Configuration"); // k (ch, r)
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks ; IO Peripheral Clocks", 1); // A (O, r)
+// Elapsed time: 29 seconds
+expandTreeTable(PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, "PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks", 9); // A (O, r)
+// Elapsed time: 26 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+// Tcl Command: 'set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0] 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (cl):  Re-customize IP : addNotify
+// r (cl): Re-customize IP: addNotify
+// cl (r): Configuration Presets: addNotify
+// Elapsed time: 36 seconds
+dismissDialog("Re-customize IP"); // O (cl)
+selectButton("Peripheral I/O Pins", "Peripheral I/O Pins"); // k (ch, r)
+selectButton("MIO Configuration", "MIO Configuration"); // k (ch, r)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals ; I/O Peripherals", 1); // aW (O, r)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO ; GPIO", 16); // aW (O, r)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit ; Application Processor Unit", 22); // aW (O, r)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug ; Programmable Logic Test and Debug", 26); // aW (O, r)
+expandTreeTable(PAResourceItoN.MIOConfigTreeTablePanel_MIO_CONFIG_TREE_TABLE, "Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces ; Memory Interfaces", 0); // aW (O, r)
+// [GUI Memory]: 207 MB (+33799kb) [02:28:30]
+selectButton("Peripheral I/O Pins", "Peripheral I/O Pins"); // k (ch, r)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+// [Engine Memory]: 1,856 MB (+8944kb) [02:28:43]
+dismissDialog("Re-customize IP"); // r (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,830 MB. GUI used memory: 132 MB. Current time: 7/31/19, 2:30:57 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,830 MB. GUI used memory: 132 MB. Current time: 7/31/19, 3:00:57 PM CEST
+// Elapsed time: 2019 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run roboy_plexus_processing_system7_0_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run roboy_plexus_xbar_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// al (cl): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// by (cl):  Save Constraints : addNotify
+dismissDialog("Save Project"); // al (cl)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd>  Wrote  : </home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ui/bd_1a0991fd.ui>  
+// by (cl):  Starting Design Runs : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Save Constraints"); // by (cl)
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 32 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/synth/roboy_plexus.v VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/sim/roboy_plexus.v VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/hdl/roboy_plexus_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block myoControl_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_49M . INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar . INFO: [BD 41-1029] Generation completed for the IP Integrator block myoControl_1 . INFO: [BD 41-1029] Generation completed for the IP Integrator block myoControl_2 . INFO: [BD 41-1029] Generation completed for the IP Integrator block myoControl_3 . INFO: [BD 41-1029] Generation completed for the IP Integrator block myoControl_4 . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/hw_handoff/roboy_plexus.hwh Generated Block Design Tcl file /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/hw_handoff/roboy_plexus_bd.tcl Generated Hardware Definition File /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/synth/roboy_plexus.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP roboy_plexus_auto_pc_0, cache-ID = 5a01b370d3872f90; cache size = 298.587 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jul 31 15:05:00 2019] Launched roboy_plexus_processing_system7_0_0_synth_1, roboy_plexus_xbar_0_synth_1, synth_1... Run output will be captured here: roboy_plexus_processing_system7_0_0_synth_1: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_processing_system7_0_0_synth_1/runme.log roboy_plexus_xbar_0_synth_1: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_xbar_0_synth_1/runme.log synth_1: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/synth_1/runme.log [Wed Jul 31 15:05:00 2019] Launched impl_1... Run output will be captured here: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 7277.059 ; gain = 203.926 ; free physical = 52197 ; free virtual = 58487 
+// Elapsed time: 21 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [Engine Memory]: 1,949 MB (+4kb) [03:07:26]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Implementation Completed: addNotify
+// [GUI Memory]: 218 MB (+1399kb) [03:24:44]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,949 MB. GUI used memory: 144 MB. Current time: 7/31/19, 3:30:57 PM CEST
+// Elapsed time: 2923 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// by (cl):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,033 MB. GUI used memory: 143 MB. Current time: 7/31/19, 3:53:47 PM CEST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,847 MB. GUI used memory: 142 MB. Current time: 7/31/19, 3:54:04 PM CEST
+// [Engine Memory]: 2,847 MB (+839404kb) [03:51:52]
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 3,024 MB (+36706kb) [03:51:53]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1576 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-3 INFO: [Netlist 29-17] Analyzing 7264 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8169.414 ; gain = 63.938 ; free physical = 51141 ; free virtual = 57658 
+// Tcl Message: Restored from archive | CPU: 3.940000 secs | Memory: 68.605721 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8169.414 ; gain = 63.938 ; free physical = 51141 ; free virtual = 57658 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8169.414 ; gain = 0.000 ; free physical = 51146 ; free virtual = 57663 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:32 ; elapsed = 00:00:23 . Memory (MB): peak = 8352.812 ; gain = 1075.613 ; free physical = 50982 ; free virtual = 57520 
+// TclEventType: DRC_ADDED
+// [GUI Memory]: 231 MB (+1725kb) [03:51:55]
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 244 MB (+1833kb) [03:51:56]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 7s
+// [GUI Memory]: 257 MB (+516kb) [03:51:59]
+// [Engine Memory]: 3,461 MB (+299524kb) [03:52:00]
+// [GUI Memory]: 270 MB (+127kb) [03:52:00]
+// WARNING: HEventQueue.dispatchEvent() is taking  4423 ms.
+// Device view-level: 0.0
+// [GUI Memory]: 284 MB (+711kb) [03:52:01]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dR' command handler elapsed time: 31 seconds
+// S (cl): Critical Messages: addNotify
+// Elapsed time: 31 seconds
+dismissDialog("Open Implemented Design"); // by (cl)
+// Elapsed time: 12 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,470 MB. GUI used memory: 216 MB. Current time: 7/31/19, 3:54:32 PM CEST
+selectMenuItem(PAResourceCommand.PACommandNames_PORTS_WINDOW, "I/O Ports"); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_PORTS_WINDOW
+// Device view-level: 0.0
+// HMemoryUtils.trashcanNow. Engine heap size: 3,466 MB. GUI used memory: 215 MB. Current time: 7/31/19, 3:54:37 PM CEST
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (21) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 8); // z (O, cl)
+// Elapsed time: 28 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "miso_0 ; IN ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 14, (String) null, 5, false); // z (O, cl)
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "miso_1 ; IN ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 15, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports miso_0 E18 
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports miso_1 F16 
+// Elapsed time: 12 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "miso_2 ; IN ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 16, (String) null, 5, false); // z (O, cl)
+// TclEventType: LOC_CONSTRAINT_ADD
+// Elapsed time: 11 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "miso_3 ; IN ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 17, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports miso_2 E17 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "miso_4 ; IN ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 18, (String) null, 5, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,471 MB. GUI used memory: 216 MB. Current time: 7/31/19, 3:55:44 PM CEST
+// Tcl Message: place_ports miso_3 F19 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_0 ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 19, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports miso_4 J20 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_1 ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 20, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports mosi_0 D20 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_2 ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 21, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports mosi_1 D19 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_1 ; OUT ;  ;  ;  ; D19 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 20, "D19", 5, false); // z (O, cl)
+// Tcl Message: set_property package_pin "" [get_ports [list  mosi_2]] 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,472 MB. GUI used memory: 218 MB. Current time: 7/31/19, 3:56:05 PM CEST
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_2 ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 21, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports mosi_1 B20 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_3 ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 22, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports mosi_2 A20 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_4 ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 23, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports mosi_3 G20 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "power_sense_n ; IN ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 24, (String) null, 4, false); // z (O, cl)
+// Tcl Message: place_ports mosi_4 G18 
+// Elapsed time: 23 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mirrored_muscle_unit_0 ; IN ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 9, (String) null, 5, false); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mirrored_muscle_unit_1 ; IN ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 10, (String) null, 4, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,473 MB. GUI used memory: 216 MB. Current time: 7/31/19, 3:56:57 PM CEST
+// Tcl Message: set_property package_pin "" [get_ports [list  mirrored_muscle_unit_0]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mirrored_muscle_unit_0 ; IN ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 9, (String) null, 2, false); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mirrored_muscle_unit_0 ; IN ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 9, (String) null, 2, false); // z (O, cl)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mirrored_muscle_unit_0 ; IN ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 9); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mirrored_muscle_unit_0 ; IN ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 9, (String) null, 2, false, false, false, false, false, true); // z (O, cl) - Double Click
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mirrored_muscle_unit_1 ; IN ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 10, (String) null, 3, false); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_0 ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 25, (String) null, 5, false); // z (O, cl)
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports sck_0 E19 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_1 ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 26, (String) null, 5, false); // z (O, cl)
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_2 ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 27, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports sck_1 F17 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_3 ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 28, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports sck_2 D18 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_0 ; OUT ;  ;  ;  ; E19 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 25, (String) null, 3, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,473 MB. GUI used memory: 219 MB. Current time: 7/31/19, 3:57:25 PM CEST
+// Tcl Message: set_property package_pin "" [get_ports [list  sck_3]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_3 ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 28, (String) null, 5, false); // z (O, cl)
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_4 ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 29, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports sck_3 F20 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_3 ; OUT ;  ;  ;  ; F20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 28, (String) null, 3, false); // z (O, cl)
+// Tcl Message: place_ports sck_4 H20 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,470 MB. GUI used memory: 214 MB. Current time: 7/31/19, 3:57:36 PM CEST
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_0 ; OUT ;  ;  ;  ; D20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 19, "12", 11, false); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_0 ; OUT ;  ;  ;  ; D20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 19, "12", 11, false); // z (O, cl)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property DRIVE 16 [get_ports [list mosi_0]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "miso_4 ; IN ;  ;  ;  ; J20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 18, (String) null, 11, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,470 MB. GUI used memory: 214 MB. Current time: 7/31/19, 3:57:43 PM CEST
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "miso_4 ; IN ;  ;  ;  ; J20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 18, (String) null, 11, false); // z (O, cl)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "miso_4 ; IN ;  ;  ;  ; J20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 18); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "miso_4 ; IN ;  ;  ;  ; J20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 18, (String) null, 11, false, false, false, false, false, true); // z (O, cl) - Double Click
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_1 ; OUT ;  ;  ;  ; B20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 20, "12", 11, false); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_1 ; OUT ;  ;  ;  ; B20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 20, "12", 11, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,470 MB. GUI used memory: 216 MB. Current time: 7/31/19, 3:57:47 PM CEST
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property DRIVE 16 [get_ports [list mosi_1]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_2 ; OUT ;  ;  ;  ; A20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 21, "12", 11, false); // z (O, cl)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property DRIVE 16 [get_ports [list mosi_2]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_3 ; OUT ;  ;  ;  ; G20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 22, "12", 11, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,470 MB. GUI used memory: 215 MB. Current time: 7/31/19, 3:57:52 PM CEST
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property DRIVE 16 [get_ports [list mosi_3]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_4 ; OUT ;  ;  ;  ; G18 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 23, "12", 11, false); // z (O, cl)
+// TclEventType: SIGNAL_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 3,471 MB. GUI used memory: 217 MB. Current time: 7/31/19, 3:57:54 PM CEST
+// Tcl Message: set_property DRIVE 16 [get_ports [list mosi_4]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_0 ; OUT ;  ;  ;  ; E19 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 25, "12", 11, false); // z (O, cl)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property DRIVE 16 [get_ports [list sck_0]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_1 ; OUT ;  ;  ;  ; F17 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 26, "12", 11, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,471 MB. GUI used memory: 215 MB. Current time: 7/31/19, 3:57:57 PM CEST
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_1 ; OUT ;  ;  ;  ; F17 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 26, "12", 11, false); // z (O, cl)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property DRIVE 16 [get_ports [list sck_1]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_2 ; OUT ;  ;  ;  ; D18 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 27, "12", 11, false); // z (O, cl)
+// TclEventType: SIGNAL_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 3,472 MB. GUI used memory: 218 MB. Current time: 7/31/19, 3:58:02 PM CEST
+// Tcl Message: set_property DRIVE 16 [get_ports [list sck_2]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_3 ; OUT ;  ;  ;  ; F20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 28, "12", 11, false); // z (O, cl)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property DRIVE 16 [get_ports [list sck_3]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_4 ; OUT ;  ;  ;  ; H20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 29, "12", 11, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,472 MB. GUI used memory: 215 MB. Current time: 7/31/19, 3:58:06 PM CEST
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property DRIVE 16 [get_ports [list sck_4]] 
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_0 (8) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 3); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "FIXED_IO_44079 (59) ; INOUT ;  ;  ;  ;  ; true ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; ", 2, "(Multiple)", 11, true); // z (O, cl) - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "FIXED_IO_44079 (59) ; INOUT ;  ;  ;  ;  ; true ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; ", 2, "(Multiple)", 11, true); // z (O, cl) - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "FIXED_IO_44079 (59) ; INOUT ;  ;  ;  ;  ; true ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; ", 2, "(Multiple)", 11, true, false, false, false, false, true); // z (O, cl) - Double Click - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "FIXED_IO_44079 (59) ; INOUT ;  ;  ;  ;  ; true ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; ", 2, "(Multiple)", 11, true); // z (O, cl) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 3,473 MB. GUI used memory: 217 MB. Current time: 7/31/19, 3:58:16 PM CEST
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "FIXED_IO_44079 (59) ; INOUT ;  ;  ;  ;  ; true ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ; ", 2, "(Multiple)", 11, true, false, false, false, false, true); // z (O, cl) - Double Click - Node
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (ss_n_0) elapsed time: 0.2s
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_0 (8) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 3, "12", 11, true); // z (O, cl) - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_0 (8) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 3, "12", 11, true); // z (O, cl) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property DRIVE 16 [get_ports [list {ss_n_0[7]} {ss_n_0[6]} {ss_n_0[5]} {ss_n_0[4]} {ss_n_0[3]} {ss_n_0[2]} {ss_n_0[1]} {ss_n_0[0]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_0 (8) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; SLOW ; NONE ; FP_VTT_50 ; ", 3, "SLOW", 12, true); // z (O, cl) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property SLEW FAST [get_ports [list {ss_n_0[7]} {ss_n_0[6]} {ss_n_0[5]} {ss_n_0[4]} {ss_n_0[3]} {ss_n_0[2]} {ss_n_0[1]} {ss_n_0[0]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_0 ; OUT ;  ;  ;  ; D20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 16 ; SLOW ; NONE ; FP_VTT_50 ; ", 27, "SLOW", 12, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,474 MB. GUI used memory: 217 MB. Current time: 7/31/19, 3:58:29 PM CEST
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property SLEW FAST [get_ports [list mosi_0]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_1 ; OUT ;  ;  ;  ; B20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 16 ; SLOW ; NONE ; FP_VTT_50 ; ", 28, "SLOW", 12, false); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_1 ; OUT ;  ;  ;  ; B20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 16 ; SLOW ; NONE ; FP_VTT_50 ; ", 28, "SLOW", 12, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,475 MB. GUI used memory: 216 MB. Current time: 7/31/19, 3:58:36 PM CEST
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property SLEW FAST [get_ports [list mosi_1]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_2 ; OUT ;  ;  ;  ; A20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 16 ; SLOW ; NONE ; FP_VTT_50 ; ", 29, "SLOW", 12, false); // z (O, cl)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property SLEW FAST [get_ports [list mosi_2]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_3 ; OUT ;  ;  ;  ; G20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 16 ; SLOW ; NONE ; FP_VTT_50 ; ", 30, "SLOW", 12, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,475 MB. GUI used memory: 216 MB. Current time: 7/31/19, 3:58:40 PM CEST
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property SLEW FAST [get_ports [list mosi_3]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "mosi_4 ; OUT ;  ;  ;  ; G18 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 16 ; SLOW ; NONE ; FP_VTT_50 ; ", 31, "SLOW", 12, false); // z (O, cl)
+// TclEventType: SIGNAL_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 3,475 MB. GUI used memory: 218 MB. Current time: 7/31/19, 3:58:44 PM CEST
+// Tcl Message: set_property SLEW FAST [get_ports [list mosi_4]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_0 ; OUT ;  ;  ;  ; E19 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 16 ; SLOW ; NONE ; FP_VTT_50 ; ", 33, "SLOW", 12, false); // z (O, cl)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property SLEW FAST [get_ports [list sck_0]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_1 ; OUT ;  ;  ;  ; F17 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 16 ; SLOW ; NONE ; FP_VTT_50 ; ", 34, "SLOW", 12, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,475 MB. GUI used memory: 217 MB. Current time: 7/31/19, 3:58:47 PM CEST
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property SLEW FAST [get_ports [list sck_1]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_2 ; OUT ;  ;  ;  ; D18 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 16 ; SLOW ; NONE ; FP_VTT_50 ; ", 35, "SLOW", 12, false); // z (O, cl)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property SLEW FAST [get_ports [list sck_2]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_3 ; OUT ;  ;  ;  ; F20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 16 ; SLOW ; NONE ; FP_VTT_50 ; ", 36, "SLOW", 12, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,475 MB. GUI used memory: 216 MB. Current time: 7/31/19, 3:58:51 PM CEST
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property SLEW FAST [get_ports [list sck_3]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "sck_4 ; OUT ;  ;  ;  ; H20 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 16 ; SLOW ; NONE ; FP_VTT_50 ; ", 37, "SLOW", 12, false); // z (O, cl)
+// TclEventType: SIGNAL_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 3,475 MB. GUI used memory: 240 MB. Current time: 7/31/19, 3:58:55 PM CEST
+// Tcl Message: set_property SLEW FAST [get_ports [list sck_4]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_1 (8) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 12, "12", 11, true); // z (O, cl) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property DRIVE 16 [get_ports [list {ss_n_1[7]} {ss_n_1[6]} {ss_n_1[5]} {ss_n_1[4]} {ss_n_1[3]} {ss_n_1[2]} {ss_n_1[1]} {ss_n_1[0]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_2 (6) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 13, "12", 11, true); // z (O, cl) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property DRIVE 16 [get_ports [list {ss_n_2[5]} {ss_n_2[4]} {ss_n_2[3]} {ss_n_2[2]} {ss_n_2[1]} {ss_n_2[0]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_3 (6) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 14, "12", 11, true); // z (O, cl) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property DRIVE 16 [get_ports [list {ss_n_3[5]} {ss_n_3[4]} {ss_n_3[3]} {ss_n_3[2]} {ss_n_3[1]} {ss_n_3[0]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_4 (6) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 15, "12", 11, true); // z (O, cl) - Node
+// TclEventType: SIGNAL_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 3,475 MB. GUI used memory: 262 MB. Current time: 7/31/19, 3:59:07 PM CEST
+// Tcl Message: set_property DRIVE 16 [get_ports [list {ss_n_4[5]} {ss_n_4[4]} {ss_n_4[3]} {ss_n_4[2]} {ss_n_4[1]} {ss_n_4[0]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_1 (8) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; SLOW ; NONE ; FP_VTT_50 ; ", 12, "SLOW", 12, true); // z (O, cl) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property SLEW FAST [get_ports [list {ss_n_1[7]} {ss_n_1[6]} {ss_n_1[5]} {ss_n_1[4]} {ss_n_1[3]} {ss_n_1[2]} {ss_n_1[1]} {ss_n_1[0]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_2 (6) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; SLOW ; NONE ; FP_VTT_50 ; ", 13, "SLOW", 12, true); // z (O, cl) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property SLEW FAST [get_ports [list {ss_n_2[5]} {ss_n_2[4]} {ss_n_2[3]} {ss_n_2[2]} {ss_n_2[1]} {ss_n_2[0]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_3 (6) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; SLOW ; NONE ; FP_VTT_50 ; ", 14, "SLOW", 12, true); // z (O, cl) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property SLEW FAST [get_ports [list {ss_n_3[5]} {ss_n_3[4]} {ss_n_3[3]} {ss_n_3[2]} {ss_n_3[1]} {ss_n_3[0]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_4 (6) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; SLOW ; NONE ; FP_VTT_50 ; ", 15, "SLOW", 12, true); // z (O, cl) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property SLEW FAST [get_ports [list {ss_n_4[5]} {ss_n_4[4]} {ss_n_4[3]} {ss_n_4[2]} {ss_n_4[1]} {ss_n_4[0]}]] 
+// Elapsed time: 23 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_0[0] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 11, (String) null, 5, false); // z (O, cl)
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_0[1] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 10, (String) null, 5, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,475 MB. GUI used memory: 221 MB. Current time: 7/31/19, 3:59:45 PM CEST
+// Tcl Message: place_ports {ss_n_0[0]} L14 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_0[2] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 9, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_0[1]} J16 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_0[3] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 8, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_0[2]} L15 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_0[4] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 7, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_0[3]} K16 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_0[5] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 6, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_0[4]} M14 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_0[6] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 5, (String) null, 5, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,475 MB. GUI used memory: 219 MB. Current time: 7/31/19, 4:00:11 PM CEST
+// Tcl Message: place_ports {ss_n_0[5]} G15 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_0[7] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 4, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_0[6]} M15 
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {ss_n_0[7]} H15 
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_1 (8) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 12); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_1[0] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 20, (String) null, 5, false); // z (O, cl)
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_1[1] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 19, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_1[0]} N15 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_1[2] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 18, (String) null, 5, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,475 MB. GUI used memory: 268 MB. Current time: 7/31/19, 4:00:34 PM CEST
+// Tcl Message: place_ports {ss_n_1[1]} J14 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_1[3] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 17, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_1[2]} N16 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_1[4] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 16, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_1[3]} K14 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_1[5] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 15, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_1[4]} L19 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_1[6] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 14, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_1[5]} J19 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_1[7] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 13, (String) null, 5, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,476 MB. GUI used memory: 219 MB. Current time: 7/31/19, 4:01:01 PM CEST
+// Tcl Message: place_ports {ss_n_1[6]} L20 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_1[2] ; OUT ;  ;  ;  ; N16 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 18, (String) null, 3, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_1[7]} K19 
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_2 (6) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 21); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_2[0] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 27, (String) null, 5, false); // z (O, cl)
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_2[1] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 26, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_2[0]} M17 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_2[2] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 25, (String) null, 5, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,476 MB. GUI used memory: 223 MB. Current time: 7/31/19, 4:01:24 PM CEST
+// Tcl Message: place_ports {ss_n_2[1]} M20 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_2[3] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 24, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_2[2]} M18 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_2[4] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 23, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_2[3]} M19 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_2[5] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 22, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_2[4]} L16 
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {ss_n_2[5]} K18 
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_3 (6) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 28); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_3[0] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 34, (String) null, 5, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,477 MB. GUI used memory: 217 MB. Current time: 7/31/19, 4:01:39 PM CEST
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_3[1] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 33, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_3[0]} L17 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_3[2] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 32, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_3[1]} K17 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_3[3] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 31, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_3[2]} T11 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_3[4] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 30, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_3[3]} U12 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_3 (6) ; OUT ;  ;  ;  ;  ;  ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 28, (String) null, 5, true); // z (O, cl) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 3,477 MB. GUI used memory: 220 MB. Current time: 7/31/19, 4:02:09 PM CEST
+// Tcl Message: place_ports {ss_n_3[4]} T10 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_3[5] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 29, (String) null, 5, false); // z (O, cl)
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_3[4] ; OUT ;  ;  ;  ; T10 ; true ; 34 ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 30, (String) null, 4, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_3[5]} T12 
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_4 (6) ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 35); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_4[0] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 41, (String) null, 5, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,477 MB. GUI used memory: 217 MB. Current time: 7/31/19, 4:02:23 PM CEST
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_4[1] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 40, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_4[0]} P14 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_4[2] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 39, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_4[1]} W13 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_4[3] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 38, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_4[2]} R14 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_4[4] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 37, (String) null, 5, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_4[3]} V12 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_4[5] ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 36, (String) null, 5, false); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,478 MB. GUI used memory: 219 MB. Current time: 7/31/19, 4:02:45 PM CEST
+// Tcl Message: place_ports {ss_n_4[4]} U13 
+// TclEventType: LOC_CONSTRAINT_ADD
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_4[4] ; OUT ;  ;  ;  ; U13 ; true ; 34 ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 37, (String) null, 2, false); // z (O, cl)
+// Tcl Message: place_ports {ss_n_4[5]} T15 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_DESIGN
+// A (cl): Out of Date Design: addNotify
+// Elapsed time: 64 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Save Constraints : addNotify
+dismissDialog("Out of Date Design"); // A (cl)
+// Tcl Message: save_constraints 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// 'h' command handler elapsed time: 22 seconds
+dismissDialog("Save Constraints"); // by (cl)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aK (aH, cl)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "roboy_plexus ;  ; Submodule Runs Complete ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Sun Jul 28 17:36:31 CEST 2019 ; 69:29:02 ;  ;  ;  ;  ; ", 3, "roboy_plexus", 0, true, false, false, false, true, false); // ay (O, cl) - Popup Trigger - Node
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.3s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Implementation Out-of-date ; -37.48611068725586 ; -10738.5029296875 ; 0.05570610612630844 ; 0.0 ; 0.0 ; 1.5438129901885986 ; 0 ; 33675 ; 20004 ; 0.0 ; 0 ; 204 ; Wed Jul 31 15:06:08 CEST 2019 ; 00:05:04 ; Vivado Implementation Defaults (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xc7z020clg400-3 ;  ; Default settings for Implementation.", 1, "impl_1", 0, false, false, false, false, true, false); // ay (O, cl) - Popup Trigger
+selectMenu(PAResourceEtoH.ExpRunMenu_LAUNCH_STEP, "Launch Step To"); // ae (an, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_FORCE_RUN_UP_TO_DATE, "Force Up-to-Date"); // ah (an, cl)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: set_property needs_refresh false [get_runs impl_1] 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 32 
+// Tcl Message: [Wed Jul 31 16:04:14 2019] Launched impl_1... Run output will be captured here: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 61 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw 
+// [GUI Memory]: 304 MB (+6250kb) [04:03:05]
+dismissDialog("Open Hardware Manager"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:06:40     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// by (cl):  Auto Connect : addNotify
+dismissDialog("Auto Connect"); // by (cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // t (O, cl)
+// Elapsed time: 11 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, true, false); // t (O, cl) - Popup Trigger
+// Elapsed time: 25 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// aN (cl): Open New Hardware Target: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, aN)
+// HOptionPane Error: 'A server which has the same host name is already connected. Enter a different valid remote host name or select 'Local Server' before proceeding. (Duplicate Host Name)'
+selectButton("NEXT", "Next >"); // JButton (j, aN)
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectButton("CANCEL", "Cancel"); // JButton (j, aN)
+// 'H' command handler elapsed time: 9 seconds
+dismissDialog("Open New Hardware Target"); // aN (cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // t (O, cl)
+expandTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, false, true); // t (O, cl) - Double Click
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, false, true); // t (O, cl) - Double Click
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i (c, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false, false, false, false, false, true); // u (O, cl) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+// [Engine Memory]: 3,640 MB (+5857kb) [04:04:15]
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false, false, false, false, true, false); // t (O, cl) - Popup Trigger
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "localhost (0) ; Connected", 0, "localhost (0)", 0, false); // t (O, cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, null, -1, null, -1, false, false, false, false, true, false); // t (O, cl) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_SERVER, "Close Server"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_SERVER
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// aN (cl): Open New Hardware Target: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, aN)
+// by (aN):  Open Server : addNotify
+// TclEventType: HW_SERVER_UPDATE
+selectButton("NEXT", "Next >"); // JButton (j, aN)
+dismissDialog("Open Server"); // by (aN)
+selectButton(PAResourceTtoZ.TargetChooserPanel_ADD_XILINX_VIRTUAL_CABLE_AS_HARDWARE, "Add Xilinx Virtual Cable (XVC)"); // a (E, aN)
+// a (cl): Add Virtual Cable: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (a)
+dismissDialog("Add Virtual Cable"); // a (cl)
+// Elapsed time: 1077 seconds
+selectButton(PAResourceTtoZ.TargetChooserPanel_ADD_XILINX_VIRTUAL_CABLE_AS_HARDWARE, "Add Xilinx Virtual Cable (XVC)"); // a (E, aN)
+// a (cl): Add Virtual Cable: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (a)
+dismissDialog("Add Virtual Cable"); // a (cl)
+selectButton("CANCEL", "Cancel"); // JButton (j, aN)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// 'H' command handler elapsed time: 1095 seconds
+dismissDialog("Open New Hardware Target"); // aN (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249A2ECE0 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1689 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,568 MB. GUI used memory: 288 MB. Current time: 7/31/19, 4:25:03 PM CEST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/roboy_plexus_wrapper.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 4,572 MB (+786452kb) [04:22:50]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // by (cl)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210249A2ECE0 (2) ; Open", 1, "xilinx_tcf/Digilent/210249A2ECE0 (2)", 0, true); // t (O, cl) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/roboy_plexus_wrapper.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 224 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// HMemoryUtils.trashcanNow. Engine heap size: 4,591 MB. GUI used memory: 267 MB. Current time: 7/31/19, 4:29:03 PM CEST
+// [GUI Memory]: 322 MB (+2731kb) [04:26:55]
+// Tcl Command: 'rdi::info_commands {get*}'
+// Tcl Command: 'rdi::info_commands {get_*}'
+// Tcl Command: 'rdi::info_commands {get_ports*}'
+// Elapsed time: 425 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_ports", true); // aC (Z, cl)
+// Tcl Command: 'get_ports'
+// Tcl Command: 'get_ports'
+// Tcl Message: get_ports 
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, cl) - Node
+// Elapsed time: 108 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,623 MB. GUI used memory: 247 MB. Current time: 7/31/19, 4:38:28 PM CEST
+dismissFileChooser();
+// 'i' command handler elapsed time: 5 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// by (cl):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design {/home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd} 
+dismissDialog("Open Block Design"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // L (O, cl)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Peripheral ;  ;  ;  ; ", 1); // L (O, cl)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "myoControl_v1.0 ; AXI4 ; Pre-Production ; Included ; Roboy:roboy_plexus:myoControl:1.0", 2, "myoControl_v1.0", 0, true); // L (O, cl) - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "myoControl_v1.0 ; AXI4 ; Pre-Production ; Included ; Roboy:roboy_plexus:myoControl:1.0", 2, "myoControl_v1.0", 0, true, false, false, false, true, false); // L (O, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cl): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+selectButton("OptionPane.button", "Cancel"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (k)
+// 'i' command handler elapsed time: 7 seconds
+dismissDialog("Edit in IP Packager"); // k (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// Elapsed time: 24 seconds
+dismissFileChooser();
+// 'i' command handler elapsed time: 24 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "myoControl_v1.0 ; AXI4 ; Pre-Production ; Included ; Roboy:roboy_plexus:myoControl:1.0", 2, "myoControl_v1.0", 0, true, false, false, false, true, false); // L (O, cl) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cl): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+selectButton("OptionPane.button", "Cancel"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (k)
+// 'i' command handler elapsed time: 11 seconds
+dismissDialog("Edit in IP Packager"); // k (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/home/letrend/workspace/snickerdoodle/snickerdoodle.tmp/myoControl_v1_0_project/myoControl_v1_0_project.xpr");
+// Opening Vivado Project: /home/letrend/workspace/snickerdoodle/snickerdoodle.tmp/myoControl_v1_0_project/myoControl_v1_0_project.xpr. Version: Vivado v2019.1 
+// by (cl):  Open Project : addNotify
+selectButton("OptionPane.button", "No"); // JButton (A, G)
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// Tcl Message: open_project /home/letrend/workspace/snickerdoodle/snickerdoodle.tmp/myoControl_v1_0_project/myoControl_v1_0_project.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 4,865 MB (+67715kb) [04:37:32]
+// WARNING: HEventQueue.dispatchEvent() is taking  1603 ms.
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'. 
+// Project name: myoControl_v1_0_project; location: /home/letrend/workspace/snickerdoodle/snickerdoodle.tmp/myoControl_v1_0_project; part: xc7z020clg400-3
+// 'i' command handler elapsed time: 10 seconds
+dismissDialog("Open Project"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,883 MB. GUI used memory: 327 MB. Current time: 7/31/19, 4:39:48 PM CEST
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // i (N, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, , myoControl_v1_0_myoControl.v]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, , myoControl_v1_0_myoControl.v]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("myoControl_v1_0_myoControl.v", 195, 375); // cl (w, cl)
+selectCodeEditor("myoControl_v1_0_myoControl.v", 195, 375, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("myoControl_v1_0_myoControl.v", 190, 365); // cl (w, cl)
+selectCodeEditor("myoControl_v1_0_myoControl.v", 190, 365, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "myoControl_v1_0_myoControl.v", 'c'); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("myoControl_v1_0_myoControl.v", 223, 401); // cl (w, cl)
+selectCodeEditor("myoControl_v1_0_myoControl.v", 149, 419); // cl (w, cl)
+selectCodeEditor("myoControl_v1_0_myoControl.v", 151, 426); // cl (w, cl)
+selectCodeEditor("myoControl_v1_0_myoControl.v", 151, 426, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "myoControl_v1_0_myoControl.v", 'c'); // cl (w, cl)
+selectCodeEditor("myoControl_v1_0_myoControl.v", 293, 400); // cl (w, cl)
+typeControlKey((HResource) null, "myoControl_v1_0_myoControl.v", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("myoControl_v1_0_myoControl.v", 187, 167); // cl (w, cl)
+selectCodeEditor("myoControl_v1_0_myoControl.v", 187, 167, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "myoControl_v1_0_myoControl.v", 'c'); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,770 MB. GUI used memory: 259 MB. Current time: 7/31/19, 4:40:43 PM CEST
+// Elapsed time: 32 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("myoControl_v1_0_myoControl.v", 201, 308); // cl (w, cl)
+selectCodeEditor("myoControl_v1_0_myoControl.v", 142, 302); // cl (w, cl)
+selectCodeEditor("myoControl_v1_0_myoControl.v", 142, 302, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("myoControl_v1_0_myoControl.v", 144, 424); // cl (w, cl)
+typeControlKey((HResource) null, "myoControl_v1_0_myoControl.v", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("myoControl_v1_0_myoControl.v", 32, 438); // cl (w, cl)
+selectCodeEditor("myoControl_v1_0_myoControl.v", 32, 438, false, false, false, false, true); // cl (w, cl) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Edit Packaged IP]", 5, false); // u (O, cl)
+// by (cl):  Open Project Manager : addNotify
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+dismissDialog("Open Project Manager"); // by (cl)
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::open_ipxact_file /home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/component.xml 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// by (cl):  IP Packager : addNotify
+dismissDialog("IP Packager"); // by (cl)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (O, cl)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cl)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 6 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// by (cl):  Package IP : addNotify
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path /home/letrend/workspace/roboy_fpga_ips/myoControl_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0' 
+// ax (cl): Package IP: addNotify
+// a (cl): Critical Messages: addNotify
+dismissDialog("Package IP"); // by (cl)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (ax)
+dismissDialog("Package IP"); // ax (cl)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// by (cl):  Open Block Design : addNotify
+// Tcl Message: current_project snickerdoodle 
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd} 
+dismissDialog("Open Block Design"); // by (cl)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 841, 121, 1155, 694, false, false, false, true, false); // gl (k, cl) - Popup Trigger
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// by (cl):  Confirm Delete : addNotify
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// [GUI Memory]: 350 MB (+12057kb) [04:40:36]
+// Tcl Message: delete_bd_objs [get_bd_nets myoControl_1_ss_n_o] [get_bd_nets miso_1_1] [get_bd_nets myoControl_1_mosi] [get_bd_nets myoControl_1_sck] [get_bd_nets mirrored_muscle_unit_1_1] [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_cells myoControl_1] 
+// Elapsed time: 11 seconds
+dismissDialog("Confirm Delete"); // by (cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// by (cl):  Confirm Delete : addNotify
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// [GUI Memory]: 367 MB (+46kb) [04:40:41]
+// Tcl Message: delete_bd_objs [get_bd_nets myoControl_2_ss_n_o] [get_bd_nets miso_2_1] [get_bd_nets myoControl_2_mosi] [get_bd_nets myoControl_2_sck] [get_bd_nets mirrored_muscle_unit_2_1] [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_cells myoControl_2] 
+dismissDialog("Confirm Delete"); // by (cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets myoControl_3_ss_n_o] [get_bd_nets miso_3_1] [get_bd_nets myoControl_3_mosi] [get_bd_nets myoControl_3_sck] [get_bd_nets mirrored_muscle_unit_3_1] [get_bd_intf_nets ps7_0_axi_periph_M03_AXI] [get_bd_cells myoControl_3] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Confirm Delete : addNotify
+// Tcl Message: delete_bd_objs [get_bd_nets myoControl_4_ss_n_o] [get_bd_nets miso_4_1] [get_bd_nets myoControl_4_mosi] [get_bd_nets myoControl_4_sck] [get_bd_nets mirrored_muscle_unit_4_1] [get_bd_intf_nets ps7_0_axi_periph_M04_AXI] [get_bd_cells myoControl_4] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Confirm Delete"); // by (cl)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h (cS, cl)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// by (cl):  Refresh IP Catalog : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -scan_changes 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/letrend/workspace/roboy_fpga_ips'. 
+// TclEventType: IP_SUMMARY_RESULTS
+// [Engine Memory]: 5,193 MB (+89256kb) [04:40:54]
+// Tcl Message: report_ip_status -name ip_status 
+dismissDialog("Refresh IP Catalog"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,928 MB. GUI used memory: 270 MB. Current time: 7/31/19, 4:43:08 PM CEST
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "Upgrade IP"); // N
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "Upgrade IP"); // N (B, cl)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/myoControl_0 ; true ; roboy_plexus_myoControl_0_3 [myoControl_v1.0] (IP revision change. IP definition 'myoControl_v1.0 (1.0)' changed on disk) ; roboy_plexus_myoControl_0_3 [myoControl_v1.0] (IP revision change. IP definition 'myoControl_v1.0 (1.0)' changed on disk) ;  ; myoControl_v1.0 ; 1.0 (Rev. 5) ; 1.0 (Rev. 6) ; roboy_plexus_myoControl_0_3 [myoControl_v1.0] (IP revision change. IP definition 'myoControl_v1.0 (1.0)' changed on disk) ; xc7z020clg400-3", 1, "roboy_plexus_myoControl_0_3 [myoControl_v1.0] (IP revision change. IP definition 'myoControl_v1.0 (1.0)' changed on disk)", 3, false); // B (O, cl)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, cl)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// Tcl Message: upgrade_ip -vlnv Roboy:roboy_plexus:myoControl:1.0 [get_ips  roboy_plexus_myoControl_0_3] -log ip_upgrade.log 
+// Tcl Message: Upgrading '/home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd' 
+// TclEventType: RUN_DELETE
+// by (cl):  Upgrade IP : addNotify
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded roboy_plexus_myoControl_0_3 (myoControl_v1.0 1.0) from revision 5 to revision 6 
+// Tcl Message: Wrote  : </home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd>  Wrote  : </home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ui/bd_1a0991fd.ui>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/letrend/workspace/snickerdoodle/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips roboy_plexus_myoControl_0_3] -no_script -sync -force -quiet 
+// aI (cl): Generate Output Products: addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL, "Skip"); // a (aI)
+dismissDialog("Generate Output Products"); // aI (cl)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cS, cl)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Resetting Runs"); // by (cl)
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 32 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (by)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Wrote  : </home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd>  VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/synth/roboy_plexus.v VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/sim/roboy_plexus.v VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/hdl/roboy_plexus_wrapper.v 
+// Tcl Message: INFO: [Common 17-365] Interrupt caught but 'launch_runs' cannot be canceled. Please wait for command to finish. INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1171] User-interrupt detected : Generation halted successfully for IP Integrator design /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd INFO: [Common 17-681] Processing pending cancel. 
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Generate Bitstream"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cl)
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cS, cl)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// by (cl):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run roboy_plexus_xbar_0_synth_1 
+// by (cl):  Starting Design Runs : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 32 
+// Tcl Message: INFO: [BD 41-1662] The design 'roboy_plexus.bd' is already validated. Therefore parameter propagation will not be re-run. 
+// Tcl Message: VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/synth/roboy_plexus.v VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/sim/roboy_plexus.v VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/hdl/roboy_plexus_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block myoControl_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_49M . INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/hw_handoff/roboy_plexus.hwh Generated Block Design Tcl file /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/hw_handoff/roboy_plexus_bd.tcl Generated Hardware Definition File /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/synth/roboy_plexus.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: FILE_SET_NEW
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP roboy_plexus_auto_pc_0, cache-ID = 5a01b370d3872f90; cache size = 299.333 MB. INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP roboy_plexus_processing_system7_0_0, cache-ID = 979af75c7eedc6aa; cache size = 299.333 MB. INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP roboy_plexus_rst_ps7_0_49M_0, cache-ID = d59200b3ecaa0b31; cache size = 299.333 MB. 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 5,022 MB. GUI used memory: 261 MB. Current time: 7/31/19, 4:44:13 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jul 31 16:44:17 2019] Launched roboy_plexus_xbar_0_synth_1, roboy_plexus_myoControl_0_3_synth_1, synth_1... Run output will be captured here: roboy_plexus_xbar_0_synth_1: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_xbar_0_synth_1/runme.log roboy_plexus_myoControl_0_3_synth_1: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_myoControl_0_3_synth_1/runme.log synth_1: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/synth_1/runme.log [Wed Jul 31 16:44:17 2019] Launched impl_1... Run output will be captured here: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 9941.480 ; gain = 22.000 ; free physical = 48020 ; free virtual = 55205 
+// 'c' command handler elapsed time: 15 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Implementation Completed: addNotify
+// Elapsed time: 726 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN, "Open Implemented Design"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// by (cl):  Reloading : addNotify
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd] 
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 4,885 MB. GUI used memory: 222 MB. Current time: 7/31/19, 4:56:32 PM CEST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 4,885 MB. GUI used memory: 222 MB. Current time: 7/31/19, 4:56:32 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1212 ms.
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1850 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// Tcl Message: INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... 
+// Tcl Message: Reading XDEF routing. 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 4,784 MB. GUI used memory: 197 MB. Current time: 7/31/19, 4:56:36 PM CEST
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1514 ms.
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 9941.480 ; gain = 0.000 ; free physical = 48420 ; free virtual = 55690 
+// Tcl Message: Restored from archive | CPU: 1.250000 secs | Memory: 18.350746 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 9941.480 ; gain = 0.000 ; free physical = 48420 ; free virtual = 55690 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 9941.480 ; gain = 0.000 ; free physical = 48399 ; free virtual = 55669 
+// Device view-level: 0.0
+// TclEventType: DRC_ADDED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.9s
+// TclEventType: METHODOLOGY_ADDED
+// Device view-level: 0.1
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  2531 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 13 seconds
+dismissDialog("Reloading"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 32 
+// Tcl Message: [Wed Jul 31 16:56:51 2019] Launched impl_1... Run output will be captured here: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 100 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+// Elapsed time: 50 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/roboy_plexus_wrapper.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// Elapsed time: 10 seconds
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "ss_n_0 (8) ; OUT ;  ;  ;  ;  ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 16 ; FAST ; NONE ; FP_VTT_50 ; ", 3); // z (O, cl)
+// Elapsed time: 791 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (cl): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // g (Q, X): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+dismissDialog("Export Hardware"); // X (cl)
+// Tcl Message: file mkdir /home/letrend/workspace/snickerdoodle/snickerdoodle.sdk 
+// Tcl Message: file copy -force /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/roboy_plexus_wrapper.sysdef /home/letrend/workspace/snickerdoodle/snickerdoodle.sdk/roboy_plexus_wrapper.hdf  
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cl): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cl)
+// Tcl Message: launch_sdk -workspace /home/letrend/workspace/snickerdoodle/snickerdoodle.sdk -hwspec /home/letrend/workspace/snickerdoodle/snickerdoodle.sdk/roboy_plexus_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace /home/letrend/workspace/snickerdoodle/snickerdoodle.sdk -hwspec /home/letrend/workspace/snickerdoodle/snickerdoodle.sdk/roboy_plexus_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// HMemoryUtils.trashcanNow. Engine heap size: 4,991 MB. GUI used memory: 256 MB. Current time: 7/31/19, 5:26:38 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,948 MB. GUI used memory: 243 MB. Current time: 7/31/19, 5:56:38 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,940 MB. GUI used memory: 241 MB. Current time: 7/31/19, 6:26:39 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1150 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,940 MB. GUI used memory: 241 MB. Current time: 7/31/19, 6:56:38 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,940 MB. GUI used memory: 241 MB. Current time: 7/31/19, 7:26:38 PM CEST
+// Elapsed time: 9367 seconds
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (21) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 16); // z (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,940 MB. GUI used memory: 241 MB. Current time: 7/31/19, 7:56:38 PM CEST

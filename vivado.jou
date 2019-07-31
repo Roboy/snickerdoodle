@@ -1,0 +1,172 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jul 31 12:02:07 2019
+# Process ID: 10862
+# Current directory: /home/letrend/workspace/snickerdoodle
+# Command line: vivado
+# Log file: /home/letrend/workspace/snickerdoodle/vivado.log
+# Journal file: /home/letrend/workspace/snickerdoodle/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/letrend/workspace/snickerdoodle/snickerdoodle.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+reset_run roboy_plexus_processing_system7_0_0_synth_1
+reset_run roboy_plexus_xbar_0_synth_1
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 32
+wait_on_run impl_1
+open_run impl_1
+place_ports miso_0 E18
+place_ports miso_1 F16
+place_ports miso_2 E17
+place_ports miso_3 F19
+place_ports miso_4 J20
+place_ports mosi_0 D20
+place_ports mosi_1 D19
+set_property package_pin "" [get_ports [list  mosi_2]]
+place_ports mosi_1 B20
+place_ports mosi_2 A20
+place_ports mosi_3 G20
+place_ports mosi_4 G18
+set_property package_pin "" [get_ports [list  mirrored_muscle_unit_0]]
+place_ports sck_0 E19
+place_ports sck_1 F17
+place_ports sck_2 D18
+set_property package_pin "" [get_ports [list  sck_3]]
+place_ports sck_3 F20
+place_ports sck_4 H20
+set_property DRIVE 16 [get_ports [list mosi_0]]
+set_property DRIVE 16 [get_ports [list mosi_1]]
+set_property DRIVE 16 [get_ports [list mosi_2]]
+set_property DRIVE 16 [get_ports [list mosi_3]]
+set_property DRIVE 16 [get_ports [list mosi_4]]
+set_property DRIVE 16 [get_ports [list sck_0]]
+set_property DRIVE 16 [get_ports [list sck_1]]
+set_property DRIVE 16 [get_ports [list sck_2]]
+set_property DRIVE 16 [get_ports [list sck_3]]
+set_property DRIVE 16 [get_ports [list sck_4]]
+set_property DRIVE 16 [get_ports [list {ss_n_0[7]} {ss_n_0[6]} {ss_n_0[5]} {ss_n_0[4]} {ss_n_0[3]} {ss_n_0[2]} {ss_n_0[1]} {ss_n_0[0]}]]
+set_property SLEW FAST [get_ports [list {ss_n_0[7]} {ss_n_0[6]} {ss_n_0[5]} {ss_n_0[4]} {ss_n_0[3]} {ss_n_0[2]} {ss_n_0[1]} {ss_n_0[0]}]]
+set_property SLEW FAST [get_ports [list mosi_0]]
+set_property SLEW FAST [get_ports [list mosi_1]]
+set_property SLEW FAST [get_ports [list mosi_2]]
+set_property SLEW FAST [get_ports [list mosi_3]]
+set_property SLEW FAST [get_ports [list mosi_4]]
+set_property SLEW FAST [get_ports [list sck_0]]
+set_property SLEW FAST [get_ports [list sck_1]]
+set_property SLEW FAST [get_ports [list sck_2]]
+set_property SLEW FAST [get_ports [list sck_3]]
+set_property SLEW FAST [get_ports [list sck_4]]
+set_property DRIVE 16 [get_ports [list {ss_n_1[7]} {ss_n_1[6]} {ss_n_1[5]} {ss_n_1[4]} {ss_n_1[3]} {ss_n_1[2]} {ss_n_1[1]} {ss_n_1[0]}]]
+set_property DRIVE 16 [get_ports [list {ss_n_2[5]} {ss_n_2[4]} {ss_n_2[3]} {ss_n_2[2]} {ss_n_2[1]} {ss_n_2[0]}]]
+set_property DRIVE 16 [get_ports [list {ss_n_3[5]} {ss_n_3[4]} {ss_n_3[3]} {ss_n_3[2]} {ss_n_3[1]} {ss_n_3[0]}]]
+set_property DRIVE 16 [get_ports [list {ss_n_4[5]} {ss_n_4[4]} {ss_n_4[3]} {ss_n_4[2]} {ss_n_4[1]} {ss_n_4[0]}]]
+set_property SLEW FAST [get_ports [list {ss_n_1[7]} {ss_n_1[6]} {ss_n_1[5]} {ss_n_1[4]} {ss_n_1[3]} {ss_n_1[2]} {ss_n_1[1]} {ss_n_1[0]}]]
+set_property SLEW FAST [get_ports [list {ss_n_2[5]} {ss_n_2[4]} {ss_n_2[3]} {ss_n_2[2]} {ss_n_2[1]} {ss_n_2[0]}]]
+set_property SLEW FAST [get_ports [list {ss_n_3[5]} {ss_n_3[4]} {ss_n_3[3]} {ss_n_3[2]} {ss_n_3[1]} {ss_n_3[0]}]]
+set_property SLEW FAST [get_ports [list {ss_n_4[5]} {ss_n_4[4]} {ss_n_4[3]} {ss_n_4[2]} {ss_n_4[1]} {ss_n_4[0]}]]
+place_ports {ss_n_0[0]} L14
+place_ports {ss_n_0[1]} J16
+place_ports {ss_n_0[2]} L15
+place_ports {ss_n_0[3]} K16
+place_ports {ss_n_0[4]} M14
+place_ports {ss_n_0[5]} G15
+place_ports {ss_n_0[6]} M15
+place_ports {ss_n_0[7]} H15
+place_ports {ss_n_1[0]} N15
+place_ports {ss_n_1[1]} J14
+place_ports {ss_n_1[2]} N16
+place_ports {ss_n_1[3]} K14
+place_ports {ss_n_1[4]} L19
+place_ports {ss_n_1[5]} J19
+place_ports {ss_n_1[6]} L20
+place_ports {ss_n_1[7]} K19
+place_ports {ss_n_2[0]} M17
+place_ports {ss_n_2[1]} M20
+place_ports {ss_n_2[2]} M18
+place_ports {ss_n_2[3]} M19
+place_ports {ss_n_2[4]} L16
+place_ports {ss_n_2[5]} K18
+place_ports {ss_n_3[0]} L17
+place_ports {ss_n_3[1]} K17
+place_ports {ss_n_3[2]} T11
+place_ports {ss_n_3[3]} U12
+place_ports {ss_n_3[4]} T10
+place_ports {ss_n_3[5]} T12
+place_ports {ss_n_4[0]} P14
+place_ports {ss_n_4[1]} W13
+place_ports {ss_n_4[2]} R14
+place_ports {ss_n_4[3]} V12
+place_ports {ss_n_4[4]} U13
+place_ports {ss_n_4[5]} T15
+save_constraints
+set_property needs_refresh false [get_runs impl_1]
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+wait_on_run impl_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/roboy_plexus_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/roboy_plexus_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+get_ports
+open_bd_design {/home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd}
+open_project /home/letrend/workspace/snickerdoodle/snickerdoodle.tmp/myoControl_v1_0_project/myoControl_v1_0_project.xpr
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file /home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/component.xml
+set_property core_revision 6 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/letrend/workspace/roboy_fpga_ips/myoControl_1.0
+current_project snickerdoodle
+open_bd_design {/home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd}
+delete_bd_objs [get_bd_nets myoControl_1_ss_n_o] [get_bd_nets miso_1_1] [get_bd_nets myoControl_1_mosi] [get_bd_nets myoControl_1_sck] [get_bd_nets mirrored_muscle_unit_1_1] [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_cells myoControl_1]
+delete_bd_objs [get_bd_nets myoControl_2_ss_n_o] [get_bd_nets miso_2_1] [get_bd_nets myoControl_2_mosi] [get_bd_nets myoControl_2_sck] [get_bd_nets mirrored_muscle_unit_2_1] [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_cells myoControl_2]
+delete_bd_objs [get_bd_nets myoControl_3_ss_n_o] [get_bd_nets miso_3_1] [get_bd_nets myoControl_3_mosi] [get_bd_nets myoControl_3_sck] [get_bd_nets mirrored_muscle_unit_3_1] [get_bd_intf_nets ps7_0_axi_periph_M03_AXI] [get_bd_cells myoControl_3]
+delete_bd_objs [get_bd_nets myoControl_4_ss_n_o] [get_bd_nets miso_4_1] [get_bd_nets myoControl_4_mosi] [get_bd_nets myoControl_4_sck] [get_bd_nets mirrored_muscle_unit_4_1] [get_bd_intf_nets ps7_0_axi_periph_M04_AXI] [get_bd_cells myoControl_4]
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv Roboy:roboy_plexus:myoControl:1.0 [get_ips  roboy_plexus_myoControl_0_3] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips roboy_plexus_myoControl_0_3] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+wait_on_run impl_1
+report_ip_status -name ip_status 
+reset_run roboy_plexus_xbar_0_synth_1
+launch_runs impl_1 -jobs 32
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd]
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/roboy_plexus_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+file mkdir /home/letrend/workspace/snickerdoodle/snickerdoodle.sdk
+file copy -force /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/roboy_plexus_wrapper.sysdef /home/letrend/workspace/snickerdoodle/snickerdoodle.sdk/roboy_plexus_wrapper.hdf
+
+launch_sdk -workspace /home/letrend/workspace/snickerdoodle/snickerdoodle.sdk -hwspec /home/letrend/workspace/snickerdoodle/snickerdoodle.sdk/roboy_plexus_wrapper.hdf

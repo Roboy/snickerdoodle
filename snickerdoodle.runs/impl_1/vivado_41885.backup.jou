@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jul 31 16:45:44 2019
+# Process ID: 41885
+# Current directory: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1
+# Command line: vivado -log roboy_plexus_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source roboy_plexus_wrapper.tcl -notrace
+# Log file: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/roboy_plexus_wrapper.vdi
+# Journal file: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source roboy_plexus_wrapper.tcl -notrace

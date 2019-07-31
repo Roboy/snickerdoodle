@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="roboy_plexus_myoControl_0_3_synth_1" LaunchPart="xc7z020clg400-3" LaunchTime="1564328189">
-  <File Type="RDS-RDS" Name="roboy_plexus_myoControl_0_3.vds"/>
-  <File Type="REPORTS-TCL" Name="roboy_plexus_myoControl_0_3_reports.tcl"/>
-  <File Type="PA-TCL" Name="roboy_plexus_myoControl_0_3.tcl"/>
+<GenRun Id="roboy_plexus_myoControl_0_3_synth_1" LaunchPart="xc7z020clg400-3" LaunchTime="1564584255">
+  <File Type="VDS-TIMINGSUMMARY" Name="roboy_plexus_myoControl_0_3_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="roboy_plexus_myoControl_0_3.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="roboy_plexus_myoControl_0_3_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="roboy_plexus_myoControl_0_3_utilization_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="roboy_plexus_myoControl_0_3_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="roboy_plexus_myoControl_0_3.tcl"/>
+  <File Type="REPORTS-TCL" Name="roboy_plexus_myoControl_0_3_reports.tcl"/>
+  <File Type="RDS-RDS" Name="roboy_plexus_myoControl_0_3.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="roboy_plexus_myoControl_0_3_drc_synth.rpt"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/roboy_plexus_myoControl_0_3">
     <File Path="$PSRCDIR/sources_1/bd/roboy_plexus/ip/roboy_plexus_myoControl_0_3/roboy_plexus_myoControl_0_3.xci">
       <FileInfo>
@@ -41,7 +46,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

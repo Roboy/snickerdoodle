@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Sun Jul 28 17:37:06 2019
+-- Date        : Wed Jul 31 15:05:32 2019
 -- Host        : base running 64-bit Ubuntu 18.04.2 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_processing_system7_0_0/roboy_plexus_processing_system7_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top roboy_plexus_processing_system7_0_0 -prefix
+--               roboy_plexus_processing_system7_0_0_ roboy_plexus_processing_system7_0_0_sim_netlist.vhdl
 -- Design      : roboy_plexus_processing_system7_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -713,7 +713,7 @@ entity roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_sy
   attribute C_EN_EMIO_ENET0 : integer;
   attribute C_EN_EMIO_ENET0 of roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
   attribute C_EN_EMIO_ENET1 : integer;
-  attribute C_EN_EMIO_ENET1 of roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 1;
+  attribute C_EN_EMIO_ENET1 of roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
   attribute C_EN_EMIO_PJTAG : integer;
   attribute C_EN_EMIO_PJTAG of roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
   attribute C_EN_EMIO_TRACE : integer;
@@ -814,10 +814,8 @@ entity roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_sy
   attribute C_USE_S_AXI_HP3 of roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "roboy_plexus_processing_system7_0_0.hwdef";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "processing_system7_v5_5_processing_system7";
   attribute POWER : string;
-  attribute POWER of roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "<PROCESSOR name={system} numA9Cores={2} clockFreq={867} load={0.5} /><MEMORY name={code} memType={LPDDR2} dataWidth={32} clockFreq={400} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={26} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS18} bidis={3} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS18} bidis={5} ioBank={Vcco_p1} clockFreq={166.666489} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={49.999947} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p0} clockFreq={99.999893} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p1} clockFreq={99.999893} usageRate={0.5} /><IO interface={GigE} ioStandard={} bidis={2} ioBank={} clockFreq={125.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1733.332} /><PLL domain={Memory} vco={1599.998} /><PLL domain={IO} vco={1999.998} /><AXI interface={S_AXI_ACP} dataWidth={32} clockFreq={49} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={49} usageRate={0.5} />/>";
+  attribute POWER of roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "<PROCESSOR name={system} numA9Cores={2} clockFreq={867} load={0.5} /><MEMORY name={code} memType={LPDDR2} dataWidth={32} clockFreq={400} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={0} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS18} bidis={3} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS18} bidis={5} ioBank={Vcco_p1} clockFreq={166.666489} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={49.999947} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p0} clockFreq={99.999893} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p1} clockFreq={99.999893} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS18} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS18} bidis={14} ioBank={Vcco_p1} clockFreq={124.999870} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1733.332} /><PLL domain={Memory} vco={1599.998} /><PLL domain={IO} vco={1999.998} /><AXI interface={S_AXI_ACP} dataWidth={32} clockFreq={49} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={49} usageRate={0.5} />/>";
   attribute USE_TRACE_DATA_EDGE_DETECTOR : integer;
   attribute USE_TRACE_DATA_EDGE_DETECTOR of roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
 end roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7;
@@ -826,14 +824,6 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0_processing_system7
   signal \<const0>\ : STD_LOGIC;
   signal \<const1>\ : STD_LOGIC;
   signal ENET0_MDIO_T_n : STD_LOGIC;
-  signal ENET1_GMII_COL_i : STD_LOGIC;
-  signal ENET1_GMII_CRS_i : STD_LOGIC;
-  signal ENET1_GMII_RXD_i : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal ENET1_GMII_RX_DV_i : STD_LOGIC;
-  signal ENET1_GMII_RX_ER_i : STD_LOGIC;
-  signal ENET1_GMII_TXD_i : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal ENET1_GMII_TX_EN_i : STD_LOGIC;
-  signal ENET1_GMII_TX_ER_i : STD_LOGIC;
   signal ENET1_MDIO_T_n : STD_LOGIC;
   signal FCLK_CLK_unbuffered : STD_LOGIC_VECTOR ( 0 to 0 );
   signal I2C0_SCL_T_n : STD_LOGIC;
@@ -917,10 +907,13 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0_processing_system7
   signal gpio_out_t_n : STD_LOGIC_VECTOR ( 63 downto 0 );
   signal NLW_PS7_i_EMIOENET0GMIITXEN_UNCONNECTED : STD_LOGIC;
   signal NLW_PS7_i_EMIOENET0GMIITXER_UNCONNECTED : STD_LOGIC;
+  signal NLW_PS7_i_EMIOENET1GMIITXEN_UNCONNECTED : STD_LOGIC;
+  signal NLW_PS7_i_EMIOENET1GMIITXER_UNCONNECTED : STD_LOGIC;
   signal NLW_PS7_i_EMIOPJTAGTDO_UNCONNECTED : STD_LOGIC;
   signal NLW_PS7_i_EMIOPJTAGTDTN_UNCONNECTED : STD_LOGIC;
   signal NLW_PS7_i_EMIOTRACECTL_UNCONNECTED : STD_LOGIC;
   signal NLW_PS7_i_EMIOENET0GMIITXD_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_PS7_i_EMIOENET1GMIITXD_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal NLW_PS7_i_EMIOTRACEDATA_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_PS7_i_MAXIGP0ARCACHE_UNCONNECTED : STD_LOGIC_VECTOR ( 1 to 1 );
   signal NLW_PS7_i_MAXIGP0AWCACHE_UNCONNECTED : STD_LOGIC_VECTOR ( 1 to 1 );
@@ -1070,6 +1063,16 @@ begin
   ENET0_GMII_TXD(0) <= \<const0>\;
   ENET0_GMII_TX_EN <= \<const0>\;
   ENET0_GMII_TX_ER <= \<const0>\;
+  ENET1_GMII_TXD(7) <= \<const0>\;
+  ENET1_GMII_TXD(6) <= \<const0>\;
+  ENET1_GMII_TXD(5) <= \<const0>\;
+  ENET1_GMII_TXD(4) <= \<const0>\;
+  ENET1_GMII_TXD(3) <= \<const0>\;
+  ENET1_GMII_TXD(2) <= \<const0>\;
+  ENET1_GMII_TXD(1) <= \<const0>\;
+  ENET1_GMII_TXD(0) <= \<const0>\;
+  ENET1_GMII_TX_EN <= \<const0>\;
+  ENET1_GMII_TX_ER <= \<const0>\;
   M_AXI_GP0_ARCACHE(3 downto 2) <= \^m_axi_gp0_arcache\(3 downto 2);
   M_AXI_GP0_ARCACHE(1) <= \<const1>\;
   M_AXI_GP0_ARCACHE(0) <= \^m_axi_gp0_arcache\(0);
@@ -1156,188 +1159,6 @@ ENET0_MDIO_T_INST_0: unisim.vcomponents.LUT1
         port map (
       I0 => ENET0_MDIO_T_n,
       O => ENET0_MDIO_T
-    );
-ENET1_GMII_COL_i_reg: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_TX_CLK,
-      CE => '1',
-      D => ENET1_GMII_COL,
-      Q => ENET1_GMII_COL_i,
-      R => '0'
-    );
-ENET1_GMII_CRS_i_reg: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_TX_CLK,
-      CE => '1',
-      D => ENET1_GMII_CRS,
-      Q => ENET1_GMII_CRS_i,
-      R => '0'
-    );
-\ENET1_GMII_RXD_i_reg[0]\: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_RX_CLK,
-      CE => '1',
-      D => ENET1_GMII_RXD(0),
-      Q => ENET1_GMII_RXD_i(0),
-      R => '0'
-    );
-\ENET1_GMII_RXD_i_reg[1]\: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_RX_CLK,
-      CE => '1',
-      D => ENET1_GMII_RXD(1),
-      Q => ENET1_GMII_RXD_i(1),
-      R => '0'
-    );
-\ENET1_GMII_RXD_i_reg[2]\: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_RX_CLK,
-      CE => '1',
-      D => ENET1_GMII_RXD(2),
-      Q => ENET1_GMII_RXD_i(2),
-      R => '0'
-    );
-\ENET1_GMII_RXD_i_reg[3]\: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_RX_CLK,
-      CE => '1',
-      D => ENET1_GMII_RXD(3),
-      Q => ENET1_GMII_RXD_i(3),
-      R => '0'
-    );
-\ENET1_GMII_RXD_i_reg[4]\: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_RX_CLK,
-      CE => '1',
-      D => ENET1_GMII_RXD(4),
-      Q => ENET1_GMII_RXD_i(4),
-      R => '0'
-    );
-\ENET1_GMII_RXD_i_reg[5]\: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_RX_CLK,
-      CE => '1',
-      D => ENET1_GMII_RXD(5),
-      Q => ENET1_GMII_RXD_i(5),
-      R => '0'
-    );
-\ENET1_GMII_RXD_i_reg[6]\: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_RX_CLK,
-      CE => '1',
-      D => ENET1_GMII_RXD(6),
-      Q => ENET1_GMII_RXD_i(6),
-      R => '0'
-    );
-\ENET1_GMII_RXD_i_reg[7]\: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_RX_CLK,
-      CE => '1',
-      D => ENET1_GMII_RXD(7),
-      Q => ENET1_GMII_RXD_i(7),
-      R => '0'
-    );
-ENET1_GMII_RX_DV_i_reg: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_RX_CLK,
-      CE => '1',
-      D => ENET1_GMII_RX_DV,
-      Q => ENET1_GMII_RX_DV_i,
-      R => '0'
-    );
-ENET1_GMII_RX_ER_i_reg: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_RX_CLK,
-      CE => '1',
-      D => ENET1_GMII_RX_ER,
-      Q => ENET1_GMII_RX_ER_i,
-      R => '0'
-    );
-\ENET1_GMII_TXD_reg[0]\: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_TX_CLK,
-      CE => '1',
-      D => ENET1_GMII_TXD_i(0),
-      Q => ENET1_GMII_TXD(0),
-      R => '0'
-    );
-\ENET1_GMII_TXD_reg[1]\: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_TX_CLK,
-      CE => '1',
-      D => ENET1_GMII_TXD_i(1),
-      Q => ENET1_GMII_TXD(1),
-      R => '0'
-    );
-\ENET1_GMII_TXD_reg[2]\: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_TX_CLK,
-      CE => '1',
-      D => ENET1_GMII_TXD_i(2),
-      Q => ENET1_GMII_TXD(2),
-      R => '0'
-    );
-\ENET1_GMII_TXD_reg[3]\: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_TX_CLK,
-      CE => '1',
-      D => ENET1_GMII_TXD_i(3),
-      Q => ENET1_GMII_TXD(3),
-      R => '0'
-    );
-\ENET1_GMII_TXD_reg[4]\: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_TX_CLK,
-      CE => '1',
-      D => ENET1_GMII_TXD_i(4),
-      Q => ENET1_GMII_TXD(4),
-      R => '0'
-    );
-\ENET1_GMII_TXD_reg[5]\: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_TX_CLK,
-      CE => '1',
-      D => ENET1_GMII_TXD_i(5),
-      Q => ENET1_GMII_TXD(5),
-      R => '0'
-    );
-\ENET1_GMII_TXD_reg[6]\: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_TX_CLK,
-      CE => '1',
-      D => ENET1_GMII_TXD_i(6),
-      Q => ENET1_GMII_TXD(6),
-      R => '0'
-    );
-\ENET1_GMII_TXD_reg[7]\: unisim.vcomponents.FDRE
-     port map (
-      C => ENET1_GMII_TX_CLK,
-      CE => '1',
-      D => ENET1_GMII_TXD_i(7),
-      Q => ENET1_GMII_TXD(7),
-      R => '0'
-    );
-ENET1_GMII_TX_EN_reg: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => ENET1_GMII_TX_CLK,
-      CE => '1',
-      D => ENET1_GMII_TX_EN_i,
-      Q => ENET1_GMII_TX_EN,
-      R => '0'
-    );
-ENET1_GMII_TX_ER_reg: unisim.vcomponents.FDRE
-    generic map(
-      INIT => '0'
-    )
-        port map (
-      C => ENET1_GMII_TX_CLK,
-      CE => '1',
-      D => ENET1_GMII_TX_ER_i,
-      Q => ENET1_GMII_TX_ER,
-      R => '0'
     );
 ENET1_MDIO_T_INST_0: unisim.vcomponents.LUT1
     generic map(
@@ -1981,16 +1802,16 @@ PS7_i: unisim.vcomponents.PS7
       EMIOENET0SOFRX => ENET0_SOF_RX,
       EMIOENET0SOFTX => ENET0_SOF_TX,
       EMIOENET1EXTINTIN => ENET1_EXT_INTIN,
-      EMIOENET1GMIICOL => ENET1_GMII_COL_i,
-      EMIOENET1GMIICRS => ENET1_GMII_CRS_i,
+      EMIOENET1GMIICOL => '0',
+      EMIOENET1GMIICRS => '0',
       EMIOENET1GMIIRXCLK => ENET1_GMII_RX_CLK,
-      EMIOENET1GMIIRXD(7 downto 0) => ENET1_GMII_RXD_i(7 downto 0),
-      EMIOENET1GMIIRXDV => ENET1_GMII_RX_DV_i,
-      EMIOENET1GMIIRXER => ENET1_GMII_RX_ER_i,
+      EMIOENET1GMIIRXD(7 downto 0) => B"00000000",
+      EMIOENET1GMIIRXDV => '0',
+      EMIOENET1GMIIRXER => '0',
       EMIOENET1GMIITXCLK => ENET1_GMII_TX_CLK,
-      EMIOENET1GMIITXD(7 downto 0) => ENET1_GMII_TXD_i(7 downto 0),
-      EMIOENET1GMIITXEN => ENET1_GMII_TX_EN_i,
-      EMIOENET1GMIITXER => ENET1_GMII_TX_ER_i,
+      EMIOENET1GMIITXD(7 downto 0) => NLW_PS7_i_EMIOENET1GMIITXD_UNCONNECTED(7 downto 0),
+      EMIOENET1GMIITXEN => NLW_PS7_i_EMIOENET1GMIITXEN_UNCONNECTED,
+      EMIOENET1GMIITXER => NLW_PS7_i_EMIOENET1GMIITXER_UNCONNECTED,
       EMIOENET1MDIOI => ENET1_MDIO_I,
       EMIOENET1MDIOMDC => ENET1_MDIO_MDC,
       EMIOENET1MDIOO => ENET1_MDIO_O,
@@ -3536,24 +3357,12 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity roboy_plexus_processing_system7_0_0 is
   port (
-    ENET1_GMII_TX_EN : out STD_LOGIC_VECTOR ( 0 to 0 );
-    ENET1_GMII_TX_ER : out STD_LOGIC_VECTOR ( 0 to 0 );
-    ENET1_MDIO_MDC : out STD_LOGIC;
-    ENET1_MDIO_O : out STD_LOGIC;
-    ENET1_MDIO_T : out STD_LOGIC;
-    ENET1_GMII_TXD : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    ENET1_GMII_COL : in STD_LOGIC;
-    ENET1_GMII_CRS : in STD_LOGIC;
-    ENET1_GMII_RX_CLK : in STD_LOGIC;
-    ENET1_GMII_RX_DV : in STD_LOGIC;
-    ENET1_GMII_RX_ER : in STD_LOGIC;
-    ENET1_GMII_TX_CLK : in STD_LOGIC;
-    ENET1_MDIO_I : in STD_LOGIC;
-    ENET1_EXT_INTIN : in STD_LOGIC;
-    ENET1_GMII_RXD : in STD_LOGIC_VECTOR ( 7 downto 0 );
     GPIO_I : in STD_LOGIC_VECTOR ( 63 downto 0 );
     GPIO_O : out STD_LOGIC_VECTOR ( 63 downto 0 );
     GPIO_T : out STD_LOGIC_VECTOR ( 63 downto 0 );
+    USB0_PORT_INDCTL : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    USB0_VBUS_PWRSELECT : out STD_LOGIC;
+    USB0_VBUS_PWRFAULT : in STD_LOGIC;
     M_AXI_GP0_ARVALID : out STD_LOGIC;
     M_AXI_GP0_AWVALID : out STD_LOGIC;
     M_AXI_GP0_BREADY : out STD_LOGIC;
@@ -3705,6 +3514,11 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0 is
   signal NLW_inst_ENET0_PTP_SYNC_FRAME_TX_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_ENET0_SOF_RX_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_ENET0_SOF_TX_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_ENET1_GMII_TX_EN_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_ENET1_GMII_TX_ER_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_ENET1_MDIO_MDC_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_ENET1_MDIO_O_UNCONNECTED : STD_LOGIC;
+  signal NLW_inst_ENET1_MDIO_T_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_ENET1_PTP_DELAY_REQ_RX_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_ENET1_PTP_DELAY_REQ_TX_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_ENET1_PTP_PDELAY_REQ_RX_UNCONNECTED : STD_LOGIC;
@@ -3857,7 +3671,6 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0 is
   signal NLW_inst_UART1_DTRN_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_UART1_RTSN_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_UART1_TX_UNCONNECTED : STD_LOGIC;
-  signal NLW_inst_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_USB1_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_WDT_RST_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_DMA0_DATYPE_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -3865,6 +3678,7 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0 is
   signal NLW_inst_DMA2_DATYPE_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_inst_DMA3_DATYPE_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_inst_ENET0_GMII_TXD_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_inst_ENET1_GMII_TXD_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal NLW_inst_EVENT_STANDBYWFE_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_inst_EVENT_STANDBYWFI_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_inst_FTMT_P2F_DEBUG_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -3942,7 +3756,6 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0 is
   signal NLW_inst_S_AXI_HP3_WACOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal NLW_inst_S_AXI_HP3_WCOUNT_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal NLW_inst_TRACE_DATA_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_inst_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_inst_USB1_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute C_DM_WIDTH : integer;
   attribute C_DM_WIDTH of inst : label is 4;
@@ -3955,7 +3768,7 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0 is
   attribute C_EN_EMIO_ENET0 : integer;
   attribute C_EN_EMIO_ENET0 of inst : label is 0;
   attribute C_EN_EMIO_ENET1 : integer;
-  attribute C_EN_EMIO_ENET1 of inst : label is 1;
+  attribute C_EN_EMIO_ENET1 of inst : label is 0;
   attribute C_EN_EMIO_PJTAG : integer;
   attribute C_EN_EMIO_PJTAG of inst : label is 0;
   attribute C_EN_EMIO_TRACE : integer;
@@ -4057,7 +3870,7 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0 is
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of inst : label is "roboy_plexus_processing_system7_0_0.hwdef";
   attribute POWER : string;
-  attribute POWER of inst : label is "<PROCESSOR name={system} numA9Cores={2} clockFreq={867} load={0.5} /><MEMORY name={code} memType={LPDDR2} dataWidth={32} clockFreq={400} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={26} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS18} bidis={3} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS18} bidis={5} ioBank={Vcco_p1} clockFreq={166.666489} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={49.999947} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p0} clockFreq={99.999893} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p1} clockFreq={99.999893} usageRate={0.5} /><IO interface={GigE} ioStandard={} bidis={2} ioBank={} clockFreq={125.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1733.332} /><PLL domain={Memory} vco={1599.998} /><PLL domain={IO} vco={1999.998} /><AXI interface={S_AXI_ACP} dataWidth={32} clockFreq={49} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={49} usageRate={0.5} />/>";
+  attribute POWER of inst : label is "<PROCESSOR name={system} numA9Cores={2} clockFreq={867} load={0.5} /><MEMORY name={code} memType={LPDDR2} dataWidth={32} clockFreq={400} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={0} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS18} bidis={3} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={SPI} ioStandard={LVCMOS18} bidis={5} ioBank={Vcco_p1} clockFreq={166.666489} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={49.999947} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p0} clockFreq={99.999893} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={6} ioBank={Vcco_p1} clockFreq={99.999893} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS18} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS18} bidis={14} ioBank={Vcco_p1} clockFreq={124.999870} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1733.332} /><PLL domain={Memory} vco={1599.998} /><PLL domain={IO} vco={1999.998} /><AXI interface={S_AXI_ACP} dataWidth={32} clockFreq={49} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={49} usageRate={0.5} />/>";
   attribute USE_TRACE_DATA_EDGE_DETECTOR : integer;
   attribute USE_TRACE_DATA_EDGE_DETECTOR of inst : label is 0;
   attribute X_INTERFACE_INFO : string;
@@ -4072,21 +3885,8 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0 is
   attribute X_INTERFACE_INFO of DDR_VRN : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRN";
   attribute X_INTERFACE_INFO of DDR_VRP : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRP";
   attribute X_INTERFACE_INFO of DDR_WEB : signal is "xilinx.com:interface:ddrx:1.0 DDR WE_N";
-  attribute X_INTERFACE_INFO of ENET1_EXT_INTIN : signal is "xilinx.com:signal:interrupt:1.0 ENET1_EXT_INTIN INTERRUPT";
-  attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of ENET1_EXT_INTIN : signal is "XIL_INTERFACENAME ENET1_EXT_INTIN, SENSITIVITY LEVEL_HIGH, PortWidth 1";
-  attribute X_INTERFACE_INFO of ENET1_GMII_COL : signal is "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 COL";
-  attribute X_INTERFACE_INFO of ENET1_GMII_CRS : signal is "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 CRS";
-  attribute X_INTERFACE_INFO of ENET1_GMII_RX_CLK : signal is "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 RX_CLK";
-  attribute X_INTERFACE_INFO of ENET1_GMII_RX_DV : signal is "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 RX_DV";
-  attribute X_INTERFACE_INFO of ENET1_GMII_RX_ER : signal is "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 RX_ER";
-  attribute X_INTERFACE_INFO of ENET1_GMII_TX_CLK : signal is "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 TX_CLK";
-  attribute X_INTERFACE_INFO of ENET1_MDIO_I : signal is "xilinx.com:interface:mdio:1.0 MDIO_ETHERNET_1 MDIO_I";
-  attribute X_INTERFACE_PARAMETER of ENET1_MDIO_I : signal is "XIL_INTERFACENAME MDIO_ETHERNET_1, CAN_DEBUG false";
-  attribute X_INTERFACE_INFO of ENET1_MDIO_MDC : signal is "xilinx.com:interface:mdio:1.0 MDIO_ETHERNET_1 MDC";
-  attribute X_INTERFACE_INFO of ENET1_MDIO_O : signal is "xilinx.com:interface:mdio:1.0 MDIO_ETHERNET_1 MDIO_O";
-  attribute X_INTERFACE_INFO of ENET1_MDIO_T : signal is "xilinx.com:interface:mdio:1.0 MDIO_ETHERNET_1 MDIO_T";
   attribute X_INTERFACE_INFO of FCLK_CLK0 : signal is "xilinx.com:signal:clock:1.0 FCLK_CLK0 CLK";
+  attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of FCLK_CLK0 : signal is "XIL_INTERFACENAME FCLK_CLK0, FREQ_HZ 49999947, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of FCLK_CLK1 : signal is "xilinx.com:signal:clock:1.0 FCLK_CLK1 CLK";
   attribute X_INTERFACE_PARAMETER of FCLK_CLK1 : signal is "XIL_INTERFACENAME FCLK_CLK1, FREQ_HZ 24999973, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0";
@@ -4134,6 +3934,8 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0 is
   attribute X_INTERFACE_INFO of S_AXI_ACP_WLAST : signal is "xilinx.com:interface:aximm:1.0 S_AXI_ACP WLAST";
   attribute X_INTERFACE_INFO of S_AXI_ACP_WREADY : signal is "xilinx.com:interface:aximm:1.0 S_AXI_ACP WREADY";
   attribute X_INTERFACE_INFO of S_AXI_ACP_WVALID : signal is "xilinx.com:interface:aximm:1.0 S_AXI_ACP WVALID";
+  attribute X_INTERFACE_INFO of USB0_VBUS_PWRFAULT : signal is "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRFAULT";
+  attribute X_INTERFACE_INFO of USB0_VBUS_PWRSELECT : signal is "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRSELECT";
   attribute X_INTERFACE_INFO of DDR_Addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
   attribute X_INTERFACE_INFO of DDR_BankAddr : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";
   attribute X_INTERFACE_INFO of DDR_DM : signal is "xilinx.com:interface:ddrx:1.0 DDR DM";
@@ -4141,10 +3943,6 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0 is
   attribute X_INTERFACE_INFO of DDR_DQS : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_PARAMETER of DDR_DQS : signal is "XIL_INTERFACENAME DDR, CAN_DEBUG false, TIMEPERIOD_PS 1250, MEMORY_TYPE COMPONENTS, DATA_WIDTH 8, CS_ENABLED true, DATA_MASK_ENABLED true, SLOT Single, MEM_ADDR_MAP ROW_COLUMN_BANK, BURST_LENGTH 8, AXI_ARBITRATION_SCHEME TDM, CAS_LATENCY 11, CAS_WRITE_LATENCY 11";
   attribute X_INTERFACE_INFO of DDR_DQS_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
-  attribute X_INTERFACE_INFO of ENET1_GMII_RXD : signal is "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 RXD";
-  attribute X_INTERFACE_INFO of ENET1_GMII_TXD : signal is "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 TXD";
-  attribute X_INTERFACE_INFO of ENET1_GMII_TX_EN : signal is "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 TX_EN";
-  attribute X_INTERFACE_INFO of ENET1_GMII_TX_ER : signal is "xilinx.com:interface:gmii:1.0 GMII_ETHERNET_1 TX_ER";
   attribute X_INTERFACE_INFO of GPIO_I : signal is "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_I";
   attribute X_INTERFACE_INFO of GPIO_O : signal is "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O";
   attribute X_INTERFACE_INFO of GPIO_T : signal is "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_T";
@@ -4207,6 +4005,7 @@ architecture STRUCTURE of roboy_plexus_processing_system7_0_0 is
   attribute X_INTERFACE_INFO of S_AXI_ACP_WID : signal is "xilinx.com:interface:aximm:1.0 S_AXI_ACP WID";
   attribute X_INTERFACE_INFO of S_AXI_ACP_WSTRB : signal is "xilinx.com:interface:aximm:1.0 S_AXI_ACP WSTRB";
   attribute X_INTERFACE_PARAMETER of S_AXI_ACP_WSTRB : signal is "XIL_INTERFACENAME S_AXI_ACP, NUM_WRITE_OUTSTANDING 8, NUM_READ_OUTSTANDING 8, DATA_WIDTH 64, PROTOCOL AXI3, FREQ_HZ 49999947, ID_WIDTH 3, ADDR_WIDTH 32, AWUSER_WIDTH 5, ARUSER_WIDTH 5, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 16, PHASE 0.000, CLK_DOMAIN roboy_plexus_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_INFO of USB0_PORT_INDCTL : signal is "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 PORT_INDCTL";
 begin
 inst: entity work.roboy_plexus_processing_system7_0_0_processing_system7_v5_5_processing_system7
      port map (
@@ -4297,21 +4096,21 @@ inst: entity work.roboy_plexus_processing_system7_0_0_processing_system7_v5_5_pr
       ENET0_PTP_SYNC_FRAME_TX => NLW_inst_ENET0_PTP_SYNC_FRAME_TX_UNCONNECTED,
       ENET0_SOF_RX => NLW_inst_ENET0_SOF_RX_UNCONNECTED,
       ENET0_SOF_TX => NLW_inst_ENET0_SOF_TX_UNCONNECTED,
-      ENET1_EXT_INTIN => ENET1_EXT_INTIN,
-      ENET1_GMII_COL => ENET1_GMII_COL,
-      ENET1_GMII_CRS => ENET1_GMII_CRS,
-      ENET1_GMII_RXD(7 downto 0) => ENET1_GMII_RXD(7 downto 0),
-      ENET1_GMII_RX_CLK => ENET1_GMII_RX_CLK,
-      ENET1_GMII_RX_DV => ENET1_GMII_RX_DV,
-      ENET1_GMII_RX_ER => ENET1_GMII_RX_ER,
-      ENET1_GMII_TXD(7 downto 0) => ENET1_GMII_TXD(7 downto 0),
-      ENET1_GMII_TX_CLK => ENET1_GMII_TX_CLK,
-      ENET1_GMII_TX_EN => ENET1_GMII_TX_EN(0),
-      ENET1_GMII_TX_ER => ENET1_GMII_TX_ER(0),
-      ENET1_MDIO_I => ENET1_MDIO_I,
-      ENET1_MDIO_MDC => ENET1_MDIO_MDC,
-      ENET1_MDIO_O => ENET1_MDIO_O,
-      ENET1_MDIO_T => ENET1_MDIO_T,
+      ENET1_EXT_INTIN => '0',
+      ENET1_GMII_COL => '0',
+      ENET1_GMII_CRS => '0',
+      ENET1_GMII_RXD(7 downto 0) => B"00000000",
+      ENET1_GMII_RX_CLK => '0',
+      ENET1_GMII_RX_DV => '0',
+      ENET1_GMII_RX_ER => '0',
+      ENET1_GMII_TXD(7 downto 0) => NLW_inst_ENET1_GMII_TXD_UNCONNECTED(7 downto 0),
+      ENET1_GMII_TX_CLK => '0',
+      ENET1_GMII_TX_EN => NLW_inst_ENET1_GMII_TX_EN_UNCONNECTED,
+      ENET1_GMII_TX_ER => NLW_inst_ENET1_GMII_TX_ER_UNCONNECTED,
+      ENET1_MDIO_I => '0',
+      ENET1_MDIO_MDC => NLW_inst_ENET1_MDIO_MDC_UNCONNECTED,
+      ENET1_MDIO_O => NLW_inst_ENET1_MDIO_O_UNCONNECTED,
+      ENET1_MDIO_T => NLW_inst_ENET1_MDIO_T_UNCONNECTED,
       ENET1_PTP_DELAY_REQ_RX => NLW_inst_ENET1_PTP_DELAY_REQ_RX_UNCONNECTED,
       ENET1_PTP_DELAY_REQ_TX => NLW_inst_ENET1_PTP_DELAY_REQ_TX_UNCONNECTED,
       ENET1_PTP_PDELAY_REQ_RX => NLW_inst_ENET1_PTP_PDELAY_REQ_RX_UNCONNECTED,
@@ -4887,9 +4686,9 @@ inst: entity work.roboy_plexus_processing_system7_0_0_processing_system7_v5_5_pr
       UART1_RTSN => NLW_inst_UART1_RTSN_UNCONNECTED,
       UART1_RX => '1',
       UART1_TX => NLW_inst_UART1_TX_UNCONNECTED,
-      USB0_PORT_INDCTL(1 downto 0) => NLW_inst_USB0_PORT_INDCTL_UNCONNECTED(1 downto 0),
-      USB0_VBUS_PWRFAULT => '0',
-      USB0_VBUS_PWRSELECT => NLW_inst_USB0_VBUS_PWRSELECT_UNCONNECTED,
+      USB0_PORT_INDCTL(1 downto 0) => USB0_PORT_INDCTL(1 downto 0),
+      USB0_VBUS_PWRFAULT => USB0_VBUS_PWRFAULT,
+      USB0_VBUS_PWRSELECT => USB0_VBUS_PWRSELECT,
       USB1_PORT_INDCTL(1 downto 0) => NLW_inst_USB1_PORT_INDCTL_UNCONNECTED(1 downto 0),
       USB1_VBUS_PWRFAULT => '0',
       USB1_VBUS_PWRSELECT => NLW_inst_USB1_VBUS_PWRSELECT_UNCONNECTED,

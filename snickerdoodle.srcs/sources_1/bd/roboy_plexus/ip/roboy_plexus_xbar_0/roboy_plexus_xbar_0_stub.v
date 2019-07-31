@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Sun Jul 28 15:05:48 2019
+// Date        : Wed Jul 31 16:45:07 2019
 // Host        : base running 64-bit Ubuntu 18.04.2 LTS
-// Command     : write_verilog -force -mode synth_stub -rename_top roboy_plexus_xbar_0 -prefix
-//               roboy_plexus_xbar_0_ roboy_plexus_xbar_0_stub.v
+// Command     : write_verilog -force -mode synth_stub
+//               /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_xbar_0/roboy_plexus_xbar_0_stub.v
 // Design      : roboy_plexus_xbar_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-3

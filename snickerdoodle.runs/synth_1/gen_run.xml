@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-3" LaunchTime="1564328873">
-  <File Type="PA-TCL" Name="roboy_plexus_wrapper.tcl"/>
-  <File Type="REPORTS-TCL" Name="roboy_plexus_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="roboy_plexus_wrapper.vds"/>
-  <File Type="RDS-UTIL" Name="roboy_plexus_wrapper_utilization_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-3" LaunchTime="1564584255">
+  <File Type="VDS-TIMINGSUMMARY" Name="roboy_plexus_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="roboy_plexus_wrapper.dcp"/>
   <File Type="RDS-UTIL-PB" Name="roboy_plexus_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="roboy_plexus_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="roboy_plexus_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="roboy_plexus_wrapper.vds"/>
+  <File Type="REPORTS-TCL" Name="roboy_plexus_wrapper_reports.tcl"/>
+  <File Type="VDS-TIMING-PB" Name="roboy_plexus_wrapper_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="roboy_plexus_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/roboy_plexus/roboy_plexus.bd">
@@ -51,13 +54,6 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_myoControl_3_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_myoControl_0_4"/>
-  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_myoControl_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_gmii_to_rgmii_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_tri_state_buffer_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_myoControl_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_myoControl_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="roboy_plexus_xbar_0"/>
 </GenRun>

@@ -1,0 +1,342 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jul 31 12:02:07 2019
+# Process ID: 10862
+# Current directory: /home/letrend/workspace/snickerdoodle
+# Command line: vivado
+# Log file: /home/letrend/workspace/snickerdoodle/vivado.log
+# Journal file: /home/letrend/workspace/snickerdoodle/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/letrend/workspace/snickerdoodle/snickerdoodle.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/letrend/workspace/roboy_fpga_ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 6809.008 ; gain = 235.844 ; free physical = 57495 ; free virtual = 62180
+update_compile_order -fileset sources_1
+open_bd_design {/home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_49M
+Adding component instance block -- Roboy:roboy_plexus:myoControl:1.0 - myoControl_0
+Adding component instance block -- Roboy:roboy_plexus:myoControl:1.0 - myoControl_1
+Adding component instance block -- Roboy:roboy_plexus:myoControl:1.0 - myoControl_2
+Adding component instance block -- Roboy:roboy_plexus:myoControl:1.0 - myoControl_3
+Adding component instance block -- Roboy:roboy_plexus:myoControl:1.0 - myoControl_4
+Successfully read diagram <roboy_plexus> from BD file </home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 7073.133 ; gain = 0.000 ; free physical = 57250 ; free virtual = 62008
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+reset_run roboy_plexus_processing_system7_0_0_synth_1
+reset_run roboy_plexus_xbar_0_synth_1
+reset_run synth_1
+save_bd_design
+Wrote  : </home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd> 
+Wrote  : </home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ui/bd_1a0991fd.ui> 
+launch_runs impl_1 -jobs 32
+Wrote  : </home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd> 
+VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/synth/roboy_plexus.v
+VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/sim/roboy_plexus.v
+VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/hdl/roboy_plexus_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myoControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_49M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myoControl_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myoControl_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myoControl_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myoControl_4 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_auto_pc_0/roboy_plexus_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/hw_handoff/roboy_plexus.hwh
+Generated Block Design Tcl file /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/hw_handoff/roboy_plexus_bd.tcl
+Generated Hardware Definition File /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/synth/roboy_plexus.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP roboy_plexus_auto_pc_0, cache-ID = 5a01b370d3872f90; cache size = 298.587 MB.
+[Wed Jul 31 15:05:00 2019] Launched roboy_plexus_processing_system7_0_0_synth_1, roboy_plexus_xbar_0_synth_1, synth_1...
+Run output will be captured here:
+roboy_plexus_processing_system7_0_0_synth_1: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_processing_system7_0_0_synth_1/runme.log
+roboy_plexus_xbar_0_synth_1: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_xbar_0_synth_1/runme.log
+synth_1: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/synth_1/runme.log
+[Wed Jul 31 15:05:00 2019] Launched impl_1...
+Run output will be captured here: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 7277.059 ; gain = 203.926 ; free physical = 52197 ; free virtual = 58487
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-3
+INFO: [Netlist 29-17] Analyzing 7264 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8169.414 ; gain = 63.938 ; free physical = 51141 ; free virtual = 57658
+Restored from archive | CPU: 3.940000 secs | Memory: 68.605721 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 8169.414 ; gain = 63.938 ; free physical = 51141 ; free virtual = 57658
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8169.414 ; gain = 0.000 ; free physical = 51146 ; free virtual = 57663
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:32 ; elapsed = 00:00:23 . Memory (MB): peak = 8352.812 ; gain = 1075.613 ; free physical = 50982 ; free virtual = 57520
+open_report: Time (s): cpu = 00:00:33 ; elapsed = 00:00:05 . Memory (MB): peak = 8941.844 ; gain = 584.027 ; free physical = 50682 ; free virtual = 57230
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+place_ports miso_0 E18
+place_ports miso_1 F16
+place_ports miso_2 E17
+place_ports miso_3 F19
+place_ports miso_4 J20
+place_ports mosi_0 D20
+place_ports mosi_1 D19
+set_property package_pin "" [get_ports [list  mosi_2]]
+place_ports mosi_1 B20
+place_ports mosi_2 A20
+place_ports mosi_3 G20
+place_ports mosi_4 G18
+set_property package_pin "" [get_ports [list  mirrored_muscle_unit_0]]
+place_ports sck_0 E19
+place_ports sck_1 F17
+place_ports sck_2 D18
+set_property package_pin "" [get_ports [list  sck_3]]
+place_ports sck_3 F20
+place_ports sck_4 H20
+set_property DRIVE 16 [get_ports [list mosi_0]]
+set_property DRIVE 16 [get_ports [list mosi_1]]
+set_property DRIVE 16 [get_ports [list mosi_2]]
+set_property DRIVE 16 [get_ports [list mosi_3]]
+set_property DRIVE 16 [get_ports [list mosi_4]]
+set_property DRIVE 16 [get_ports [list sck_0]]
+set_property DRIVE 16 [get_ports [list sck_1]]
+set_property DRIVE 16 [get_ports [list sck_2]]
+set_property DRIVE 16 [get_ports [list sck_3]]
+set_property DRIVE 16 [get_ports [list sck_4]]
+set_property DRIVE 16 [get_ports [list {ss_n_0[7]} {ss_n_0[6]} {ss_n_0[5]} {ss_n_0[4]} {ss_n_0[3]} {ss_n_0[2]} {ss_n_0[1]} {ss_n_0[0]}]]
+set_property SLEW FAST [get_ports [list {ss_n_0[7]} {ss_n_0[6]} {ss_n_0[5]} {ss_n_0[4]} {ss_n_0[3]} {ss_n_0[2]} {ss_n_0[1]} {ss_n_0[0]}]]
+set_property SLEW FAST [get_ports [list mosi_0]]
+set_property SLEW FAST [get_ports [list mosi_1]]
+set_property SLEW FAST [get_ports [list mosi_2]]
+set_property SLEW FAST [get_ports [list mosi_3]]
+set_property SLEW FAST [get_ports [list mosi_4]]
+set_property SLEW FAST [get_ports [list sck_0]]
+set_property SLEW FAST [get_ports [list sck_1]]
+set_property SLEW FAST [get_ports [list sck_2]]
+set_property SLEW FAST [get_ports [list sck_3]]
+set_property SLEW FAST [get_ports [list sck_4]]
+set_property DRIVE 16 [get_ports [list {ss_n_1[7]} {ss_n_1[6]} {ss_n_1[5]} {ss_n_1[4]} {ss_n_1[3]} {ss_n_1[2]} {ss_n_1[1]} {ss_n_1[0]}]]
+set_property DRIVE 16 [get_ports [list {ss_n_2[5]} {ss_n_2[4]} {ss_n_2[3]} {ss_n_2[2]} {ss_n_2[1]} {ss_n_2[0]}]]
+set_property DRIVE 16 [get_ports [list {ss_n_3[5]} {ss_n_3[4]} {ss_n_3[3]} {ss_n_3[2]} {ss_n_3[1]} {ss_n_3[0]}]]
+set_property DRIVE 16 [get_ports [list {ss_n_4[5]} {ss_n_4[4]} {ss_n_4[3]} {ss_n_4[2]} {ss_n_4[1]} {ss_n_4[0]}]]
+set_property SLEW FAST [get_ports [list {ss_n_1[7]} {ss_n_1[6]} {ss_n_1[5]} {ss_n_1[4]} {ss_n_1[3]} {ss_n_1[2]} {ss_n_1[1]} {ss_n_1[0]}]]
+set_property SLEW FAST [get_ports [list {ss_n_2[5]} {ss_n_2[4]} {ss_n_2[3]} {ss_n_2[2]} {ss_n_2[1]} {ss_n_2[0]}]]
+set_property SLEW FAST [get_ports [list {ss_n_3[5]} {ss_n_3[4]} {ss_n_3[3]} {ss_n_3[2]} {ss_n_3[1]} {ss_n_3[0]}]]
+set_property SLEW FAST [get_ports [list {ss_n_4[5]} {ss_n_4[4]} {ss_n_4[3]} {ss_n_4[2]} {ss_n_4[1]} {ss_n_4[0]}]]
+place_ports {ss_n_0[0]} L14
+place_ports {ss_n_0[1]} J16
+place_ports {ss_n_0[2]} L15
+place_ports {ss_n_0[3]} K16
+place_ports {ss_n_0[4]} M14
+place_ports {ss_n_0[5]} G15
+place_ports {ss_n_0[6]} M15
+place_ports {ss_n_0[7]} H15
+place_ports {ss_n_1[0]} N15
+place_ports {ss_n_1[1]} J14
+place_ports {ss_n_1[2]} N16
+place_ports {ss_n_1[3]} K14
+place_ports {ss_n_1[4]} L19
+place_ports {ss_n_1[5]} J19
+place_ports {ss_n_1[6]} L20
+place_ports {ss_n_1[7]} K19
+place_ports {ss_n_2[0]} M17
+place_ports {ss_n_2[1]} M20
+place_ports {ss_n_2[2]} M18
+place_ports {ss_n_2[3]} M19
+place_ports {ss_n_2[4]} L16
+place_ports {ss_n_2[5]} K18
+place_ports {ss_n_3[0]} L17
+place_ports {ss_n_3[1]} K17
+place_ports {ss_n_3[2]} T11
+place_ports {ss_n_3[3]} U12
+place_ports {ss_n_3[4]} T10
+place_ports {ss_n_3[5]} T12
+place_ports {ss_n_4[0]} P14
+place_ports {ss_n_4[1]} W13
+place_ports {ss_n_4[2]} R14
+place_ports {ss_n_4[3]} V12
+place_ports {ss_n_4[4]} U13
+place_ports {ss_n_4[5]} T15
+save_constraints
+set_property needs_refresh false [get_runs impl_1]
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+[Wed Jul 31 16:04:14 2019] Launched impl_1...
+Run output will be captured here: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:06:40
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249A2ECE0
+set_property PROGRAM.FILE {/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/roboy_plexus_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/roboy_plexus_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+get_ports
+DDR_addr[0] DDR_addr[10] DDR_addr[11] DDR_addr[12] DDR_addr[13] DDR_addr[14] DDR_addr[1] DDR_addr[2] DDR_addr[3] DDR_addr[4] DDR_addr[5] DDR_addr[6] DDR_addr[7] DDR_addr[8] DDR_addr[9] DDR_ba[0] DDR_ba[1] DDR_ba[2] DDR_cas_n DDR_ck_n DDR_ck_p DDR_cke DDR_cs_n DDR_dm[0] DDR_dm[1] DDR_dm[2] DDR_dm[3] DDR_dq[0] DDR_dq[10] DDR_dq[11] DDR_dq[12] DDR_dq[13] DDR_dq[14] DDR_dq[15] DDR_dq[16] DDR_dq[17] DDR_dq[18] DDR_dq[19] DDR_dq[1] DDR_dq[20] DDR_dq[21] DDR_dq[22] DDR_dq[23] DDR_dq[24] DDR_dq[25] DDR_dq[26] DDR_dq[27] DDR_dq[28] DDR_dq[29] DDR_dq[2] DDR_dq[30] DDR_dq[31] DDR_dq[3] DDR_dq[4] DDR_dq[5] DDR_dq[6] DDR_dq[7] DDR_dq[8] DDR_dq[9] DDR_dqs_n[0] DDR_dqs_n[1] DDR_dqs_n[2] DDR_dqs_n[3] DDR_dqs_p[0] DDR_dqs_p[1] DDR_dqs_p[2] DDR_dqs_p[3] DDR_odt DDR_ras_n DDR_reset_n DDR_we_n FIXED_IO_ddr_vrn FIXED_IO_ddr_vrp FIXED_IO_mio[0] FIXED_IO_mio[10] FIXED_IO_mio[11] FIXED_IO_mio[12] FIXED_IO_mio[13] FIXED_IO_mio[14] FIXED_IO_mio[15] FIXED_IO_mio[16] FIXED_IO_mio[17] FIXED_IO_mio[18] FIXED_IO_mio[19] FIXED_IO_mio[1] FIXED_IO_mio[20] FIXED_IO_mio[21] FIXED_IO_mio[22] FIXED_IO_mio[23] FIXED_IO_mio[24] FIXED_IO_mio[25] FIXED_IO_mio[26] FIXED_IO_mio[27] FIXED_IO_mio[28] FIXED_IO_mio[29] FIXED_IO_mio[2] FIXED_IO_mio[30] FIXED_IO_mio[31] FIXED_IO_mio[32] FIXED_IO_mio[33] FIXED_IO_mio[34] FIXED_IO_mio[35] FIXED_IO_mio[36] FIXED_IO_mio[37] FIXED_IO_mio[38] FIXED_IO_mio[39] FIXED_IO_mio[3] FIXED_IO_mio[40] FIXED_IO_mio[41] FIXED_IO_mio[42] FIXED_IO_mio[43] FIXED_IO_mio[44] FIXED_IO_mio[45] FIXED_IO_mio[46] FIXED_IO_mio[47] FIXED_IO_mio[48] FIXED_IO_mio[49] FIXED_IO_mio[4] FIXED_IO_mio[50] FIXED_IO_mio[51] FIXED_IO_mio[52] FIXED_IO_mio[53] FIXED_IO_mio[5] FIXED_IO_mio[6] FIXED_IO_mio[7] FIXED_IO_mio[8] FIXED_IO_mio[9] FIXED_IO_ps_clk FIXED_IO_ps_porb FIXED_IO_ps_srstb mirrored_muscle_unit_0 mirrored_muscle_unit_1 mirrored_muscle_unit_2 mirrored_muscle_unit_3 mirrored_muscle_unit_4 miso_0 miso_1 miso_2 miso_3 miso_4 mosi_0 mosi_1 mosi_2 mosi_3 mosi_4 power_sense_n sck_0 sck_1 sck_2 sck_3 sck_4 ss_n_0[0] ss_n_0[1] ss_n_0[2] ss_n_0[3] ss_n_0[4] ss_n_0[5] ss_n_0[6] ss_n_0[7] ss_n_1[0] ss_n_1[1] ss_n_1[2] ss_n_1[3] ss_n_1[4] ss_n_1[5] ss_n_1[6] ss_n_1[7] ss_n_2[0] ss_n_2[1] ss_n_2[2] ss_n_2[3] ss_n_2[4] ss_n_2[5] ss_n_3[0] ss_n_3[1] ss_n_3[2] ss_n_3[3] ss_n_3[4] ss_n_3[5] ss_n_4[0] ss_n_4[1] ss_n_4[2] ss_n_4[3] ss_n_4[4] ss_n_4[5]
+open_bd_design {/home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd}
+open_project /home/letrend/workspace/snickerdoodle/snickerdoodle.tmp/myoControl_v1_0_project/myoControl_v1_0_project.xpr
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/hdl/PIDController.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/hdl/SpiControl.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/hdl/myoControl_v1_0_myoControl.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/hdl/myoControl_v1_0.v:]
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file /home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/component.xml
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-5226] Project source file '/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File '/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/hdl/PIDController.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File '/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/hdl/SpiControl.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File '/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/hdl/myoControl_v1_0_myoControl.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File '/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/hdl/spi_master_slave/trunk/rtl/spi_master_slave/spi_master.vhd' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File '/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/hdl/myoControl_v1_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File '/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/hdl/PIDController.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File '/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/hdl/SpiControl.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File '/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/hdl/myoControl_v1_0_myoControl.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File '/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/hdl/spi_master_slave/trunk/rtl/spi_master_slave/spi_master.vhd' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File '/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0/hdl/myoControl_v1_0.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+set_property core_revision 6 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path /home/letrend/workspace/roboy_fpga_ips/myoControl_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/letrend/workspace/roboy_fpga_ips/myoControl_1.0'
+current_project snickerdoodle
+open_bd_design {/home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd}
+delete_bd_objs [get_bd_nets myoControl_1_ss_n_o] [get_bd_nets miso_1_1] [get_bd_nets myoControl_1_mosi] [get_bd_nets myoControl_1_sck] [get_bd_nets mirrored_muscle_unit_1_1] [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_cells myoControl_1]
+delete_bd_objs [get_bd_nets myoControl_2_ss_n_o] [get_bd_nets miso_2_1] [get_bd_nets myoControl_2_mosi] [get_bd_nets myoControl_2_sck] [get_bd_nets mirrored_muscle_unit_2_1] [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_cells myoControl_2]
+delete_bd_objs [get_bd_nets myoControl_3_ss_n_o] [get_bd_nets miso_3_1] [get_bd_nets myoControl_3_mosi] [get_bd_nets myoControl_3_sck] [get_bd_nets mirrored_muscle_unit_3_1] [get_bd_intf_nets ps7_0_axi_periph_M03_AXI] [get_bd_cells myoControl_3]
+delete_bd_objs [get_bd_nets myoControl_4_ss_n_o] [get_bd_nets miso_4_1] [get_bd_nets myoControl_4_mosi] [get_bd_nets myoControl_4_sck] [get_bd_nets mirrored_muscle_unit_4_1] [get_bd_intf_nets ps7_0_axi_periph_M04_AXI] [get_bd_cells myoControl_4]
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/letrend/workspace/roboy_fpga_ips'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv Roboy:roboy_plexus:myoControl:1.0 [get_ips  roboy_plexus_myoControl_0_3] -log ip_upgrade.log
+Upgrading '/home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd'
+INFO: [IP_Flow 19-3422] Upgraded roboy_plexus_myoControl_0_3 (myoControl_v1.0 1.0) from revision 5 to revision 6
+Wrote  : </home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd> 
+Wrote  : </home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ui/bd_1a0991fd.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/letrend/workspace/snickerdoodle/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips roboy_plexus_myoControl_0_3] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+Wrote  : </home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd> 
+VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/synth/roboy_plexus.v
+VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/sim/roboy_plexus.v
+VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/hdl/roboy_plexus_wrapper.v
+INFO: [Common 17-365] Interrupt caught but 'launch_runs' cannot be canceled. Please wait for command to finish.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1171] User-interrupt detected : Generation halted successfully for IP Integrator design /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd
+INFO: [Common 17-681] Processing pending cancel.
+report_ip_status -name ip_status 
+reset_run roboy_plexus_xbar_0_synth_1
+launch_runs impl_1 -jobs 32
+INFO: [BD 41-1662] The design 'roboy_plexus.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/synth/roboy_plexus.v
+VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/sim/roboy_plexus.v
+VHDL Output written to : /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/hdl/roboy_plexus_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myoControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_49M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/ip/roboy_plexus_auto_pc_0/roboy_plexus_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/hw_handoff/roboy_plexus.hwh
+Generated Block Design Tcl file /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/hw_handoff/roboy_plexus_bd.tcl
+Generated Hardware Definition File /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/synth/roboy_plexus.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP roboy_plexus_auto_pc_0, cache-ID = 5a01b370d3872f90; cache size = 299.333 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP roboy_plexus_processing_system7_0_0, cache-ID = 979af75c7eedc6aa; cache size = 299.333 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP roboy_plexus_rst_ps7_0_49M_0, cache-ID = d59200b3ecaa0b31; cache size = 299.333 MB.
+[Wed Jul 31 16:44:17 2019] Launched roboy_plexus_xbar_0_synth_1, roboy_plexus_myoControl_0_3_synth_1, synth_1...
+Run output will be captured here:
+roboy_plexus_xbar_0_synth_1: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_xbar_0_synth_1/runme.log
+roboy_plexus_myoControl_0_3_synth_1: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/roboy_plexus_myoControl_0_3_synth_1/runme.log
+synth_1: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/synth_1/runme.log
+[Wed Jul 31 16:44:17 2019] Launched impl_1...
+Run output will be captured here: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 9941.480 ; gain = 22.000 ; free physical = 48020 ; free virtual = 55205
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/letrend/workspace/snickerdoodle/snickerdoodle.srcs/sources_1/bd/roboy_plexus/roboy_plexus.bd]
+refresh_design
+INFO: [Netlist 29-17] Analyzing 1850 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 9941.480 ; gain = 0.000 ; free physical = 48420 ; free virtual = 55690
+Restored from archive | CPU: 1.250000 secs | Memory: 18.350746 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 9941.480 ; gain = 0.000 ; free physical = 48420 ; free virtual = 55690
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 9941.480 ; gain = 0.000 ; free physical = 48399 ; free virtual = 55669
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+[Wed Jul 31 16:56:51 2019] Launched impl_1...
+Run output will be captured here: /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/roboy_plexus_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+file mkdir /home/letrend/workspace/snickerdoodle/snickerdoodle.sdk
+file copy -force /home/letrend/workspace/snickerdoodle/snickerdoodle.runs/impl_1/roboy_plexus_wrapper.sysdef /home/letrend/workspace/snickerdoodle/snickerdoodle.sdk/roboy_plexus_wrapper.hdf
+
+launch_sdk -workspace /home/letrend/workspace/snickerdoodle/snickerdoodle.sdk -hwspec /home/letrend/workspace/snickerdoodle/snickerdoodle.sdk/roboy_plexus_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/letrend/workspace/snickerdoodle/snickerdoodle.sdk -hwspec /home/letrend/workspace/snickerdoodle/snickerdoodle.sdk/roboy_plexus_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.

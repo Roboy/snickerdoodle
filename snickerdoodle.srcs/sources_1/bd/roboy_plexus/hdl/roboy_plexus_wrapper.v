@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-//Date        : Sun Jul 28 17:47:49 2019
+//Date        : Wed Jul 31 16:44:09 2019
 //Host        : base running 64-bit Ubuntu 18.04.2 LTS
 //Command     : generate_target roboy_plexus_wrapper.bd
 //Design      : roboy_plexus_wrapper
@@ -31,8 +31,6 @@ module roboy_plexus_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    MDC,
-    MDIO,
     mirrored_muscle_unit_0,
     mirrored_muscle_unit_1,
     mirrored_muscle_unit_2,
@@ -49,12 +47,6 @@ module roboy_plexus_wrapper
     mosi_3,
     mosi_4,
     power_sense_n,
-    rgmii_rx_ctl,
-    rgmii_rxc,
-    rgmii_rxd,
-    rgmii_tx_ctl,
-    rgmii_txc,
-    rgmii_txd,
     sck_0,
     sck_1,
     sck_2,
@@ -86,8 +78,6 @@ module roboy_plexus_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  output MDC;
-  inout MDIO;
   input mirrored_muscle_unit_0;
   input mirrored_muscle_unit_1;
   input mirrored_muscle_unit_2;
@@ -104,12 +94,6 @@ module roboy_plexus_wrapper
   output mosi_3;
   output mosi_4;
   input power_sense_n;
-  input rgmii_rx_ctl;
-  input rgmii_rxc;
-  input [3:0]rgmii_rxd;
-  output rgmii_tx_ctl;
-  output rgmii_txc;
-  output [3:0]rgmii_txd;
   output sck_0;
   output sck_1;
   output sck_2;
@@ -142,8 +126,6 @@ module roboy_plexus_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire MDC;
-  wire MDIO;
   wire mirrored_muscle_unit_0;
   wire mirrored_muscle_unit_1;
   wire mirrored_muscle_unit_2;
@@ -160,12 +142,6 @@ module roboy_plexus_wrapper
   wire mosi_3;
   wire mosi_4;
   wire power_sense_n;
-  wire rgmii_rx_ctl;
-  wire rgmii_rxc;
-  wire [3:0]rgmii_rxd;
-  wire rgmii_tx_ctl;
-  wire rgmii_txc;
-  wire [3:0]rgmii_txd;
   wire sck_0;
   wire sck_1;
   wire sck_2;
@@ -199,8 +175,6 @@ module roboy_plexus_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-        .MDC(MDC),
-        .MDIO(MDIO),
         .mirrored_muscle_unit_0(mirrored_muscle_unit_0),
         .mirrored_muscle_unit_1(mirrored_muscle_unit_1),
         .mirrored_muscle_unit_2(mirrored_muscle_unit_2),
@@ -217,12 +191,6 @@ module roboy_plexus_wrapper
         .mosi_3(mosi_3),
         .mosi_4(mosi_4),
         .power_sense_n(power_sense_n),
-        .rgmii_rx_ctl(rgmii_rx_ctl),
-        .rgmii_rxc(rgmii_rxc),
-        .rgmii_rxd(rgmii_rxd),
-        .rgmii_tx_ctl(rgmii_tx_ctl),
-        .rgmii_txc(rgmii_txc),
-        .rgmii_txd(rgmii_txd),
         .sck_0(sck_0),
         .sck_1(sck_1),
         .sck_2(sck_2),

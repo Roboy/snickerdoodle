@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main()
+{
+
+	init_platform();
+	return 0;
+}
